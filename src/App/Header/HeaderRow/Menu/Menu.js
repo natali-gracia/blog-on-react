@@ -1,16 +1,14 @@
 import React from "react"
 
-import'./../../Header/HeaderRow/Menu/menu.css'
-import'./menufix.css'
+import'./menu.css'
 
-
-const MenuFix = () => {
+const Menu = () => {
 	return (
         <div>
-            <ul className="menu items-fixedmenu">
+            <ul className="menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="/">Beauty</a></li>
-                <li className="dropdown-item dropdown-fixedmenu">
+                <li className="dropdown-item">
                     <a href="/">Fashion </a>
                     <ul className="dropdown-menu">
                         <li><a href="/">News</a></li>
@@ -19,7 +17,7 @@ const MenuFix = () => {
                         <li><a href="/">Everyday fashion</a></li>
                     </ul>
                 </li>
-                <li className="dropdown-item dropdown-fixedmenu">
+                <li className="dropdown-item">
                     <a href="/">Travels </a>
                     <ul className="dropdown-menu">
                         <li><a href="/">Countries</a></li>
@@ -35,4 +33,4 @@ const MenuFix = () => {
 	)
 }
 
-export default MenuFix
+export default Menu

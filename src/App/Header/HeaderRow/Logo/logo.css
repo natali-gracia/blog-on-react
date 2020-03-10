@@ -1,0 +1,10 @@
+.logo {
+	height: 82px;
+	line-height: 82px;
+	margin-left: 25px;
+}
+.logo img {
+	height: 50px;
+	width: 125px;
+	vertical-align: middle;
+}

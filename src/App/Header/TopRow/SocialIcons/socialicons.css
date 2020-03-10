@@ -1,0 +1,48 @@
+.top-social-icons {
+	padding-left: 20px;
+}
+.top-social-icons a {
+	display: block;
+	position: relative;
+    margin-right: 1px;
+    color: #fff;
+    float: left;
+	height: 40px;
+	line-height: 40px;
+	width: 30px;
+}
+.top-social-icons a:after {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	left: 8px;
+	top: 13px;
+}
+.fb-icon:after {
+	background-image: url("/images/fb-icon.png");
+}
+.fb-icon:hover:after {
+	background-image: url("/images/fb-icon-gold.png");
+}
+.youtube-icon:after {
+	background-image: url("/images/youtube-icon.png");
+}
+.youtube-icon:hover:after {
+	background-image: url("/images/youtube-icon-gold.png");
+}
+.insta-icon:after {
+	background-image: url("/images/insta-icon.png");
+}
+.insta-icon:hover:after {
+	background-image: url("/images/insta-icon-gold.png");
+}
+.pint-icon:after {
+	background-image: url("/images/pint-icon.png");
+}
+.pint-icon:hover:after {
+	background-image: url("/images/pint-icon-gold.png");
+}
