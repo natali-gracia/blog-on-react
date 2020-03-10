@@ -8,7 +8,7 @@ import MenuFix from './MenuFix/MenuFix'
 const FixedNav = () => {
 	
 	return (
-        <div className="fixednav" id="fixnav">
+        <div className="fixednav" id="fixnav" style={{display: 'none'}}>
             <div className="wrap">
                 <div className="col-md-4">
                     <LogoFix/>
