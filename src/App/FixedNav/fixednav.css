@@ -1,0 +1,10 @@
+.fixednav {
+	background-color: #fff;
+	width: 1500px;
+    text-transform: uppercase;
+    z-index: 10;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.2);
+    position: fixed;
+    transition: all 2s linear;
+}

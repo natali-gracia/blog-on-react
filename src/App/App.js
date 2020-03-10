@@ -3,23 +3,20 @@ import React from 'react';
 import'./../common/style/reset.css'
 import'./../common/style/base.css'
 
+import FixedNav from './FixedNav/FixedNav'
+// import Header from './Header/Header'
+// import Slider from './Slider/Slider'
+// import Main from './Main/Main'
+// import Footer from './Footer/Footer'
 
 const App = () => {
   return (
     <div>
-	      <div className="content">
-  <h1 className="heading">
-    Google Fonts in React
-  </h1>
-  <h2 className="subheading">
-    Learn how to add fonts in a React Project
-  </h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <hr/>
-  <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-</div>
+	      <FixedNav/>
+        {/* <Header/>
+        <Slider/>
+        <Main/>
+        <Footer/> */}
     </div>
   );
 }

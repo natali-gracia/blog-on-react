@@ -1,0 +1,10 @@
+.logo-fixednav {
+	margin-left: 25px;
+	height: 56px;
+	line-height: 52px;
+}
+.logo-fixednav img {
+	height: 40px;
+	width: 80px;
+	vertical-align: middle;
+}
