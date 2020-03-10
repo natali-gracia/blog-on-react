@@ -5,7 +5,7 @@ import'./../common/style/base.css'
 
 import FixedNav from './FixedNav/FixedNav'
 import Header from './Header/Header'
-// import Slider from './Slider/Slider'
+import Slider from './Slider/Slider'
 // import Main from './Main/Main'
 // import Footer from './Footer/Footer'
 
@@ -14,8 +14,8 @@ const App = () => {
     <div>
 	      <FixedNav/>
         <Header/>
-        {/* <Slider/>
-        <Main/>
+        <Slider/>
+        {/* <Main/>
         <Footer/> */}
     </div>
   );
