@@ -1,24 +1,44 @@
-import React from "react"
+import React,{Component} from "react"
 
-import'./fixednav.css'
+import NavBar from './NavBar'
 
-import LogoFix from './LogoFix/LogoFix'
-import MenuFix from './MenuFix/MenuFix'
 
-const FixedNav = () => {
-	
+class FixedNav extends Component {
+
+    state = {
+        showNavBar: false
+    }
+
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+      }
+
+    handleScroll = () => {
+        if(window.pageYOffset > 150) {
+            this.setState({
+              showNavBar: true,
+            });
+          } else {
+            this.setState({
+              showNavBar: false,
+            });
+          }
+        }
+
+
+    render() {
+
 	return (
-        <div className="fixednav" id="fixnav" style={{display: 'none'}}>
-            <div className="wrap">
-                <div className="col-md-4">
-                    <LogoFix/>
-                </div>
-                <div className="col-md-auto">
-                    <MenuFix/>						
-                </div>			
-            </div>
-	    </div>						
-	)
-}
+        <div>
+            {
+                this.state.showNavBar ? <NavBar/> : null
+            }
+        </div>
+	);
+}}
 
 export default FixedNav
