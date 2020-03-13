@@ -2,7 +2,7 @@ import React from "react"
 
 import'./maincontent.css'
 
-// import PostsList from './PostsList'
+import PostsList from './PostsList'
 
 const MainContent = () => {	
 	return (
@@ -15,9 +15,8 @@ const MainContent = () => {
                     <a href="">Popular posts</a>
                 </div>
             </div>
-            <div className="posts-list flex-wrap">
-                PostsList
-                {/* <PostsList/> 												 */}
+            <div className="posts-list">
+                <PostsList/> 												
             </div>
             <button className="more-posts">Load more posts</button>
         </div> 				

@@ -21,6 +21,11 @@ a {
 	display: block;
 	clear: both;
 }
+.flex-wrap {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .col-md-3 {
 	float: left;
     width: 350px;
