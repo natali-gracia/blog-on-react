@@ -6,7 +6,7 @@ import'./../common/style/base.css'
 import FixedNav from './FixedNav/FixedNav'
 import Header from './Header/Header'
 import SliderFade from './Slider/SliderFade'
-// import Main from './Main/Main'
+import Main from './Main/Main'
 // import Footer from './Footer/Footer'
 
 const App = () => {
@@ -15,7 +15,8 @@ const App = () => {
 	      <FixedNav/>
         <Header/>
         <SliderFade/>
-        {/* <Main/>
+        <Main/>
+        {/* 
         <Footer/> */}
     </div>
   );
