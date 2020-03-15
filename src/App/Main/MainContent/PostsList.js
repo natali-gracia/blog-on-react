@@ -6,7 +6,7 @@ import postsData from './postsData'
 const PostsList = () => {	
 	return (
         <div className="flex-wrap">
-            {postsData.map((post)=>(
+            {postsData.reverse().slice(0,2).map((post)=>(
                     <div>
                         <PostListItem 
                             title={post.title}
