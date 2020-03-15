@@ -1,0 +1,50 @@
+.subscr-form {
+	padding: 0 25px;
+}
+.subscr-form input, .subscr-form button {
+	height: 56px;
+    border: none;
+    width: 100%;
+    display: block;
+    font-family: 'Lora', sans-serif;
+    font-size: 14px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 0;
+}
+.subscr-form button {
+	margin: 10px 0 0 0;
+}
+.subscr-form input {
+	background: #eee;
+}
+.subscr-form button {
+	background: #cdb280;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+    letter-spacing: 1px;
+}
+.subscr-form button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.subscr-form input::placeholder {
+	color: #000;
+}
+.subscr-form input:focus::-webkit-input-placeholder {
+  color: #999;
+}
+.subscr-form input::focus::-moz-placeholder {
+  color: #999;
+}
+.subscr-form input::focus:-moz-placeholder {
+  color: #999;
+}
+.subscr-form input::focus:-ms-input-placeholder {
+  color: #999;
+}
+.subscr-form input:focus, .subscr-form button:focus {
+	border: none;
+	outline: none;
+}

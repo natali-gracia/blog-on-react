@@ -3,7 +3,7 @@ import React from "react"
 import'./main.css'
 
 import MainContent from './MainContent/MainContent'
-// import Sidebar from './Sidebar/Sidebar'
+import Sidebar from './Sidebar/Sidebar'
 
 
 const Main = () => {	
@@ -16,8 +16,7 @@ const Main = () => {
 						    <MainContent/>
                         </div>
 					    <div className="col-md-3">
-                            Sidebar
-						    {/* <Sidebar/>	 */}
+						    <Sidebar/>	
 					    </div>					
 				    </div>
 			    </div>

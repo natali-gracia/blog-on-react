@@ -1,48 +1,74 @@
 .top-social-icons {
 	padding-left: 20px;
 }
-.top-social-icons a {
+.top-social-icons a, .widget-social-icons a, .footer-social-icons a {
 	display: block;
 	position: relative;
     margin-right: 1px;
     color: #fff;
     float: left;
+}
+.top-social-icons a, .widget-social-icons a {
 	height: 40px;
 	line-height: 40px;
+}
+.top-social-icons a {
 	width: 30px;
 }
-.top-social-icons a:after {
+.widget-social-icons a {
+	width: 35px;
+}
+.footer-social-icons a {
+	width: 37px;
+	height: 45px;
+	line-height: 45px;
+}	
+.top-social-icons a:after, .widget-social-icons a:after, .footer-social-icons a:after {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	content: "";
 	display: block;
 	position: absolute;
+}
+.top-social-icons a:after {
 	width: 14px;
 	height: 14px;
 	left: 8px;
 	top: 13px;
 }
+.widget-social-icons a:after {
+	width: 16px;
+	height: 16px;
+	left: 10px;
+	top: 12px;
+}
+.footer-social-icons a:after {
+	width: 18px;
+	height: 18px;
+	left: 10px;
+	top: 12px;
+}	
 .fb-icon:after {
-	background-image: url("/images/fb-icon.png");
+	background-image: url("/images/socialicons/fb-icon.png");
 }
 .fb-icon:hover:after {
-	background-image: url("/images/fb-icon-gold.png");
+	background-image: url("/images/socialicons/fb-icon-gold.png");
 }
 .youtube-icon:after {
-	background-image: url("/images/youtube-icon.png");
+	background-image: url("/images/socialicons/youtube-icon.png");
 }
 .youtube-icon:hover:after {
-	background-image: url("/images/youtube-icon-gold.png");
+	background-image: url("/images/socialicons/youtube-icon-gold.png");
 }
 .insta-icon:after {
-	background-image: url("/images/insta-icon.png");
+	background-image: url("/images/socialicons/insta-icon.png");
 }
 .insta-icon:hover:after {
-	background-image: url("/images/insta-icon-gold.png");
+	background-image: url("/images/socialicons/insta-icon-gold.png");
 }
 .pint-icon:after {
-	background-image: url("/images/pint-icon.png");
+	background-image: url("/images/socialicons/pint-icon.png");
 }
 .pint-icon:hover:after {
-	background-image: url("/images/pint-icon-gold.png");
+	background-image: url("/images/socialicons/pint-icon-gold.png");
 }

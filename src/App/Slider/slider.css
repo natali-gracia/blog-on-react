@@ -95,13 +95,13 @@
 		content: "";
 }
 .slick-slide-one:after {
-	background-image: url("/images/anariel-post-11.jpg");
+	background-image: url("/images/sliderimg/anariel-post-11.jpg");
 }
 .slick-slide-two:after {
-	background-image: url("/images/anariel-post-12.jpg");
+	background-image: url("/images/sliderimg/anariel-post-12.jpg");
 }
 .slick-slide-three:after {
-	background-image: url("/images/anariel-post-1.jpg");
+	background-image: url("/images/sliderimg/anariel-post-1.jpg");
 }
 .slick-slide-one:before, .slick-slide-two:before, .slick-slide-three:before  {
 	content: "";
