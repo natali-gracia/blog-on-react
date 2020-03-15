@@ -49,3 +49,6 @@
 	background: #fff;
 	color: #222;
 }
+.hidden {
+    display:none;
+}
