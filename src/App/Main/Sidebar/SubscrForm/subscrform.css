@@ -2,7 +2,7 @@
 	padding: 0 25px;
 }
 .subscr-form input, .subscr-form button {
-	height: 56px;
+	  height: 56px;
     border: none;
     width: 100%;
     display: block;
@@ -47,4 +47,15 @@
 .subscr-form input:focus, .subscr-form button:focus {
 	border: none;
 	outline: none;
+}
+
+.subscr-accept {
+  margin: 4px 25px;
+  padding: 20px 20px 20px 5px;
+  background: #ffffe0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  line-height: 26px;
 }

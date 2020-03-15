@@ -3,6 +3,7 @@ import React from "react"
 import'./sidebar.css'
 
 import SubscrForm from './SubscrForm/SubscrForm'
+import WidgetSocialIcons from './WidgetSocialIcons'
 
 const Sidebar = () => {	
 	return (
@@ -18,6 +19,14 @@ const Sidebar = () => {
                 <h3>Subscribe to our Newsletter</h3>
                 <SubscrForm/>
             </div>
+            <div className="widget widget-social">
+                <WidgetSocialIcons/>
+            </div>
+            <div className="widget">
+                <h3>Popular Posts</h3>
+                
+            </div>
+
         </div> 				
 	)
 }

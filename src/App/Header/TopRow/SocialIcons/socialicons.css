@@ -1,6 +1,9 @@
 .top-social-icons {
 	padding-left: 20px;
 }
+.widget-social-icons, .footer-social-icons {
+	display: inline-block;
+}
 .top-social-icons a, .widget-social-icons a, .footer-social-icons a {
 	display: block;
 	position: relative;

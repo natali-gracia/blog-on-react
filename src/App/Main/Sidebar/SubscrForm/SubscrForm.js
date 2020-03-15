@@ -5,30 +5,42 @@ import './subscrform.css'
 class SubscrForm extends Component {
 
     state = {
-		value: '',
+        getValue: '',
+        showForm: true,
         } 
         
     handleChange = ((event) => {
-        this.setState({value: event.target.value});
+        this.setState({getValue: event.target.value});
         }
     )
     handleSubscribe = ((event) =>  {
-    alert('Please, check your inbox now to confirm your subscription.');
+    this.setState({showForm: false});
     event.preventDefault();
         }
     )
 
     render() {
         return (
-            <div className="subscr-form">
-                <form onSubmit={this.handleSubscribe}>
-                <label>
-                    <input type="text" name="user-email" title="Enter Your Email ..." 
-                    placeholder="Enter Your Email ..."
-                    value={this.state.value} onChange={this.handleChange} />
-                </label>
-                <button type="submit" value="Subscribe!">Subscribe!</button>
-                </form>
+            <div>
+                {
+                    this.state.showForm ? 
+                        <div className="subscr-form">
+                            <form method="" action="" onSubmit={this.handleSubscribe}>
+                                <label>
+                                    <input type="Email" name="user-email" title="Enter Your Email ..." 
+                                    placeholder="Enter Your Email ..."
+                                    value={this.state.getValue} onChange={this.handleChange}/>
+                                </label>
+                                <button type="submit" value="Subscribe!">
+                                    Subscribe!
+                                </button>
+                            </form>
+                        </div> 
+                    : 
+                        <div className="subscr-accept">
+                            <p>Please, check your inbox {this.state.getValue} to confirm your subscription.</p>
+                        </div>
+                }
             </div>
 
           );
