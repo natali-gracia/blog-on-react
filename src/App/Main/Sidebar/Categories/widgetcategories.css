@@ -1,0 +1,19 @@
+.categories-item {
+	border-bottom: 1px dashed #eaeaea;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.categories-item:last-child {
+	border: none;
+}
+.categories-item a {
+	font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    color: #8e8e8e;
+}
+.categories-item a:hover {
+	color: #cdb280;
+}

@@ -4,8 +4,9 @@ import'./sidebar.css'
 
 import SubscrForm from './SubscrForm/SubscrForm'
 import WidgetSocialIcons from './WidgetSocialIcons'
-import PostsListWidgetPopular from './PostsListWidget/PostsListWidgetPopular'
-import PostsListWidget from './PostsListWidget/PostsListWidget'
+import PostsListWidgetPopular from './PostsListWidgets/PostsListWidgetPopular'
+import PostsListWidget from './PostsListWidgets/PostsListWidget'
+import WidgetCategories from './Categories/WidgetCategories'
 
 const Sidebar = () => {	
 	return (
@@ -28,6 +29,11 @@ const Sidebar = () => {
                 <h3>Popular Posts</h3>
                 <PostsListWidgetPopular/>
             </div>
+            <div className="widget">
+                <h3>Categories</h3>
+                <WidgetCategories/>
+
+            </div>           
             <div className="widget">
                 <h3>Recent Posts</h3>
                 <PostsListWidget/>
