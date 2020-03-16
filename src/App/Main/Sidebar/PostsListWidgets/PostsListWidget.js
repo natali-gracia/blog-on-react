@@ -10,7 +10,7 @@ const PostsListWidget = () => {
         return (
             <div>
                 {postsData.sort((a,b)=> b.id - a.id).slice(0,3).map((post)=>(
-                        <div className="widget-posts">
+                        <div className="widget-posts" key={post.id}>
                             <PostListWidgetItem 
                                 title={post.title}
                                 date={post.date}

@@ -10,8 +10,8 @@ const PostsListWidgetPopular = () => {
         return (
             <div>
                 {postsData.sort((a,b)=> b.likes - a.likes)
-                .slice(0,3).map((post)=>(
-                        <div className="widget-posts">
+                .slice(0,4).map((post)=>(
+                        <div className="widget-posts" key={post.id}>
                             <PostListWidgetItem
                                 title={post.title}
                                 date={post.date}

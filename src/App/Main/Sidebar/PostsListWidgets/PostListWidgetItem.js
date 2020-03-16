@@ -18,7 +18,7 @@ const PostListWidgetItem = ({
                     <h4>
                         <a href="/">{title}</a>
                     </h4>
-                    <div class="widget-date">{date}</div>                   
+                    <div className="widget-date">{date}</div>                   
                 </div>
             </div>
             )

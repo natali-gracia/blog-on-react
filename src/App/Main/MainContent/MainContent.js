@@ -3,12 +3,17 @@ import React,{Component} from "react"
 import'./maincontent.css'
 
 import PostsList from './PostsList'
+import PostsListPopular from './PostsListPopular'
+import RadioButtons from './RadioButtons'
+
+
 import postsData from './postsData'
 
 class MainContent extends Component {
 
     state = {
         sliceValue: 6,
+        postsFilter: 'Recent posts',
         }
     
     sliceChange = () => {
@@ -16,20 +21,23 @@ class MainContent extends Component {
             sliceValue: prevState.sliceValue + 2
         }));
     }
+    onRadioButton = (event) => {
+        this.setState({
+            postsFilter: event.target.value
+        });
+      }
 
     render() {	
         return (
             <div>
-                <div className="posts-nav flex-wrap">
-                    <div className="btn-posts-nav active">
-                        <a href="">Recent posts</a>
-                    </div>
-                    <div className="btn-posts-nav">
-                        <a href="">Popular posts</a>
-                    </div>
+                <div className="posts-nav">
+                    <RadioButtons
+                    postsFilter = {this.state.postsFilter}
+                    onRadioButton = {this.onRadioButton}
+                    />
                 </div>
                 <div className="posts-list">
-                    <PostsList
+                    <PostsListPopular
                     sliceValue = {this.state.sliceValue}
                     /> 												
                 </div>

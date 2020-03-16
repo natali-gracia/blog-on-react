@@ -1,0 +1,41 @@
+.btn-posts-nav {
+    width: 49.5%;
+    background: #f6f6f6;
+    color: #000;
+}
+.btn-posts-nav label {
+    display: block;
+    height: 50px;;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    /* background: #f6f6f6;
+    color: #000; */
+    border: none;
+    padding: 0;
+	box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.05);
+}
+.btn-posts-nav p {
+    line-height: 50px;
+}
+
+.btn-posts-nav input {
+    display: none;
+}
+
+/* input[type="radio"] {
+	display: none;
+} */
+/* input[type="radio"]:checked + label:before {
+	background-color: #fff;
+} */
+.checked, .btn-posts-nav label:hover {
+	background: #222;
+    color: #fff;
+}
+/* style={{background: postsFilter === "Recent posts" ? '#222': '#f6f6f6'}} */

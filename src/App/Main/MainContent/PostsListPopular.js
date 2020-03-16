@@ -3,13 +3,13 @@ import PostListItem from './PostListItem'
 import postsData from './postsData'
 
 
-const PostsList = ({
+const PostsListPopular = ({
     sliceValue
 }) => {
         return (
             <div className="flex-wrap">
-                {postsData.sort((a,b)=> b.id - a.id).slice(0,sliceValue).map((post)=>(
-                        <div>
+                {postsData.sort((a,b)=> b.likes - a.likes).slice(0,sliceValue).map((post)=>(
+                        <div key={post.id}>
                             <PostListItem 
                                 title={post.title}
                                 date={post.date}
@@ -26,4 +26,4 @@ const PostsList = ({
 	    )
 }
 
-export default PostsList
+export default PostsListPopular

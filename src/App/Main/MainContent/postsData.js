@@ -30,8 +30,8 @@ const postsData = [
         сategory1: "Blog",
         сategory2: ' • Lifestyle',
         image:"/images/postsimg/anariel-post-15-390x240.jpg",
-        imagesmall:'',
-        likes:31,
+        imagesmall:'/images/postsimg/anariel-post-15-255x170.jpg',
+        likes:50,
         excerpt:"Over the past few years there have been a wave of independent coffee shops opening in town, which means caffeine lovers have more places than ever...",         
     },
     {
@@ -52,8 +52,8 @@ const postsData = [
         сategory1: 'Travels',
         сategory2: ' • Lifestyle',
         image:"/images/postsimg/anariel-post-1-390x240.jpg",
-        imagesmall:'',
-        likes:9,
+        imagesmall:"/images/postsimg/anariel-post-1-255x170.jpg",
+        likes:51,
         excerpt:"I got used to travelling by car a lot and it was very hard for me to dare to travel without it. This article is about advantages of travelling by car...",        
     },
     {
