@@ -21,6 +21,9 @@ a {
 	display: block;
 	clear: both;
 }
+.flex {
+	display: flex;
+}
 .flex-wrap {
 	display: flex;
     justify-content: space-between;

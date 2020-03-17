@@ -1,0 +1,10 @@
+.footer-subscr {
+	margin-bottom: 25px;
+}
+.footer-subscr input {
+	background: #222;
+	margin-top: 1.2em;
+}
+.footer-subscr input, .footer-subscr input::placeholder {
+	color: #fff;
+}

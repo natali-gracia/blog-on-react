@@ -1,9 +1,9 @@
 import React,{Component} from "react"
 
-import './subscrform.css'
-import './subscrsidebar.css'
+import './../../Main/Sidebar/SubscrForm/subscrform.css'
+import './subscrfooter.css'
 
-class SubscrForm extends Component {
+class FooterSubscr extends Component {
 
     state = {
         getValue: '',
@@ -25,7 +25,7 @@ class SubscrForm extends Component {
             <div>
                 {
                     this.state.showForm ? 
-                        <div className="subscr-form sidebar-subscr">
+                        <div className="subscr-form footer-subscr">
                             <form method="" action="" onSubmit={this.handleSubscribe}>
                                 <label>
                                     <input type="Email" name="user-email" title="Enter Your Email ..." 
@@ -38,7 +38,7 @@ class SubscrForm extends Component {
                             </form>
                         </div> 
                     : 
-                        <div className="subscr-accept sidebar-subscr-accept">
+                        <div className="subscr-accept footer-subscr">
                             <p>Please, check your inbox {this.state.getValue} to confirm your subscription.</p>
                         </div>
                 }
@@ -48,4 +48,4 @@ class SubscrForm extends Component {
     }
 }
 
-export default SubscrForm
+export default FooterSubscr

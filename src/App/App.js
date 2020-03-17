@@ -7,7 +7,7 @@ import FixedNav from './FixedNav/FixedNav'
 import Header from './Header/Header'
 import SliderFade from './Slider/SliderFade'
 import Main from './Main/Main'
-// import Footer from './Footer/Footer'
+import Footer from './Footer/Footer'
 
 const App = () => {
   return (
@@ -15,9 +15,8 @@ const App = () => {
 	      <FixedNav/>
         <Header/>
         <SliderFade/>
-        <Main/>
-        {/* 
-        <Footer/> */}
+        <Main/>       
+        <Footer/>
     </div>
   );
 }

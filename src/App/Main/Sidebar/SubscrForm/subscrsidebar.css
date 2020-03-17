@@ -1,0 +1,12 @@
+.sidebar-subscr {
+	padding: 0 25px;
+}
+.sidebar-subscr input::placeholder {
+	color: #000;
+}
+.sidebar-subscr input {
+	background: #eee;
+}
+.sidebar-subscr-accept {
+	margin: 4px 25px;
+}
