@@ -2,17 +2,16 @@ import React from "react"
 
 import'./footerrow.css'
 
-import SocialIcons from './SocialIcons/SocialIcons'
-import Search from './Search/Search'
-
 const FooterRow = () => {
 	return (
-        <div className="footer-top">
-            <div className="instagram-line">
-                <InstaLine/>
-            </div>
-            <div className="footer-widget">
-                <FooterWidget/>						
+        <div className="wrap footer-row">
+            <div className="col-md-10 lower-footer">
+                <div className="col-md-5 left-footer-content">© 2020 copyright // All rights reserved</div>
+				<div className="col-md-5 right-footer-content">Created by 
+					<strong>
+						<a href="/">NataliaSmalii</a>
+					</strong>
+				</div>                						
             </div>			
 	    </div>						
 	)

@@ -1,0 +1,28 @@
+.footer-row {
+	background: #fff;
+	text-align: center;
+	padding: 0px 0 25px 0;
+}
+.lower-footer {
+	border-top: 3px solid #eee;
+}
+.left-footer-content, .right-footer-content {
+	padding-top: 25px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #000;
+}
+.left-footer-content {
+	text-align: left;
+}
+.right-footer-content {
+	text-align: right;
+}
+.right-footer-content a {
+	text-decoration: none;
+	color: #cdb280;
+	font-weight: bold;
+}
+.right-footer-content a:hover {
+	text-decoration: underline;
+}

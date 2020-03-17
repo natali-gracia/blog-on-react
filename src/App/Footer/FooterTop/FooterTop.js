@@ -18,7 +18,6 @@ const FooterTop = () => {
                 <div className="footer-social">
                 <FooterSocialIcons/>
                 </div>
-
             </div>			
 	    </div>						
 	)

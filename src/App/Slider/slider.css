@@ -227,3 +227,12 @@
     position: absolute;
     display: block; 
 }
+.slick-prev, .slick-next {
+	opacity: 0;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
