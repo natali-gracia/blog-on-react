@@ -37,9 +37,13 @@ class MainContent extends Component {
                     />
                 </div>
                 <div className="posts-list">
+                    {this.state.postsFilter==='Recent posts' ? 
+                    <PostsList
+                    sliceValue = {this.state.sliceValue}
+                    /> : 
                     <PostsListPopular
                     sliceValue = {this.state.sliceValue}
-                    /> 												
+                    />}     												
                 </div>
                 <div className={this.state.sliceValue>=postsData.length ? 'hidden' : ''}>
                     <button className="more-posts" onClick={this.sliceChange}>Load more posts</button>
