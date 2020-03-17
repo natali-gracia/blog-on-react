@@ -1,0 +1,61 @@
+.widget-search {
+	width: 320px;
+	height: 50px;
+	position: relative;
+}
+.widget-search button {
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: none;
+	border: none;
+	position: absolute;
+	right: 7px;
+	top: 10px;
+}
+.widget-search button:hover {
+	cursor: pointer;
+}
+.widget-search button:after {
+	background-image: url('/images/magnifying-glass.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 26px;
+	height: 26px;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	margin: auto;
+	content: "";
+	display: block;
+	position: absolute;
+}
+.widget-search input {
+	width: 320px;
+	height: 50px;
+	padding: 5px 5px 5px 10px;
+	background: #eee;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+}
+.widget-search input::placeholder {
+	color: #000;
+}
+.widget-search input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.widget-search input::focus::-moz-placeholder {
+    color: transparent;
+}
+.widget-search input::focus:-moz-placeholder {
+    color: transparent;
+}
+.widget-search input::focus:-ms-input-placeholder {
+    color: transparent;
+} 
+.widget-search input:focus, .widget-search button:focus {
+	border: none;
+	outline: none;
+}

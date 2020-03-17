@@ -8,6 +8,7 @@ import PostsListWidgetPopular from './PostsListWidgets/PostsListWidgetPopular'
 import PostsListWidget from './PostsListWidgets/PostsListWidget'
 import WidgetCategories from './Categories/WidgetCategories'
 import TagsCloud from "./TagsCloud/TagsCloud"
+import SearchWidget from "./SearchWidget/SearchWidget"
 
 const Sidebar = () => {	
 	return (
@@ -42,6 +43,10 @@ const Sidebar = () => {
                 <h3>Recent Posts</h3>
                 <PostsListWidget/>
             </div>
+            <div className="widget">
+                <h3>Search</h3>
+                <SearchWidget/>
+            </div>             
         </div> 				
 	)
 }

@@ -2,25 +2,17 @@ import React,{Component} from "react"
 
 import'./maincontent.css'
 
-import PostsList from './PostsList'
-import PostsListPopular from './PostsListPopular'
+import PostsListWithBtn from './PostsListWithBtn'
+import PostsListPopularWithBtn from './PostsListPopularWithBtn'
 import RadioButtons from './RadioButtons'
 
-
-import postsData from './postsData'
 
 class MainContent extends Component {
 
     state = {
-        sliceValue: 6,
         postsFilter: 'Recent posts',
         }
     
-    sliceChange = () => {
-        this.setState((prevState)=>({
-            sliceValue: prevState.sliceValue + 2
-        }));
-    }
     onRadioButton = (event) => {
         this.setState({
             postsFilter: event.target.value
@@ -36,17 +28,11 @@ class MainContent extends Component {
                     onRadioButton = {this.onRadioButton}
                     />
                 </div>
-                <div className="posts-list">
-                    {this.state.postsFilter==='Recent posts' ? 
-                    <PostsList
-                    sliceValue = {this.state.sliceValue}
-                    /> : 
-                    <PostsListPopular
-                    sliceValue = {this.state.sliceValue}
-                    />}     												
-                </div>
-                <div className={this.state.sliceValue>=postsData.length ? 'hidden' : ''}>
-                    <button className="more-posts" onClick={this.sliceChange}>Load more posts</button>
+                <div>
+                    {this.state.postsFilter==='Recent posts' ?
+                        <PostsListWithBtn/> : 
+                        <PostsListPopularWithBtn/> 
+                    }                                    
                 </div>
             </div> 				
         )
