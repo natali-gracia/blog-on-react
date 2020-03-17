@@ -7,6 +7,7 @@ import WidgetSocialIcons from './WidgetSocialIcons'
 import PostsListWidgetPopular from './PostsListWidgets/PostsListWidgetPopular'
 import PostsListWidget from './PostsListWidgets/PostsListWidget'
 import WidgetCategories from './Categories/WidgetCategories'
+import TagsCloud from "./TagsCloud/TagsCloud"
 
 const Sidebar = () => {	
 	return (
@@ -32,8 +33,11 @@ const Sidebar = () => {
             <div className="widget">
                 <h3>Categories</h3>
                 <WidgetCategories/>
-
-            </div>           
+            </div>
+            <div className="widget">
+                <h3>Tags</h3>
+                <TagsCloud/>
+            </div>          
             <div className="widget">
                 <h3>Recent Posts</h3>
                 <PostsListWidget/>

@@ -9,7 +9,7 @@ const PostsList = ({
         return (
             <div className="flex-wrap">
                 {postsData.sort((a,b)=> b.id - a.id).slice(0,sliceValue).map((post)=>(
-                        <div>
+                        <div key={post.id}>
                             <PostListItem 
                                 title={post.title}
                                 date={post.date}
