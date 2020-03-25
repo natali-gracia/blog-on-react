@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from "react-router-dom"
 
 import'./../common/style/reset.css'
 import'./../common/style/base.css'
@@ -13,8 +14,8 @@ const App = () => {
   return (
     <div>
 	      <FixedNav/>
-        <Header/>
-        <SliderFade/>
+        <Header/>							
+        <Route exact path='/'><SliderFade/></Route>
         <Main/>       
         <Footer/>
     </div>

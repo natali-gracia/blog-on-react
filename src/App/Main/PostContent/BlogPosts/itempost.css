@@ -1,0 +1,200 @@
+.top-blog-post {
+	background: #fafafa;
+}
+.top-blogitem {
+	background: #fafafa;
+}
+.blog-category {	
+	text-align: center;
+	padding-top: 15px;
+	height: 48px;
+}
+.blog-category em {
+	font-size: 12px;
+	color: #6f7c82;
+	font-weight: bold;
+}
+.blog-category a {
+	font-style: normal;
+	font-family: 'Lora', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #6f7c82;
+    padding: 2px 7px 2px 9px;
+}
+.blog-category a:hover {
+	text-decoration: underline;
+	color: #cdb280;
+}
+.postitem-title {
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Lora', sans-serif;
+    line-height: 100%;
+    padding: 0 5px 20px 5px;
+    letter-spacing: 1px;
+}
+h1 {
+    color: #333;
+    font-size: 34px;
+}
+.postitem-meta {
+	padding-top: 0;
+    margin-top: -15px;
+    padding-bottom: 18px;
+	height: 48px;
+	text-align: center;
+}
+.postitem-meta a, .postitem-meta span  {
+	display: inline;
+	letter-spacing: 1px;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #6f7c82;
+    font-style: italic;
+    font-family: 'Lora', sans-serif;
+    text-decoration: none;
+}
+.postitem-meta a:hover {
+	color: #cdb280;
+}
+.post-meta-time, .post-meta-author {
+	margin-right: 25px;
+	position: relative; 
+}
+.post-meta-time:after, .post-meta-author:after {
+	display: block;
+	position: absolute;
+	width: 5px;
+    height: 5px;
+    font-size: 14px;
+    border-radius: 90px;
+    background: #6f7c82;
+    margin-top: -17px;
+    right: -17px;
+    position: absolute;
+    content: '';
+}
+.post-meta-author {
+	border-bottom: 1px solid;
+}
+.post-tags {
+	float: left;
+	margin: 10px 0 15px 0;
+}
+.tags-cloud a:hover {
+	background-color: #cdb280;
+}
+.tags-cloud a {
+	font-size: 10px;
+    border-radius: 90px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 3px;
+    max-height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    padding: 0px 10px;
+    background: #bbb;
+    color: #fff;    
+}
+.post-social {
+	float: right;
+	color: #6f7c82;
+	font-family: 'Lora', sans-serif;
+	font-style: italic;
+	font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.toolbox-social-icons a {
+	display: block;
+	position: relative;
+	width: 26px;
+	height: 30px;
+	line-height: 30px;
+    margin-right: 1px;
+    float: left;
+}
+.toolbox-social-icons a:last-child {
+	width: 21px;
+}
+.toolbox-social-icons a:after {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left: 5px;
+	top: 8px;
+}
+.fb-icon-grey:after {
+	background-image: url("/images/socialicons/fb-icon-grey.png");
+}
+.fb-icon-grey:hover:after {
+	background-image: url("/images/socialicons/fb-icon-gold.png");
+}
+.youtube-icon-grey:after {
+	background-image: url("/images/socialicons/youtube-icon-grey.png");
+}
+.youtube-icon-grey:hover:after {
+	background-image: url("/images/socialicons/youtube-icon-gold.png");
+}
+.insta-icon-grey:after {
+	background-image: url("/images/socialicons/insta-icon-grey.png");
+}
+.insta-icon-grey:hover:after {
+	background-image: url("/images/socialicons/insta-icon-gold.png");
+}
+.pint-icon-grey:after {
+	background-image: url("/images/socialicons/pint-icon-grey.png");
+}
+.pint-icon-grey:hover:after {
+	background-image: url("/images/socialicons/pint-icon-gold.png");
+}
+@media only screen and (max-width: 960px) and (min-width: 0px) {
+	.post-social {
+		margin-left: 30px;
+	}
+}
+@media screen and (max-width: 620px) and (min-width: 0px) {
+	.post-social {
+		margin: 10px 0 !important;
+		float: left !important;
+		width: 100%;
+	}	    
+}
+@media screen and (max-width: 515px) and (min-width: 0px) {
+	.post-meta {
+		margin-left: 0;
+	    width: 100%;
+	    min-height: 120px;
+	    background: none;
+	}
+	.post-meta a {
+	    width: 100%;
+	    float: left;
+	    padding: 3px 0px;
+	    font-size: 12px !important;
+	}
+	.post-meta-author {
+		border-color: #eee !important;
+	}
+	.post-meta-time:after, .post-meta-author:after {
+		width: 0 !important;
+	    height: 0 !important;
+	}
+}

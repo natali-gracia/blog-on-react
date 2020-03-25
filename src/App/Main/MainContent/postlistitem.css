@@ -57,7 +57,7 @@
 	padding-bottom: 16px;
 	text-align: center;
 }
-.post-meta a {
+.post-meta a, .post-meta-time {
 	letter-spacing: 1px;
     text-transform: none;
     font-weight: 500;
@@ -69,7 +69,8 @@
 }
 .post-meta-time {
 	margin-right: 25px;
-	position: relative; 
+	position: relative;
+	cursor: default; 
 }
 .post-meta-time:after {
 	display: block;

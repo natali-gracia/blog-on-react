@@ -12,7 +12,7 @@ import SearchWidget from "./SearchWidget/SearchWidget"
 
 const Sidebar = () => {	
 	return (
-        <div>
+        <div className="sidebar-row">
             <div className="widget">
                 <h3>About me</h3>
                 <div className="text-widget">

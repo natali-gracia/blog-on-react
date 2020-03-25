@@ -2,36 +2,36 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./postlistitem.css"
 
+import {Link} from "react-router-dom"
+
 const PostListItem = ({
     title,
     date,
     image,
+    link,
     excerpt,
-    сategory1,
-    сategory2,
-    сategory3max,
+    сategories,
 }) => {
         return (
             <div className="blog-items">
                 <div className="top-blog">
                     <div className="blog-image">
-                        <a href="#" title={title}>
+                        <Link to={link} title={title}>
                             <img src={image} alt=""/>
-                        </a>	
+                        </Link>	
                     </div>
                     <div className="blog-category">
                         <div>
-                            <a href="#">{сategory1}</a>
-                            <a href="#">{сategory2}</a>
-                            <a href="#">{сategory3max}</a> 
+                            <a href="#">{сategories}</a> 
                         </div>								
                     </div>
                     <h2 className="title">
-                        <a href="#">{title}</a>
+                        <Link to={link}>{title}</Link>
                     </h2>
                     <div className="post-meta">
-                        <a href="#" className="post-meta-time">{date}</a>
-                        <a href="#">{7} Comments</a>
+                        <span className="post-meta-time">{date}</span>
+                        <Link to={link}>{7} Comments</Link>
+                        {/* <Link to={link} onClick={this.windowLocation}>{7} Comments</Link>  */}
                     </div>
                 </div>
                 <div className="blog-content">{excerpt}</div>
@@ -45,9 +45,7 @@ PostListItem.propTypes = {
     date:PropTypes.string.isRequired,
     excerpt:PropTypes.string,
     image:PropTypes.string,
-    сategory1:PropTypes.string.isRequired,
-    сategory2:PropTypes.string,
-    сategory3:PropTypes.string,
+    сategories:PropTypes.array,
 }
 
 PostListItem.defaultProps = {

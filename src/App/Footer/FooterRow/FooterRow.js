@@ -9,7 +9,7 @@ const FooterRow = () => {
                 <div className="col-md-5 left-footer-content">© 2020 copyright // All rights reserved</div>
 				<div className="col-md-5 right-footer-content">Created by 
 					<strong>
-						<a href="/">NataliaSmalii</a>
+						<a href="/"> NataliaSmalii</a>
 					</strong>
 				</div>                						
             </div>			

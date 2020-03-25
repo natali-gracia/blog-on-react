@@ -1,0 +1,64 @@
+.post-text {
+	padding-top: 20px;
+    font-weight: normal;
+}
+.post-text ul {
+	list-style: disc;
+	margin: 1.25em 0 1.25em 2em;
+}
+.post-text p {
+	margin: 1em 0 1.5em 0;
+}
+.main-letter {
+	float: left;
+	color: #333;
+    font-size: 100px;
+    margin: 9px 10px 0 -7px;
+    font-weight: 700;
+    line-height: 76px;
+    width: auto;
+    height: auto;
+}
+.post-quote {
+	margin: 30px 0 30px 70px;
+    padding-left: 15px;
+    border-left: 5px solid #ddd;
+    position: relative;
+}
+.post-quote:before {
+	background-image: url("/images/quote-icon.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transform: scale(-1, 1);
+	width: 50px;
+	height: 50px;
+	margin-left: -70px;
+    margin-top: -6px;
+    left: 0;
+	content: "";
+	display: block;
+	position: absolute;
+}  
+.quote-text {
+	text-align: left;
+	color: #999;
+    font-size: 20px;
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    line-height: 34px;
+}
+strong {
+	font-weight: 700;
+}
+img.alignleft {
+	display: block;
+	float: left;
+	padding: 10px 25px 0px 0px;
+}
+.post-source a {
+	text-decoration: none;
+	color: #c5a076;
+}
+.post-source a:hover {
+	text-decoration: underline;
+}

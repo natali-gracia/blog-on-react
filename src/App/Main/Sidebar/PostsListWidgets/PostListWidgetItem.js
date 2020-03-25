@@ -5,13 +5,13 @@ import "./postlistwidgetitem.css"
 const PostListWidgetItem = ({
     title,
     date,
-    imagesmall,
+    image,
 }) => {
         return (
             <div>
                 <div className="imgholder">
                     <a href="/">
-                        <img src={imagesmall} alt=""/>
+                        <img src={image} alt=""/>
                     </a>
                 </div>
                 <div className="widget-title">

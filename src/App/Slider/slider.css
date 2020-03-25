@@ -72,6 +72,8 @@
     display: block;
     text-align: center;
     box-sizing: border-box;
+    position: relative;
+    z-index: 10000;
 }
 .item-btn-more a:hover {
 	background-color: #fff;

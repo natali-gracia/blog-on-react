@@ -2,7 +2,6 @@ import React,{Component} from "react"
 
 import NavBar from './NavBar'
 
-
 class FixedNav extends Component {
 
     state = {
@@ -18,7 +17,7 @@ class FixedNav extends Component {
       }
 
     handleScroll = () => {
-        if(window.pageYOffset > 150) {
+        if(window.pageYOffset > 200) {
             this.setState({
               showNavBar: true,
             });

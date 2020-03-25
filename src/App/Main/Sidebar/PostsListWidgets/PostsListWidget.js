@@ -14,7 +14,7 @@ const PostsListWidget = () => {
                             <PostListWidgetItem 
                                 title={post.title}
                                 date={post.date}
-                                imagesmall={post.imagesmall}
+                                image={post.image_sidebar}
                             />
                         </div>
                     ))

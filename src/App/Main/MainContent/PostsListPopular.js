@@ -13,11 +13,10 @@ const PostsListPopular = ({
                             <PostListItem 
                                 title={post.title}
                                 date={post.date}
-                                image={post.image}
+                                image={post.image_postitem}
+                                link={post.link}
                                 excerpt={post.excerpt}
-                                сategory1={post.сategory1}
-                                сategory2={post.сategory2}
-                                сategory3max={post.сategory3max}
+                                сategories={post.сategories}
                             />
                         </div>
                     ))

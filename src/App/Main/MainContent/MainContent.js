@@ -21,7 +21,7 @@ class MainContent extends Component {
 
     render() {	
         return (
-            <div>
+            <div className="maincontent-row">
                 <div className="posts-nav">
                     <RadioButtons
                     postsFilter = {this.state.postsFilter}
