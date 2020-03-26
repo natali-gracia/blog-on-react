@@ -3,15 +3,15 @@ import React from "react"
 import './blogpost.css'
 
 import postsData, {getPostsMap} from "../../MainContent/postsData"
-import commentsData from './../CommentsList/commentsData'
+import commentsData from '../CommentsList/commentsData'
 
 import TopPostItem from './TopPostItem'
-import PostTextId10 from "./../PostsText/PostTextId10"
+import PostTextId10 from "../PostsText/PostTextId10"
 import BottomPostItem from './BottomPostItem'
-import RelatedPosts from './../RelatedPosts/RelatedPosts'
-import CommentsList from './../CommentsList/CommentsList'
-import CommentForm from './../CommentForm/CommentForm'
-import PostsNav from './../PostsNav/PostsNav'
+import RelatedPosts from '../RelatedPosts/RelatedPosts'
+import CommentsList from '../CommentsList/CommentsList'
+import CommentForm from '../CommentForm/CommentForm'
+import PostsNav from '../PostsNav/PostsNav'
 
 const BlogPostId10 = ({
         postItemData = getPostsMap(postsData),           

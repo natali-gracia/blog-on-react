@@ -4,11 +4,15 @@ import TopRow from './TopRow/TopRow'
 import HeaderRow from './HeaderRow/HeaderRow'
 
 
-const Header = () => {	
+const Header = ({
+	changeBrowsingCategory
+}) => {	
 	return (
 		<header>
 			<TopRow/>
-            <HeaderRow/>
+            <HeaderRow
+			changeBrowsingCategory={changeBrowsingCategory}
+			/>
 		</header>						
 	)
 }

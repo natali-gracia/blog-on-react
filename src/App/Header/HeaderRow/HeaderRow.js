@@ -5,7 +5,9 @@ import'./headerrow.css'
 import Logo from './Logo/Logo'
 import Menu from './Menu/Menu'
 
-const HeaderRow = () => {
+const HeaderRow = ({
+    changeBrowsingCategory
+}) => {
 	
 	return (
         <div className="header-row">
@@ -14,7 +16,9 @@ const HeaderRow = () => {
                     <Logo/>
                 </div>
                 <div className="col-md-auto">
-                    <Menu/>						
+                    <Menu
+                    changeBrowsingCategory={changeBrowsingCategory}
+                    />						
                 </div>			
             </div>
 	    </div>						

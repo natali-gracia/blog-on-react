@@ -3,6 +3,22 @@ main {
 	padding-bottom: 30px;
 	background-color: #fff;
 }
+.breadcrumb {
+	text-align: center;
+    background: #f7f7f7;
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+.breadcrumb span {
+	font-family: 'Lora', sans-serif;
+	font-style: italic;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: none;
+	color: #cdb280;
+}
 @media only screen and (max-width: 1520px) and (min-width: 0px) {
 	.col-md-12 img {
 		width: 100%;

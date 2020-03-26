@@ -2,7 +2,7 @@ import React from "react"
 
 import './relatedposts.css'
 
-import postsData, {getPostsMap} from "./../../MainContent/postsData"
+import postsData, {getPostsMap} from "../../MainContent/postsData"
 
 import RelatedPostsItem from './RelatedPostsItem'
 

@@ -4,14 +4,17 @@ import { Route } from "react-router-dom"
 import BlogPostId10 from './BlogPosts/BlogPostId10'
 
 
-const PostContent = () => {
+const PostPage = () => {
 	return (
 		<div>
-			<Route path='/enjoy-the-winter-time-in-the-city'>
+			<Route path='/post/enjoy-the-winter-time-in-the-city'>
 				<BlogPostId10/>
+			</Route>
+			<Route path='/post/beautiful-christmas-decoration'>
+				sfgb.kjab;
 			</Route>
 		</div>							
 	)
 }
 
-export default PostContent
+export default PostPage

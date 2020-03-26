@@ -2,20 +2,24 @@ import React from "react"
 
 import './widgetcategories.css'
 
-const WidgetCategories = () => {
+import {Link} from "react-router-dom"
+
+const WidgetCategories = ({
+    changeBrowsingCategory
+}) => {
 	return (
         <div>
             <div className="categories-item">
-                <a href="/">Beauty</a>
+                <Link to="/category/beauty" onClick={() => changeBrowsingCategory('Beauty')}>Beauty</Link>
             </div>
             <div className="categories-item">
-                <a href="/">Fashion</a>
+                <Link to="/category/fashion" onClick={() => changeBrowsingCategory('Fashion')}>Fashion</Link>
             </div>
             <div className="categories-item">
-                <a href="/">Travels</a>
+                <Link to="/category/travels" onClick={() => changeBrowsingCategory('Travels')}>Travels</Link>
             </div>
             <div className="categories-item">
-                <a href="/">Lifestyle</a>
+                <Link to="/category/lifestyle" onClick={() => changeBrowsingCategory('Lifestyle')}>Lifestyle</Link>
             </div>
         </div>
 	)

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { Route } from "react-router-dom"
 
 import'./../common/style/reset.css'
@@ -10,16 +10,34 @@ import SliderFade from './Slider/SliderFade'
 import Main from './Main/Main'
 import Footer from './Footer/Footer'
 
-const App = () => {
+class App extends Component {
+	
+	state = {
+		categoryInBreadcrumb: '',
+	}
+	
+	changeBrowsingCategory = ((name) => {
+        this.setState({categoryInBreadcrumb: name})
+      }) 
+      
+  render () {
+
   return (
     <div>
-	      <FixedNav/>
-        <Header/>							
+	      <FixedNav
+          changeBrowsingCategory={this.changeBrowsingCategory}
+        />
+        <Header
+          changeBrowsingCategory={this.changeBrowsingCategory}
+        />							
         <Route exact path='/'><SliderFade/></Route>
-        <Main/>       
+        <Main
+          categoryInBreadcrumb={this.state.categoryInBreadcrumb}
+          changeBrowsingCategory={this.changeBrowsingCategory}
+        />       
         <Footer/>
     </div>
-  );
-}
+  )
+}}
 
 export default App

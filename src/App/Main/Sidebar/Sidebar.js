@@ -10,7 +10,9 @@ import WidgetCategories from './Categories/WidgetCategories'
 import TagsCloud from "./TagsCloud/TagsCloud"
 import SearchWidget from "./SearchWidget/SearchWidget"
 
-const Sidebar = () => {	
+const Sidebar = ({
+    changeBrowsingCategory
+}) => {	
 	return (
         <div className="sidebar-row">
             <div className="widget">
@@ -33,7 +35,9 @@ const Sidebar = () => {
             </div>
             <div className="widget">
                 <h3>Categories</h3>
-                <WidgetCategories/>
+                <WidgetCategories
+                changeBrowsingCategory={changeBrowsingCategory}
+                />
             </div>
             <div className="widget">
                 <h3>Tags</h3>

@@ -5,7 +5,9 @@ import'./fixednav.css'
 import LogoFix from './LogoFix/LogoFix'
 import MenuFix from './MenuFix/MenuFix'
 
-const NavBar = () => {
+const NavBar = ({
+    changeBrowsingCategory
+}) => {
 
 	return (
         <div className="fixednav slidein-animation">
@@ -14,7 +16,9 @@ const NavBar = () => {
                     <LogoFix/>
                 </div>
                 <div className="col-md-auto">
-                    <MenuFix/>						
+                    <MenuFix 
+                    changeBrowsingCategory={changeBrowsingCategory}
+                    />						
                 </div>			
             </div>
         </div> 					

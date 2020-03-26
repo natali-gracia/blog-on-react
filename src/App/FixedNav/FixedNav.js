@@ -31,13 +31,17 @@ class FixedNav extends Component {
 
     render() {
 
-	return (
-        <div>
-            {
-                this.state.showNavBar ? <NavBar/> : null
-            }
-        </div>
-	);
+    const {
+      changeBrowsingCategory
+    } = this.props;
+
+    return (
+          <div>
+              {
+                  this.state.showNavBar ? <NavBar changeBrowsingCategory={changeBrowsingCategory}/> : null
+              }
+          </div>
+    );
 }}
 
 export default FixedNav
