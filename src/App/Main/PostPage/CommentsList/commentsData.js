@@ -43,4 +43,17 @@ const commentsData = [
     },
 ]
 
+// console.log(commentsData.length)
+// console.log(commentsData[1].replies)
+
+// const TrueLength = commentsData.map((post)=>(
+//     post.replies.map((post)=>(
+//         post.replies.map((post)=>(
+//             post.replies
+//         ))
+//     ))
+// ))
+
+// console.log(TrueLength)
+
 export default commentsData

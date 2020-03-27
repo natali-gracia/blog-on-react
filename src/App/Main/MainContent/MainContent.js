@@ -3,7 +3,7 @@ import React,{Component} from "react"
 import'./maincontent.css'
 
 import PostsListWithBtn from './PostsListWithBtn'
-import PostsListPopularWithBtn from './PostsListPopularWithBtn'
+import  PostsListPopular from './PostsListPopular'
 import RadioButtons from './RadioButtons'
 
 
@@ -31,7 +31,9 @@ class MainContent extends Component {
                 <div>
                     {this.state.postsFilter==='Recent posts' ?
                         <PostsListWithBtn/> : 
-                        <PostsListPopularWithBtn/> 
+                        <PostsListWithBtn
+                        PostsListRelevant={PostsListPopular}
+                        /> 
                     }                                    
                 </div>
             </div> 				

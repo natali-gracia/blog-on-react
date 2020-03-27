@@ -30,7 +30,7 @@ class SliderFade extends Component {
                           <div className="item-date">February 14, 2020</div>	
                           <div className="item-subtitle">Enjoy the winter time in the city</div>
                           <div className="item-btn-more">
-                              <button type="button"><Link to="/enjoy-the-winter-time-in-the-city">READ MORE</Link></button> 
+                              <button type="button"><Link to="/post/enjoy-the-winter-time-in-the-city">READ MORE</Link></button> 
 						              </div>					
 					            </div>
 				          </div>
@@ -41,7 +41,7 @@ class SliderFade extends Component {
                           <div className="item-date">November 23, 2019</div>	
                           <div className="item-subtitle">Fashion tips for autumn days</div>
                           <div className="item-btn-more">
-                              <button type="button"><Link to="/fashion-tips-for-autumn-days">READ MORE</Link></button> 
+                              <button type="button"><Link to="/post/fashion-tips-for-autumn-days">READ MORE</Link></button> 
 						              </div>					
 					            </div>
 				          </div>
@@ -52,7 +52,7 @@ class SliderFade extends Component {
                           <div className="item-date">October 30, 2019</div>	
                           <div className="item-subtitle">Come with me on a drive to the country</div>
                           <div className="item-btn-more">
-                              <button type="button"><Link to="/come-with-me-on-a-drive-to-the-country">READ MORE</Link></button> 
+                              <button type="button"><Link to="/post/come-with-me-on-a-drive-to-the-country">READ MORE</Link></button> 
 						              </div>					
 					            </div>
 				          </div>

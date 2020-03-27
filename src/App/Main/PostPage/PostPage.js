@@ -11,7 +11,7 @@ const PostPage = () => {
 				<BlogPostId10/>
 			</Route>
 			<Route path='/post/beautiful-christmas-decoration'>
-				sfgb.kjab;
+				Beautiful christmas decoration
 			</Route>
 		</div>							
 	)

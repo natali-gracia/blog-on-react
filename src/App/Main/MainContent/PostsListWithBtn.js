@@ -19,11 +19,18 @@ class PostsListWithBtn extends Component {
     }
 
     render() {	
+
+        const {
+            PostsListRelevant = PostsList,
+            categoryInBreadcrumb,
+        } = this.props
+
         return (
             <div>
                 <div className="posts-list"> 
-                    <PostsList
+                    <PostsListRelevant
                     sliceValue = {this.state.sliceValue}
+                    categoryInBreadcrumb = {categoryInBreadcrumb}
                     />    												
                 </div>
                 <div className={this.state.sliceValue>=postsData.length ? 'hidden' : ''}>

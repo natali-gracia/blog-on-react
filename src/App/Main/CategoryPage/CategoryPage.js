@@ -1,27 +1,21 @@
 import React from "react"
-import { Route } from "react-router-dom"
+// import { Route } from "react-router-dom"
 
-import PageBeauty from './PageBeauty'
-import PageFashion from './PageFashion'
-import PageTravels from './PageTravels'
-import PageLifestyle from './PageLifestyle'
+import './categorypage.css'
+
+import PostsListWithBtn from './../MainContent/PostsListWithBtn'
+import PostsListCategories from './PostsListCategories'
 
 
-const CategoryPage = () => {
+const CategoryPage = ({
+	categoryInBreadcrumb
+}) => {
 	return (
-		<div>
-			<Route path='/category/beauty'>
-				<PageBeauty/>
-			</Route>
-            <Route path='/category/fashion'>
-				<PageFashion/>
-			</Route>
-            <Route path='/category/travels'>
-				<PageTravels/>
-			</Route>
-            <Route path='/category/lifestyle'>
-				<PageLifestyle/>
-			</Route>
+		<div className="category-pagerow">
+			<PostsListWithBtn
+			categoryInBreadcrumb={categoryInBreadcrumb}
+			PostsListRelevant={PostsListCategories}
+			/>
 		</div>							
 	)
 }

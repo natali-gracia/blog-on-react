@@ -31,7 +31,10 @@ const Main = ({
 					<div className="col-md-7">
 						<Route exact path='/'><MainContent/></Route>
 						<Route path='/post/'><PostPage/></Route>
-						<Route path='/category/'><CategoryPage/></Route> 
+						<Route path='/category/' render={()=>(
+							<CategoryPage
+							categoryInBreadcrumb={categoryInBreadcrumb}
+							/>)}/> 
 					</div>
 					<div className="col-md-3">
 						<Sidebar
