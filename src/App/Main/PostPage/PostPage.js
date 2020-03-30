@@ -1,18 +1,19 @@
 import React from "react"
-import { Route } from "react-router-dom"
 
-import BlogPostId10 from './BlogPosts/BlogPostId10'
+import postsData from './../MainContent/postsData'
 
+import BlogPost from './BlogPosts/BlogPost'
 
 const PostPage = () => {
 	return (
 		<div>
-			<Route path='/post/enjoy-the-winter-time-in-the-city'>
-				<BlogPostId10/>
-			</Route>
-			<Route path='/post/beautiful-christmas-decoration'>
-				Beautiful christmas decoration
-			</Route>
+			{postsData.filter(post => post.link === window.location.pathname).map((post)=>(
+					<div key={post.id}>
+						<BlogPost
+							id={post.id}
+						/>
+					</div>
+				))}
 		</div>							
 	)
 }

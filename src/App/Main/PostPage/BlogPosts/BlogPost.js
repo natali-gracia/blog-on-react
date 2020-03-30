@@ -1,33 +1,36 @@
 import React from "react"
 
 import './blogpost.css'
+import'./poststext.css'
 
 import postsData, {getPostsMap} from "../../MainContent/postsData"
 import commentsData from '../CommentsList/commentsData'
 
 import TopPostItem from './TopPostItem'
-import PostTextId10 from "../PostsText/PostTextId10"
 import BottomPostItem from './BottomPostItem'
 import RelatedPosts from '../RelatedPosts/RelatedPosts'
 import CommentsList from '../CommentsList/CommentsList'
 import CommentForm from '../CommentForm/CommentForm'
 import PostsNav from '../PostsNav/PostsNav'
 
-const BlogPostId10 = ({
-        postItemData = getPostsMap(postsData),           
+const BlogPost = ({
+        postItemData = getPostsMap(postsData),
+        id,           
 }) => {
         return (
             <div>
                 <div className="blog-post">
                         <TopPostItem 
-                                title={postItemData[10].title}
-                                date={postItemData[10].date}
-                                сategories={postItemData[10].сategories}
-                                author={postItemData[10].author}
+                                title={postItemData[id].title}
+                                date={postItemData[id].date}
+                                сategories={postItemData[id].сategories}
+                                author={postItemData[id].author}
                         />
-                        <PostTextId10/>
+                        <div>
+                                {postItemData[id].post_text}
+                        </div>
                         <BottomPostItem 
-                                tags={postItemData[10].tags}
+                                tags={postItemData[id].tags}
                         />
 		</div>
                 <div className="related-posts">
@@ -35,7 +38,7 @@ const BlogPostId10 = ({
                                 <h4>Related Posts</h4>
                         </div>
                         <RelatedPosts
-                                id={postItemData[10].id}
+                                id={postItemData[id].id}
                         />
                 </div>
                 {commentsData && commentsData.length !== 0 ? 
@@ -57,4 +60,4 @@ const BlogPostId10 = ({
 	    )
 }
 
-export default BlogPostId10
+export default BlogPost

@@ -4,24 +4,19 @@ import { Route } from "react-router-dom"
 import'./main.css'
 
 import MainContent from './MainContent/MainContent'
+import PostImage from './PostImage'
+import BreadCrumb from "./BreadCrumb"
 import PostPage from './PostPage/PostPage'
 import CategoryPage from './CategoryPage/CategoryPage'
 import Sidebar from './Sidebar/Sidebar'
-import BreadCrumb from "./BreadCrumb"
-
 
 const Main = ({
 	categoryInBreadcrumb,
-	changeBrowsingCategory
+	changeBrowsingCategory,
 }) => {	
 	return (
         <main>
-			<Route path='/post/enjoy-the-winter-time-in-the-city' render={() => 
-					<div className="col-md-12">
-						<img src="/images/postsimg/anariel-post-11.jpg" alt=""/>
-					</div>
-				} 
-			/>
+			<Route path='/post/'><PostImage/></Route>
 			<Route path='/category/' render={()=>(
 				<BreadCrumb 
 				categoryInBreadcrumb={categoryInBreadcrumb}
