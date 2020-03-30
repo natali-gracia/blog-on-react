@@ -16,7 +16,7 @@ import PostsNav from '../PostsNav/PostsNav'
 const BlogPost = ({
         postItemData = getPostsMap(postsData),
         changeBrowsingCategory,
-        id,           
+        id,          
 }) => {
         return (
             <div>
@@ -44,13 +44,16 @@ const BlogPost = ({
                                 id={postItemData[id].id}
                         />
                 </div>
-                {commentsData && commentsData.length !== 0 ? 
-                        <div className="comment-list">
-                                <div className="post-widget-title">
-                                        <h4>{commentsData.length} Comments</h4>
+                {commentsData && commentsData.length !== 0 ?
+                        <div>
+                                <div id="comment-list"></div>
+                                <div className="comment-list">
+                                        <div className="post-widget-title">
+                                                <h4>{commentsData.length} Comments</h4>
+                                        </div>
+                                        <CommentsList/>  
                                 </div>
-                                <CommentsList/>  
-                        </div> 
+                        </div>          
                 : null}
                 <div>
                         <CommentForm/>

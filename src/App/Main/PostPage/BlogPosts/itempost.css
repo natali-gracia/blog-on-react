@@ -36,7 +36,8 @@
     font-family: 'Lora', sans-serif;
     line-height: 100%;
     padding: 0 5px 20px 5px;
-    letter-spacing: 1px;
+	letter-spacing: 1px;
+	cursor: default;
 }
 h1 {
     color: #333;
@@ -49,7 +50,14 @@ h1 {
 	height: 48px;
 	text-align: center;
 }
-.postitem-meta a, .postitem-meta span  {
+.scroll-btn {
+	display: inline;
+}
+.scroll-btn button:focus {
+	border: none;
+	outline-style: none;
+}
+.postitem-meta a, .postitem-meta span,  .postitem-meta button {
 	display: inline;
 	letter-spacing: 1px;
     text-transform: none;
@@ -58,10 +66,12 @@ h1 {
     color: #6f7c82;
     font-style: italic;
     font-family: 'Lora', sans-serif;
-    text-decoration: none;
+	border: none;
+	background: none;
 }
-.postitem-meta a:hover {
+.postitem-meta a:hover, .postitem-meta button:hover {
 	color: #cdb280;
+	cursor: pointer;
 }
 .post-meta-time, .post-meta-author {
 	margin-right: 25px;

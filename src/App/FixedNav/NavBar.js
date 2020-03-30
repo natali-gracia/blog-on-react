@@ -7,22 +7,17 @@ import MenuFix from './MenuFix/MenuFix'
 
 const NavBar = ({
     changeBrowsingCategory
-}) => {
-
-	return (
-        <div className="fixednav slidein-animation">
-            <div className="wrap">
-                <div className="col-md-4">
-                    <LogoFix/>
-                </div>
-                <div className="col-md-auto">
-                    <MenuFix 
-                    changeBrowsingCategory={changeBrowsingCategory}
-                    />						
-                </div>			
+}) => (
+    <div className="fixednav slidein-animation">
+        <div className="wrap">
+            <div className="col-md-4">
+                <LogoFix />
             </div>
-        </div> 					
-	);
-}
+            <div className="col-md-auto">
+                <MenuFix changeBrowsingCategory={changeBrowsingCategory} />
+            </div>
+        </div>
+    </div>
+)
 
 export default NavBar

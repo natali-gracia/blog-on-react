@@ -3,6 +3,10 @@ import PropTypes from "prop-types"
 import './itempost.css'
 
 import {Link} from "react-router-dom"
+import ScrollIntoView from 'react-scroll-into-view'
+
+// import CommentsList from './../CommentsList/CommentsList'
+
 
 const TopPostItem = ({
     title,
@@ -11,6 +15,7 @@ const TopPostItem = ({
     category_link,
     author, 
     changeBrowsingCategory,
+    commentPlace,
 }) => {
 	return (
         <div className="wrap">           
@@ -25,7 +30,9 @@ const TopPostItem = ({
                 <div className="postitem-meta">
                     <span className="post-meta-time">{date}</span>
                     <a href="#" className="post-meta-author">by {author}</a>
-                    <a href="#">7 Comments</a>
+                        <ScrollIntoView selector="#comment-list" className="scroll-btn">
+                        <button>7 Comments</button>
+                        </ScrollIntoView>                    
                 </div>
             </div>
         </div>
