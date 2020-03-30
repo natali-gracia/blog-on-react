@@ -34,6 +34,7 @@ PostListWidgetItem.propTypes = {
     title:PropTypes.string.isRequired,
     date:PropTypes.string.isRequired,
     image:PropTypes.string,
+    link:PropTypes.string,
 }
 
 export default PostListWidgetItem

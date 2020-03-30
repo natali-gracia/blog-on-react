@@ -20,12 +20,10 @@
 .postrel-meta {
 	text-align: center;
 	line-height: 14px;
-}
-.postrel-meta a {
 	font-size: 12px;
-    text-decoration: none;
     text-transform: uppercase;
-    color: #bbb;
+	color: #bbb;
+	cursor: default;
 }
 @media only screen and (max-width: 1520px) and (min-width: 0px) {
 	.related-items img {

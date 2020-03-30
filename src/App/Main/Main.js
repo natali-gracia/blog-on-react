@@ -16,7 +16,9 @@ const Main = ({
 }) => {	
 	return (
         <main>
-			<Route path='/post/'><PostImage/></Route>
+			<Route path='/post/' render={()=>(
+				<PostImage 
+				/>)}/>
 			<Route path='/category/' render={()=>(
 				<BreadCrumb 
 				categoryInBreadcrumb={categoryInBreadcrumb}
@@ -25,7 +27,9 @@ const Main = ({
 				<div className="wrap">
 					<div className="col-md-7">
 						<Route exact path='/'><MainContent/></Route>
-						<Route path='/post/'><PostPage/></Route>
+						<Route path='/post/' render={()=>(
+							<PostPage 
+							/>)}/>
 						<Route path='/category/' render={()=>(
 							<CategoryPage
 							categoryInBreadcrumb={categoryInBreadcrumb}

@@ -1,6 +1,9 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import './relatedposts.css'
+
+import {Link} from "react-router-dom"
 
 const RelatedPostsItem = ({
         title,
@@ -10,17 +13,27 @@ const RelatedPostsItem = ({
 }) => {
 	return (
         <div className="related-items">
-                <a href={link} title={title}>
+                <Link to={link} title={title}>
                         <img src={image} alt=""/>
-                </a>	
+                </Link>		
                 <h2 className="postrel-title">
-                        <a href={link}>{title}</a>
+                        <Link to={link}>
+                            {title}
+                        </Link>	
                 </h2>
                 <div className="postrel-meta">
-                        <a href="#">{date}</a>
+                        {date}
                 </div>
         </div>								
 	)
 }
+
+RelatedPostsItem.propTypes = {
+        title:PropTypes.string.isRequired,
+        date:PropTypes.string.isRequired,
+        image:PropTypes.string,
+        link:PropTypes.string,
+}
+    
 
 export default RelatedPostsItem
