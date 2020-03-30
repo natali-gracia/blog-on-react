@@ -1,20 +1,23 @@
 import React from "react"
 import PropTypes from "prop-types"
-
 import './itempost.css'
+
+import {Link} from "react-router-dom"
 
 const TopPostItem = ({
     title,
     date,
     сategories,
+    category_link,
     author, 
+    changeBrowsingCategory,
 }) => {
 	return (
         <div className="wrap">           
             <div className="top-blogitem">
                 <div className="blog-category">
                     <em>
-                        <a href="#">{сategories}</a>
+                        <Link to={category_link} onClick={() => changeBrowsingCategory(сategories)}>{сategories}</Link>
                         {/* <a href="#">Blog</a>•<a href="#">Fashion</a> */}
                     </em>								
                 </div>

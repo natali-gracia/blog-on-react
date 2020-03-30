@@ -15,7 +15,7 @@ const postsData = [
         image: '/images/postsimg/lisbeth-demo1-2.3-1500x720.jpg',
         image_postitem: "/images/postsimg/lisbeth-demo1-2.3-390x240.jpg",
         image_sidebar: '',
-        image_widget: '/images/postsimg/anariel-post-example-345x230.jpg',
+        image_widget: '/images/postsimg/lisbeth-demo1-2.3-345x230.jpg',
         link: '/post/my-trip-to-paris',
         likes:23,
         excerpt:
@@ -34,7 +34,7 @@ const postsData = [
         image: '/images/postsimg/lisbeth-demo1-9.2g.jpg',
         image_postitem:"/images/postsimg/lisbeth-demo1-9g-390x240.jpg",
         image_sidebar: '',
-        image_widget: '/images/postsimg/anariel-post-example-345x230.jpg',
+        image_widget: '/images/postsimg/lisbeth-demo1-9g-345x230.jpg',
         link: '/post/why-do-we-think-cats-are-unfriendly',     
         likes:45,
         excerpt:
@@ -53,7 +53,7 @@ const postsData = [
         image: '/images/postsimg/anariel-post-15.jpg',
         image_postitem:"/images/postsimg/anariel-post-15-390x240.jpg",
         image_sidebar: '/images/postsimg/anariel-post-15-255x170.jpg',
-        image_widget: '/images/postsimg/anariel-post-example-345x230.jpg',
+        image_widget: '/images/postsimg/anariel-post-15-345x230.jpg',
         link: '/post/best-coffee-in-town',     
         likes:50,
         excerpt:
@@ -72,7 +72,7 @@ const postsData = [
         image: '/images/postsimg/anariel-post-13.jpg',        
         image_postitem:"/images/postsimg/anariel-post-13-390x240.jpg",
         image_sidebar: '',
-        image_widget: '/images/postsimg/anariel-post-example-345x230.jpg',
+        image_widget: '/images/postsimg/anariel-post-13-345x230.jpg',
         link: '/post/visit-the-gardens',     
         likes:40,
         excerpt:
@@ -91,7 +91,7 @@ const postsData = [
         image: '/images/postsimg/anariel-post-1.jpg',         
         image_postitem:"/images/postsimg/anariel-post-1-390x240.jpg",
         image_sidebar: '/images/postsimg/anariel-post-1-255x170.jpg',
-        image_widget: '/images/postsimg/anariel-post-example-345x230.jpg',
+        image_widget: '/images/postsimg/anariel-post-1-345x230.jpg',
         link: '/post/come-with-me-on-a-drive-to-the-country',     
         likes:51,
         excerpt:
@@ -148,7 +148,7 @@ const postsData = [
         image: '/images/postsimg/anariel-post-4.jpg',
         image_postitem: '/images/postsimg/anariel-post-4-390x240.jpg',
         image_sidebar: '/images/postsimg/anariel-post-4-255x170.jpg',
-        image_widget: '/images/postsimg/anariel-post-example-345x230.jpg',
+        image_widget: '/images/postsimg/anariel-post-4-345x230.jpg',
         link: '/post/ten-tips-for-travel-by-car',        
         likes:52,
         excerpt:
@@ -186,7 +186,7 @@ const postsData = [
         image: '/images/postsimg/anariel-post-11.jpg',         
         image_postitem:"/images/postsimg/anariel-post-11-390x240.jpg",
         image_sidebar: '/images/postsimg/anariel-post-11-255x170.jpg',
-        image_widget: '/images/postsimg/anariel-post-example-345x230.jpg',        
+        image_widget: '/images/postsimg/anariel-post-11-345x230.jpg',        
         likes:49,
         link: '/post/enjoy-the-winter-time-in-the-city',
         excerpt:

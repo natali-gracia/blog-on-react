@@ -15,6 +15,7 @@ import PostsNav from '../PostsNav/PostsNav'
 
 const BlogPost = ({
         postItemData = getPostsMap(postsData),
+        changeBrowsingCategory,
         id,           
 }) => {
         return (
@@ -24,7 +25,9 @@ const BlogPost = ({
                                 title={postItemData[id].title}
                                 date={postItemData[id].date}
                                 сategories={postItemData[id].сategories}
+                                category_link={postItemData[id].category_link}
                                 author={postItemData[id].author}
+                                changeBrowsingCategory={changeBrowsingCategory}
                         />
                         <div>
                                 {postItemData[id].post_text}

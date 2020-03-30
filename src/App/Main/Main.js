@@ -28,7 +28,8 @@ const Main = ({
 					<div className="col-md-7">
 						<Route exact path='/'><MainContent/></Route>
 						<Route path='/post/' render={()=>(
-							<PostPage 
+							<PostPage
+							changeBrowsingCategory={changeBrowsingCategory}
 							/>)}/>
 						<Route path='/category/' render={()=>(
 							<CategoryPage
