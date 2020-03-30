@@ -57,7 +57,7 @@ h1 {
 	border: none;
 	outline-style: none;
 }
-.postitem-meta a, .postitem-meta span,  .postitem-meta button {
+.postitem-meta span,  .postitem-meta button {
 	display: inline;
 	letter-spacing: 1px;
     text-transform: none;
@@ -69,15 +69,15 @@ h1 {
 	border: none;
 	background: none;
 }
-.postitem-meta a:hover, .postitem-meta button:hover {
+.postitem-meta button:hover {
 	color: #cdb280;
 	cursor: pointer;
 }
-.post-meta-time, .post-meta-author {
+.post-meta-time {
 	margin-right: 25px;
 	position: relative; 
 }
-.post-meta-time:after, .post-meta-author:after {
+.post-meta-time:after {
 	display: block;
 	position: absolute;
 	width: 5px;
@@ -89,9 +89,6 @@ h1 {
     right: -17px;
     position: absolute;
     content: '';
-}
-.post-meta-author {
-	border-bottom: 1px solid;
 }
 .post-tags {
 	float: left;
@@ -200,10 +197,7 @@ h1 {
 	    padding: 3px 0px;
 	    font-size: 12px !important;
 	}
-	.post-meta-author {
-		border-color: #eee !important;
-	}
-	.post-meta-time:after, .post-meta-author:after {
+	.post-meta-time:after {
 		width: 0 !important;
 	    height: 0 !important;
 	}
