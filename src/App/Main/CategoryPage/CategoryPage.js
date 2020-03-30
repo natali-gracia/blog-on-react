@@ -7,13 +7,15 @@ import PostsListCategories from './PostsListCategories'
 
 
 const CategoryPage = ({
-	categoryInBreadcrumb
+	categoryInBreadcrumb,
+	changeBrowsingCategory
 }) => {
 	return (
 		<div className="category-pagerow">
 			<PostsListWithBtn
 			categoryInBreadcrumb={categoryInBreadcrumb}
 			PostsListRelevant={PostsListCategories}
+			changeBrowsingCategory={changeBrowsingCategory}
 			/>
 		</div>							
 	)

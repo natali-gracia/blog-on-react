@@ -19,7 +19,12 @@ class MainContent extends Component {
         });
       }
 
-    render() {	
+    render() {
+        
+        const {
+            changeBrowsingCategory,
+        } = this.props
+        
         return (
             <div className="maincontent-row">
                 <div className="posts-nav">
@@ -30,9 +35,12 @@ class MainContent extends Component {
                 </div>
                 <div>
                     {this.state.postsFilter==='Recent posts' ?
-                        <PostsListWithBtn/> : 
+                        <PostsListWithBtn
+                        changeBrowsingCategory={changeBrowsingCategory}
+                        /> : 
                         <PostsListWithBtn
                         PostsListRelevant={PostsListPopular}
+                        changeBrowsingCategory={changeBrowsingCategory}
                         /> 
                     }                                    
                 </div>

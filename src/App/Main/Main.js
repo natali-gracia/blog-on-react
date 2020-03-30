@@ -26,7 +26,10 @@ const Main = ({
 			<div className="col-md-10">
 				<div className="wrap">
 					<div className="col-md-7">
-						<Route exact path='/'><MainContent/></Route>
+						<Route exact path='/' render={()=>(
+							<MainContent
+							changeBrowsingCategory={changeBrowsingCategory}
+							/>)}/>
 						<Route path='/post/' render={()=>(
 							<PostPage
 							changeBrowsingCategory={changeBrowsingCategory}
@@ -34,6 +37,7 @@ const Main = ({
 						<Route path='/category/' render={()=>(
 							<CategoryPage
 							categoryInBreadcrumb={categoryInBreadcrumb}
+							changeBrowsingCategory={changeBrowsingCategory}
 							/>)}/> 
 					</div>
 					<div className="col-md-3">

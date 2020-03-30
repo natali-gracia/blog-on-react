@@ -11,6 +11,8 @@ const PostListItem = ({
     link,
     excerpt,
     сategories,
+    category_link,
+    changeBrowsingCategory
 }) => {
         return (
             <div className="blog-items">
@@ -21,9 +23,9 @@ const PostListItem = ({
                         </Link>	
                     </div>
                     <div className="blog-category">
-                        <div>
-                            <a href="#">{сategories}</a> 
-                        </div>								
+                        <Link to={category_link} onClick={() => changeBrowsingCategory(сategories)}>
+                            {сategories}
+                        </Link>								
                     </div>
                     <h2 className="title">
                         <Link to={link}>{title}</Link>
@@ -46,6 +48,7 @@ PostListItem.propTypes = {
     excerpt:PropTypes.string,
     image:PropTypes.string,
     сategories:PropTypes.array,
+    category_link:PropTypes.string,
 }
 
 PostListItem.defaultProps = {

@@ -5,7 +5,8 @@ import postsData from '../MainContent/postsData'
 
 const PostsListCategories = ({
     sliceValue,
-    categoryInBreadcrumb
+    categoryInBreadcrumb,
+    changeBrowsingCategory
 }) => {
         return (
             <div className="flex-wrap">
@@ -18,6 +19,7 @@ const PostsListCategories = ({
                                 link={post.link}
                                 excerpt={post.excerpt}
                                 сategories={post.сategories}
+                                changeBrowsingCategory={changeBrowsingCategory}
                             />
                         </div>
                     ))
