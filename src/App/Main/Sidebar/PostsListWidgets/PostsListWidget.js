@@ -15,6 +15,7 @@ const PostsListWidget = () => {
                                 title={post.title}
                                 date={post.date}
                                 image={post.image_sidebar}
+                                link={post.link}
                             />
                         </div>
                     ))
