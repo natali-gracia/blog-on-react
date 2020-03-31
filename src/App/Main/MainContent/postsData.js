@@ -314,7 +314,11 @@ export const getPostsMap = (array) => {
         [post.id]:post
     }),{})
 }
-
 // console.log(getPostsMap(postsData)[10].posttext)
+
+const result = postsData.filter(item => item.category_link === '/category/lifestyle');
+
+console.log(result.length);
+
 
 export default postsData

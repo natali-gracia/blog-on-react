@@ -19,7 +19,7 @@ class SliderFade extends Component {
         slidesToScroll: 1,
         cssEase: 'linear',
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3500,
       };
       return (
         <div className="slider-row">

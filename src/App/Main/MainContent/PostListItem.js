@@ -32,8 +32,7 @@ const PostListItem = ({
                     </h2>
                     <div className="post-meta">
                         <span className="post-meta-time">{date}</span>
-                        <Link to={link}>{7} Comments</Link>
-                        {/* <Link to={link} onClick={this.windowLocation}>{7} Comments</Link>  */}
+                        <span>{7} Comments</span>
                     </div>
                 </div>
                 <div className="blog-content">{excerpt}</div>
@@ -47,7 +46,7 @@ PostListItem.propTypes = {
     date:PropTypes.string.isRequired,
     excerpt:PropTypes.string,
     image:PropTypes.string,
-    сategories:PropTypes.array,
+    categories:PropTypes.string,
     category_link:PropTypes.string,
 }
 

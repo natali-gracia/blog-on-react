@@ -5,17 +5,13 @@ import './itempost.css'
 import {Link} from "react-router-dom"
 import ScrollIntoView from 'react-scroll-into-view'
 
-// import CommentsList from './../CommentsList/CommentsList'
-
 
 const TopPostItem = ({
     title,
     date,
     сategories,
     category_link,
-    author, 
     changeBrowsingCategory,
-    commentPlace,
 }) => {
 	return (
         <div className="wrap">           
@@ -41,7 +37,7 @@ const TopPostItem = ({
 TopPostItem.propTypes = {
     title:PropTypes.string.isRequired,
     date:PropTypes.string.isRequired,
-    сategories:PropTypes.array,
+    categories:PropTypes.string,
 }
 
 
