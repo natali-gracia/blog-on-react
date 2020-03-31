@@ -19,7 +19,52 @@ const postsData = [
         link: '/post/my-trip-to-paris',
         likes:23,
         excerpt:
-        "Paris is the capital and most populous city of France, with an administrative limits area of 105 square kilometres (41 square miles) and a 2015 population of 2,229,621. The...",           
+        "Paris is the capital and most populous city of France, with an administrative limits area of 105 square kilometres (41 square miles) and a 2015 population of 2,229,621. The...",
+        post_text: 
+        React.createElement(
+            "div", {className: "post-text"},
+            React.createElement(
+                "span", {className: "main-letter"}, "P"),
+                React.createElement("strong", null, "aris"), 
+                " is the capital and most populous city of ",
+                React.createElement("strong", null, "France"),
+                ", with an administrative limits area of 105 square kilometres (41 square miles) and a 2015 population of 2,229,621. The city is a commune and department, and the capital-heart of the 12,012-square-kilometre (4,638-square-mile) Île-de-France region (colloquially known as the ‘Paris Region’), whose 12,142,802 2016 population represents roughly 18 percent of the population of France. By the 17th century, Paris had become one of Europe’s major centers of finance, commerce, fashion, science, and the arts, a position that it retains still today. The ",
+                React.createElement("strong", null, "Paris Region"),
+                " had a GDP of €649.6 billion (The US $763.4 billion) in 2014, accounting for 30.4 percent of the GDP of France. According to official estimates, in 2013-14 the Paris Region had the third-highest GDP in the world and the largest regional GDP in the EU.",
+            React.createElement(
+                "p", null,
+                    "The City of Paris’ administrative limits form a horizontal oval centered on its historical-heart Île de la Cité island; this island is near the peak of an arc of Seine river that divides the city into southern Rive Gauche (Left Bank) and northern Rive Droite regions."),
+            React.createElement(
+                "p", null,
+                    React.createElement("strong", null, "Paris"), 
+                    " is but the core of a built-up area that extends well beyond its limits: commonly referred to as the agglomération Parisienne, and statistically, as a unité urbaine (a measure of urban area), the Paris agglomeration’s 10,601,122 2013 population makes it the largest urban area in the European Union.[3] City-influenced commuter activity reaches well beyond even this in a statistical aire urbaine de Paris (a measure of metropolitan area), that had a 2013 population of 12,405,426, a number one-fifth the population of France,  and one that makes it, after London, the second largest metropolitan area in the European Union. The 2016 Metropole of Grand Paris initiative, encompassing the City of Paris and its surrounding petite couronne department communes, or an area covering 814 square kilometers and representing a population of 7 million, aims to improve city-suburb cooperation through a unique governing body."),
+            React.createElement(
+                "p", null,
+                    React.createElement(
+                        "img", {
+                            className: "alignleft",
+                            src: "/images/postsimg/postsitemimg/lisbeth-demo1-2.2.jpg",
+                            alt: ""
+                        })),
+            React.createElement(
+                "p", null,
+                    "The city is a major rail, highway, and air-transport hub served by two international airports: Paris-Charles de Gaulle (the second busiest airport in Europe after London Heathrow Airport with 63.8 million passengers in 2014) and Paris-Orly. Opened in 1900, the city’s subway system, the Paris Métro, serves 5.23 million passengers daily, and is the second busiest metro system in Europe after Moscow Metro. Paris’ Gare du Nord is one of the ten busiest railway stations in the world, with 262 million passengers in 2015."),
+            React.createElement(
+                "p", null,
+                    "Paris is especially known for its museums and architectural landmarks: the Louvre was the most visited art museum in the world in 2016, with 7.4 million visitors. The Musée d’Orsay and Musée de l’Orangerie are noted for their collections of French Impressionist art, and the Pompidou-center Musée National d’Art Moderne has the largest collection of modern and contemporary art in Europe. The historical district along Seine River in the city center is classified as a UNESCO Heritage Site. Popular landmarks in the center of the city include the Cathedral of Notre Dame de Paris and The Gothic royal chapel of Sainte-Chapelle, both on the Île de la Cité; the Eiffel Tower, constructed for the Paris Universal Exposition of 1889; the Grand Palais and Petit Palais, built for the Paris Universal Exposition of 1900; the Arc de Triomphe on the Champs Elysees, and the Basilica of Sacré-Coeur on the hill of Montmartre. Paris received 22.2 million visitors in 2015, making it one of the world’s top tourist destinations, but the number of greater Paris visitors dropped by 11.5 percent following the terrorist attacks the following year."),
+            React.createElement(
+                "div", {className: "post-quote"},
+                    React.createElement(
+                        "span", {className: "quote-text"}, 
+                        "Paris is located in northern central France. By road, it is 450 kilometres (280 mi) southeast of London, 287 kilometres (178 mi) south of Calais, 305 kilometres (190 mi) southwest of Brussels, 774 kilometres (481 mi) north of Marseille, 385 kilometres (239 mi) northeast of Nantes, and 135 kilometres (84 mi) southeast of Rouen")),
+            React.createElement(
+                "p", null,
+                    "Most French rulers since the Middle Ages made a point of leaving their mark on a city that, contrary to many other of the world’s capitals, has never been destroyed by catastrophe or war. In modernizing its infrastructure through the centuries, Paris has preserved even its earliest history in its street map.  At its origin, before the Middle Ages, the city was composed around several islands and sandbanks in a bend of the Seine; of those, two remain today: the île Saint-Louis, the île de la Cité; a third one is 1827 artificially created île aux Cygnes."),
+            React.createElement(
+                "p", {className: "post-source"},
+                    React.createElement("strong", null, "Source:",
+                    React.createElement(
+                        "a", {href: ""}, " Wikihow")))),          
     },
     {
         id:2,
