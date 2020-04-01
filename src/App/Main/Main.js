@@ -16,7 +16,7 @@ const Main = ({
 }) => {	
 	return (
         <main>
-			<Route path='/post/' render={()=>(
+			<Route path='/post/:postTitle' render={()=>(
 				<PostImage 
 				/>)}/>
 			<Route path='/category/' render={()=>(
@@ -30,7 +30,7 @@ const Main = ({
 							<MainContent
 							changeBrowsingCategory={changeBrowsingCategory}
 							/>)}/>
-						<Route path='/post/' render={()=>(
+						<Route path='/post/:postTitle' render={()=>(
 							<PostPage
 							changeBrowsingCategory={changeBrowsingCategory}
 							/>)}/>

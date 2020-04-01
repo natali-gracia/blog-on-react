@@ -18,7 +18,7 @@ const RelatedPosts = ({
                                         <RelatedPostsItem
                                                 title={post.title}
                                                 date={post.date}
-                                                link={post.link}
+                                                title_link={post.title_link}
                                                 image={post.image_widget}
                                         />
                                 </div>

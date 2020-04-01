@@ -16,7 +16,7 @@ const PostsListWidgetPopular = () => {
                                 title={post.title}
                                 date={post.date}
                                 image={post.image_sidebar}
-                                link={post.link}
+                                title_link={post.title_link}
                             />
                         </div>
                     ))

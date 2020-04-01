@@ -8,18 +8,18 @@ const PostListWidgetItem = ({
     title,
     date,
     image,
-    link,
+    title_link,
 }) => {
         return (
             <div>
                 <div className="imgholder">
-                    <Link to={link} title={title}>
+                    <Link to={`/post/${title_link}`} title={title}>
                         <img src={image} alt=""/>
                     </Link>	
                 </div>
                 <div className="widget-title">
                     <h4>
-                        <Link to={link}>
+                        <Link to={`/post/${title_link}`}>
                             {title}
                         </Link>	
                     </h4>
@@ -34,7 +34,7 @@ PostListWidgetItem.propTypes = {
     title:PropTypes.string.isRequired,
     date:PropTypes.string.isRequired,
     image:PropTypes.string,
-    link:PropTypes.string,
+    title_link:PropTypes.string,
 }
 
 export default PostListWidgetItem

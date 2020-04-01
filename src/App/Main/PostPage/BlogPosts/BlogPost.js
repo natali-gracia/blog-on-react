@@ -16,7 +16,9 @@ import PostsNav from '../PostsNav/PostsNav'
 const BlogPost = ({
         postItemData = getPostsMap(postsData),
         changeBrowsingCategory,
-        id,          
+        id,      
+        // repliesLength = commentsData.filter(post => post.replies.length !== 0),
+        // repliesLengthTwo = repliesLength.filter(post => post.replies.length !== 0),
 }) => {
         return (
             <div>
@@ -29,8 +31,11 @@ const BlogPost = ({
                                 author={postItemData[id].author}
                                 changeBrowsingCategory={changeBrowsingCategory}
                         />
-                        <div>
-                                {postItemData[id].post_text}
+                        <div className="post-text"
+                        dangerouslySetInnerHTML={{
+                                __html:postItemData[id].post_text
+                            }}
+                        >
                         </div>
                         <BottomPostItem 
                                 tags={postItemData[id].tags}

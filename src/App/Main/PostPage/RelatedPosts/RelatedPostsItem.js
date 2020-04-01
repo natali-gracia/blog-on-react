@@ -8,16 +8,16 @@ import {Link} from "react-router-dom"
 const RelatedPostsItem = ({
         title,
         date,
-        link,
+        title_link,
         image,
 }) => {
 	return (
         <div className="related-items">
-                <Link to={link} title={title}>
+                <Link to={`/post/${title_link}`} title={title}>
                         <img src={image} alt=""/>
                 </Link>		
                 <h2 className="postrel-title">
-                        <Link to={link}>
+                        <Link to={`/post/${title_link}`}>
                             {title}
                         </Link>	
                 </h2>
@@ -32,7 +32,7 @@ RelatedPostsItem.propTypes = {
         title:PropTypes.string.isRequired,
         date:PropTypes.string.isRequired,
         image:PropTypes.string,
-        link:PropTypes.string,
+        title_link:PropTypes.string,
 }
     
 
