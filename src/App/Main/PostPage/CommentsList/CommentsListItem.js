@@ -4,15 +4,17 @@ import "./commentslist.css"
 
 
 const CommentsListItem = ({
+    id,
     author,
     avatar,
     date,
     text,
     replies,
+    lastCommentId
 }) => {
         return (
             <div>
-                <div className="comment-item wrap">
+                <div className={id === lastCommentId ? 'last-comment-item wrap' : 'comment-item wrap'}>
                     <div className="comment-author">
                         <img src={avatar} alt=""/>
                     </div>

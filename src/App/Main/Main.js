@@ -16,9 +16,7 @@ const Main = ({
 }) => {	
 	return (
         <main>
-			<Route path='/post/:postTitle' render={()=>(
-				<PostImage 
-				/>)}/>
+			<Route path='/post/:postTitle' component={PostImage}/>
 			<Route path='/category/' render={()=>(
 				<BreadCrumb 
 				categoryInBreadcrumb={categoryInBreadcrumb}
@@ -30,10 +28,12 @@ const Main = ({
 							<MainContent
 							changeBrowsingCategory={changeBrowsingCategory}
 							/>)}/>
-						<Route path='/post/:postTitle' render={()=>(
+						<Route path='/post/:postTitle' render={({match})=>(
 							<PostPage
-							changeBrowsingCategory={changeBrowsingCategory}
-							/>)}/>
+								match={match}
+								changeBrowsingCategory={changeBrowsingCategory}
+							/>)
+						}/>
 						<Route path='/category/' render={()=>(
 							<CategoryPage
 							categoryInBreadcrumb={categoryInBreadcrumb}

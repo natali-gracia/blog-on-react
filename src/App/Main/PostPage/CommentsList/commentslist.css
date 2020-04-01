@@ -3,9 +3,10 @@
 	margin-bottom: 40px;
 	border-bottom: 1px solid #eaeaea;
 }
-.comment-item:last-child {
+.last-comment-item {
 	padding-bottom: 0;
 	border-bottom: none;
+	margin-bottom: 40px;
 }
 .comment-author {
 	float: left;

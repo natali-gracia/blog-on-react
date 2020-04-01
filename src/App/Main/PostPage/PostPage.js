@@ -8,18 +8,14 @@ const PostPage = ({
 	match,
 	changeBrowsingCategory
 }) => {
-    // const postLink = match.params.postTitle;
+	const linkTitle = postsData.filter(post => post.title_link === match.params.postTitle)
 
 	return (
 		<div>
-			{postsData.filter(post => (`/post/${post.title_link}`) === window.location.pathname).map((post)=>(
-					<div key={post.id}>
-						<BlogPost
-							id={post.id}
-							changeBrowsingCategory={changeBrowsingCategory}
-						/>
-					</div>
-				))}
+			<BlogPost
+				id={linkTitle[0].id}
+				changeBrowsingCategory={changeBrowsingCategory}
+			/>
 		</div>							
 	)
 }

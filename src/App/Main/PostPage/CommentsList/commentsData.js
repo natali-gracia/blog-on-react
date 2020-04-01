@@ -1,6 +1,6 @@
 const commentsData = [
     {
-        id: 10-1,
+        id: 11,
         author:'Anariel',
         avatar:'/images/unknown-avatar.png',
         date:'December 3, 2019 at 6:23 pm',
@@ -8,21 +8,21 @@ const commentsData = [
         replies: []
     },
     {
-        id: 10-2,
+        id: 11,
         author:'Lisbet',
         avatar:'/images/unknown-avatar.png',
         date:'December 21, 2019 at 2:40 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [
             {
-                id: 10-21,
+                id: 12,
                 author:'Boris',
                 avatar:'/images/unknown-avatar.png',
                 date:'December 22, 2019 at 3:10 pm',
                 text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
                 replies: [
                     {
-                        id: 10-211,
+                        id: 13,
                         author:'Jack',
                         avatar:'/images/unknown-avatar.png',
                         date:'December 28, 2019 at 1:08 pm',
@@ -34,7 +34,7 @@ const commentsData = [
         ]
     },
     {
-        id: 10-3,
+        id: 14,
         author:'Alise',
         avatar:'/images/unknown-avatar.png',
         date:'February 8, 2020 at 9:54 pm',
