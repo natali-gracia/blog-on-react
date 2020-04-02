@@ -10,16 +10,25 @@ import RelatedPostsItem from './RelatedPostsItem'
 const RelatedPosts = ({
         postItemData = getPostsMap(postsData),
         id,
-}) => {
+}) => { 
+
+        let RelatedPostsFilter = postsData.filter(post => post.сategories === postItemData[id].сategories).filter(post => post.id !== postItemData[id].id).sort((a,b)=> b.id - a.id).slice(0,3)
+
+        let LastRelatedPostsId = RelatedPostsFilter[RelatedPostsFilter.length-1].id
+
+
+
 	return (
-                <div className="flex-wrap">
-                        {postsData.filter(post => post.сategories === postItemData[id].сategories).filter(post => post.id != postItemData[id].id).sort((a,b)=> b.id - a.id).slice(0.3).map((post)=>(
-                                <div className="related-post-item" key={post.id}>
+                <div className="wrap">
+                        {RelatedPostsFilter.map((post)=>(
+                                <div key={post.id}>
                                         <RelatedPostsItem
+                                                id={post.id}
                                                 title={post.title}
                                                 date={post.date}
                                                 title_link={post.title_link}
                                                 image={post.image_widget}
+                                                LastRelatedPostsId={LastRelatedPostsId}
                                         />
                                 </div>
                                 ))

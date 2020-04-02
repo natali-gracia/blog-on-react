@@ -8,7 +8,9 @@ const PostPage = ({
 	match,
 	changeBrowsingCategory
 }) => {
+
 	const linkTitle = postsData.filter(post => post.title_link === match.params.postTitle)
+
 
 	return (
 		<div>

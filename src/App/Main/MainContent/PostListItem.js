@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./postlistitem.css"
 
+
 import {Link} from "react-router-dom"
 
 const PostListItem = ({
@@ -11,16 +12,9 @@ const PostListItem = ({
     image,  
     excerpt,
     сategories,
-    category_link,
-    // categoriesArray,
-    // categoriesArray_1,
     changeBrowsingCategory,
-    // categoriesArrayCount = Object.keys({categoriesArray}).map(() => {
-    //     return (
-    //     {categoriesArray}
-    //     )
-    // })
 }) => {
+
         return (
             <div className="blog-items">
                 <div className="top-blog">
@@ -29,26 +23,18 @@ const PostListItem = ({
                             <img src={image} alt=""/>
                         </Link>	
                     </div>
-                    {/* <div className="blog-category">
-                    {Object.keys({categoriesArray_1}).map((item,id) => {
-                        return (
-                        <div key={id}>
-                            {item.сategory}
-                        </div>
-                        )
-                    })}
-                    </div> */}
-                    {/* <div className="blog-category">
-                         {Object.keys(categoriesArrayCount).map((index)=>{
-                             return (
-                                 index = index.value
-                             )
-                        })}
-                    </div> */}
                     <div className="blog-category">
-                        <Link to={category_link} onClick={() => changeBrowsingCategory(сategories)}>
-                            {сategories}
-                        </Link>								
+                        {сategories.map((category,i,arr)=>(
+                            <span>
+                            <Link to={`/category/${category}`} onClick={() => changeBrowsingCategory(category)}>
+                                {category}
+                            </Link> 
+                            {i != (arr.length-1) ? 
+                            <em>•</em>
+                            : ''}
+                            </span>
+                            ))
+                        }
                     </div>
                     <h2 className="title">
                         <Link to={`/post/${title_link}`}>{title}</Link>
@@ -70,10 +56,7 @@ PostListItem.propTypes = {
     date:PropTypes.string.isRequired,
     excerpt:PropTypes.string,
     image:PropTypes.string,
-    categories:PropTypes.string,
-    category_link:PropTypes.string,
-    categoriesArray_1:PropTypes.array,
-    categoriesArray:PropTypes.array,
+    categories:PropTypes.array,
 }
 
 PostListItem.defaultProps = {

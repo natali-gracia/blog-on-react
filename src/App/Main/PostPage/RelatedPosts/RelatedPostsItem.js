@@ -6,13 +6,15 @@ import './relatedposts.css'
 import {Link} from "react-router-dom"
 
 const RelatedPostsItem = ({
+        id,
         title,
         date,
         title_link,
         image,
+        LastRelatedPostsId,
 }) => {
 	return (
-        <div className="related-items">
+        <div className={id === LastRelatedPostsId ? 'related-items last-item' : 'related-items'}>
                 <Link to={`/post/${title_link}`} title={title}>
                         <img src={image} alt=""/>
                 </Link>		
