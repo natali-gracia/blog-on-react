@@ -16,7 +16,7 @@ main {
 	font-style: italic;
 	font-size: 22px;
 	font-weight: 700;
-	text-transform: none;
+	text-transform: capitalize;
 	color: #cdb280;
 }
 @media only screen and (max-width: 1520px) and (min-width: 0px) {

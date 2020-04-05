@@ -13,44 +13,44 @@ const MenuFix = ({
             <ul className="menu items-fixedmenu">
                 <li><Link to="/">Home</Link></li>
                 <li>
-                    <Link to="/category/beauty" onClick={() => changeBrowsingCategory('Beauty')}>Beauty</Link>
+                    <Link to="/category/beauty" onClick={() => changeBrowsingCategory('beauty')}>Beauty</Link>
                 </li>
                 <li className="dropdown-item dropdown-fixedmenu">
-                    <Link to="/category/fashion" onClick={() => changeBrowsingCategory('Fashion')}>Fashion</Link>
+                    <Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>Fashion</Link>
                     <ul className="dropdown-menu">
                         <li>
-                            <Link to="/category/fashion" onClick={() => changeBrowsingCategory('Fashion')}>News</Link>
+                            <Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>News</Link>
                         </li>
                         <li>
-                            <Link to="/category/fashion" onClick={() => changeBrowsingCategory('Fashion')}>Trends</Link>
+                            <Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>Trends</Link>
                         </li>
                         <li>
-                            <Link to="/category/fashion" onClick={() => changeBrowsingCategory('Fashion')}>Collections</Link>
+                            <Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>Collections</Link>
                         </li>
                         <li>
-                            <Link to="/category/fashion" onClick={() => changeBrowsingCategory('Fashion')}>Everyday fashion</Link>
+                            <Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>Everyday fashion</Link>
                         </li>
                     </ul>
                 </li>
                 <li className="dropdown-item dropdown-fixedmenu">
-                    <Link to="/category/travels" onClick={() => changeBrowsingCategory('Travels')}>Travels </Link>
+                    <Link to="/category/travels" onClick={() => changeBrowsingCategory('travels')}>Travels </Link>
                     <ul className="dropdown-menu">
                         <li>
-                            <Link to="/category/travels" onClick={() => changeBrowsingCategory('Travels')}>Countries</Link>
+                            <Link to="/category/travels" onClick={() => changeBrowsingCategory('travels')}>Countries</Link>
                         </li>
                         <li>
-                            <Link to="/category/travels" onClick={() => changeBrowsingCategory('Travels')}>Active travels</Link>
+                            <Link to="/category/travels" onClick={() => changeBrowsingCategory('travels')}>Active travels</Link>
                         </li>
                         <li>
-                            <Link to="/category/travels" onClick={() => changeBrowsingCategory('Travels')}>My tops</Link>
+                            <Link to="/category/travels" onClick={() => changeBrowsingCategory('travels')}>My tops</Link>
                         </li>
                         <li>
-                            <Link to="/category/travels" onClick={() => changeBrowsingCategory('Travels')}>Lifehacks</Link>
+                            <Link to="/category/travels" onClick={() => changeBrowsingCategory('travels')}>Lifehacks</Link>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link to="/category/lifestyle" onClick={() => changeBrowsingCategory('Lifestyle')}>Lifestyle</Link>
+                    <Link to="/category/lifestyle" onClick={() => changeBrowsingCategory('lifestyle')}>Lifestyle</Link>
                 </li>				
                 <li><Link to="/">About me</Link></li>
 			</ul>		

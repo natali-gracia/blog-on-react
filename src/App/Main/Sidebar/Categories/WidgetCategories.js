@@ -10,16 +10,16 @@ const WidgetCategories = ({
 	return (
         <div>
             <div className="categories-item">
-                <Link to="/category/beauty" onClick={() => changeBrowsingCategory('Beauty')}>Beauty</Link>
+                <Link to="/category/beauty" onClick={() => changeBrowsingCategory('beauty')}>Beauty</Link>
             </div>
             <div className="categories-item">
-                <Link to="/category/fashion" onClick={() => changeBrowsingCategory('Fashion')}>Fashion</Link>
+                <Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>Fashion</Link>
             </div>
             <div className="categories-item">
-                <Link to="/category/travels" onClick={() => changeBrowsingCategory('Travels')}>Travels</Link>
+                <Link to="/category/travels" onClick={() => changeBrowsingCategory('travels')}>Travels</Link>
             </div>
             <div className="categories-item">
-                <Link to="/category/lifestyle" onClick={() => changeBrowsingCategory('Lifestyle')}>Lifestyle</Link>
+                <Link to="/category/lifestyle" onClick={() => changeBrowsingCategory('lifestyle')}>Lifestyle</Link>
             </div>
         </div>
 	)

@@ -10,17 +10,23 @@ const TopPostItem = ({
     title,
     date,
     сategories,
-    category_link,
     changeBrowsingCategory,
 }) => {
 	return (
         <div className="wrap">           
             <div className="top-blogitem">
                 <div className="blog-category">
-                    <em>
-                        <Link to={category_link} onClick={() => changeBrowsingCategory(сategories)}>{сategories}</Link>
-                        {/* <a href="#">Blog</a>•<a href="#">Fashion</a> */}
-                    </em>								
+                        {сategories.map((category,i,arr)=>(
+                            <span keys={i}>
+                            <Link to={`/category/${category}`} onClick={() => changeBrowsingCategory(category)}>
+                                {category}
+                            </Link> 
+                            {i !== (arr.length-1) ? 
+                            <em>•</em>
+                            : ''}
+                            </span>
+                            ))
+                        }
                 </div>
                 <h1 className="postitem-title">{title}</h1>
                 <div className="postitem-meta">

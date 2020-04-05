@@ -18,7 +18,6 @@ const PostsListPopular = ({
                                 title_link={post.title_link}
                                 excerpt={post.excerpt}
                                 сategories={post.сategories}
-                                category_link={post.category_link}
                                 changeBrowsingCategory={changeBrowsingCategory}
                             />
                         </div>

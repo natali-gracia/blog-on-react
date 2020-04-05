@@ -17,8 +17,6 @@ const BlogPost = ({
         postItemData = getPostsMap(postsData),
         changeBrowsingCategory,
         id,      
-        // repliesLength = commentsData.filter(post => post.replies.length !== 0),
-        // repliesLengthTwo = repliesLength.filter(post => post.replies.length !== 0),
 }) => {
         return (
             <div>
@@ -27,7 +25,6 @@ const BlogPost = ({
                                 title={postItemData[id].title}
                                 date={postItemData[id].date}
                                 сategories={postItemData[id].сategories}
-                                category_link={postItemData[id].category_link}
                                 author={postItemData[id].author}
                                 changeBrowsingCategory={changeBrowsingCategory}
                         />

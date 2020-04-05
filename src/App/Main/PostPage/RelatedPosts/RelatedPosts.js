@@ -12,11 +12,9 @@ const RelatedPosts = ({
         id,
 }) => { 
 
-        let RelatedPostsFilter = postsData.filter(post => post.сategories === postItemData[id].сategories).filter(post => post.id !== postItemData[id].id).sort((a,b)=> b.id - a.id).slice(0,3)
+        const RelatedPostsFilter = postsData.filter((post,item) => post.сategories[item] === postItemData[id].сategories[item]).filter(post => post.id !== postItemData[id].id).sort((a,b)=> b.id - a.id).slice(0,3)
 
-        let LastRelatedPostsId = RelatedPostsFilter[RelatedPostsFilter.length-1].id
-
-
+        const LastRelatedPostsId = RelatedPostsFilter[RelatedPostsFilter.length-1].id
 
 	return (
                 <div className="wrap">

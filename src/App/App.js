@@ -13,7 +13,7 @@ import Footer from './Footer/Footer'
 class App extends Component {
 	
 	state = {
-		categoryInBreadcrumb: 'Travels',
+		categoryInBreadcrumb: 'travels',
 	}
 	
 	changeBrowsingCategory = ((name) => {

@@ -25,11 +25,11 @@ const PostListItem = ({
                     </div>
                     <div className="blog-category">
                         {сategories.map((category,i,arr)=>(
-                            <span>
+                            <span key={i}>
                             <Link to={`/category/${category}`} onClick={() => changeBrowsingCategory(category)}>
                                 {category}
                             </Link> 
-                            {i != (arr.length-1) ? 
+                            {i !== (arr.length-1) ? 
                             <em>•</em>
                             : ''}
                             </span>
