@@ -16,7 +16,8 @@ const TopPostItem = ({
         <div className="wrap">           
             <div className="top-blogitem">
                 <div className="blog-category">
-                        {сategories.map((category,i,arr)=>(
+                        {сategories.map((category,i,arr)=>{
+                            return ( 
                             <span keys={i}>
                             <Link to={`/category/${category}`} onClick={() => changeBrowsingCategory(category)}>
                                 {category}
@@ -25,7 +26,7 @@ const TopPostItem = ({
                             <em>•</em>
                             : ''}
                             </span>
-                            ))
+                            )})
                         }
                 </div>
                 <h1 className="postitem-title">{title}</h1>

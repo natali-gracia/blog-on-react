@@ -7,7 +7,9 @@ import MainContent from './MainContent/MainContent'
 import PostImage from './PostImage'
 import BreadCrumb from "./BreadCrumb"
 import PostPage from './PostPage/PostPage'
-import CategoryPage from './CategoryPage/CategoryPage'
+import PostsListWithBtn from './MainContent/PostsListWithBtn'
+import PostsListCategories from './CategoryPage/PostsListCategories'
+import PostsListTags from './TagsPage/PostsListTags'
 import Sidebar from './Sidebar/Sidebar'
 
 const Main = ({
@@ -18,8 +20,14 @@ const Main = ({
         <main>
 			<Route path='/post/:postTitle' component={PostImage}/>
 			<Route path='/category/' render={()=>(
-				<BreadCrumb 
-				categoryInBreadcrumb={categoryInBreadcrumb}
+				<BreadCrumb
+					categoryInBreadcrumb={categoryInBreadcrumb}
+				/>)}/>
+			<Route path='/tag/' render={()=>(
+				<BreadCrumb
+					categoryInBreadcrumb={categoryInBreadcrumb}
+					classForFilterTitle = 'breadcrumb symbolsmall'
+					browsingItem = 'Tag'
 				/>)}/>
 			<div className="col-md-10">
 				<div className="wrap">
@@ -32,13 +40,23 @@ const Main = ({
 							<PostPage
 								match={match}
 								changeBrowsingCategory={changeBrowsingCategory}
-							/>)
-						}/>
+							/>)}/>
 						<Route path='/category/' render={()=>(
-							<CategoryPage
-							categoryInBreadcrumb={categoryInBreadcrumb}
-							changeBrowsingCategory={changeBrowsingCategory}
-							/>)}/> 
+							<div className="category-pagerow">
+								<PostsListWithBtn
+								categoryInBreadcrumb={categoryInBreadcrumb}
+								PostsListRelevant={PostsListCategories}
+								changeBrowsingCategory={changeBrowsingCategory}
+								/>
+							</div>)}/>
+						<Route path='/tag/' render={()=>(
+							<div className="category-pagerow">
+								<PostsListWithBtn
+								categoryInBreadcrumb={categoryInBreadcrumb}
+								PostsListRelevant={PostsListTags}
+								changeBrowsingCategory={changeBrowsingCategory}
+								/>
+							</div>)}/>
 					</div>
 					<div className="col-md-3">
 						<Sidebar

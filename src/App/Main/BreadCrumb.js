@@ -3,12 +3,14 @@ import React from "react"
 import "./main.css"
 
 const BreadCrumb = ({
-    categoryInBreadcrumb
+    categoryInBreadcrumb,
+    classForFilterTitle = 'breadcrumb',
+    browsingItem = 'Category'
 }) => {
         return (
-            <div className='breadcrumb'>
+            <div className={classForFilterTitle}>
                 <div className='browzing'>
-                    Browsing Category
+                    Browsing {browsingItem}
                </div>
                <span>{categoryInBreadcrumb}</span>
             </div>						

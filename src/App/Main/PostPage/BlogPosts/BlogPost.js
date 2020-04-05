@@ -36,6 +36,7 @@ const BlogPost = ({
                         </div>
                         <BottomPostItem 
                                 tags={postItemData[id].tags}
+                                changeBrowsingCategory={changeBrowsingCategory}
                         />
 		</div>
                 <div className="related-posts">

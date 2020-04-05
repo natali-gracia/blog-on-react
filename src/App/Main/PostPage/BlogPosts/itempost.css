@@ -94,22 +94,6 @@ h1 {
 	float: left;
 	margin: 10px 0 15px 0;
 }
-.tags-cloud a:hover {
-	background-color: #cdb280;
-}
-.tags-cloud a {
-	font-size: 10px;
-    border-radius: 90px;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-bottom: 3px;
-    max-height: 28px;
-    line-height: 28px;
-    display: inline-block;
-    padding: 0px 10px;
-    background: #bbb;
-    color: #fff;    
-}
 .post-social {
 	float: right;
 	color: #6f7c82;

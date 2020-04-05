@@ -3,16 +3,19 @@ import PropTypes from "prop-types"
 
 import './itempost.css'
 
+import TagsCloud from "../../../../Components/TagsCloud/TagsCloud"
+
 const BottomPostItem = ({
+    changeBrowsingCategory,
     tags,
 }) => {
 	return (
         <div className="wrap">
-            <div className="post-tags tags-cloud">
-                <a href="/">{tags}</a>
-                <a href="/">fashion</a>
-                <a href="/">handcrafted</a>
-                <a href="/">jewellery</a>
+            <div className="post-tags">
+                <TagsCloud
+                    tags={tags}
+                    changeBrowsingCategory={changeBrowsingCategory}
+                />
             </div>
             <div className="post-social">
                 <div className="flex-row">

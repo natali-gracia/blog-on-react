@@ -19,6 +19,12 @@ main {
 	text-transform: capitalize;
 	color: #cdb280;
 }
+.symbolsmall span {
+	text-transform: none !important;
+}
+.category-pagerow {
+    margin-top: 40px;
+}
 @media only screen and (max-width: 1520px) and (min-width: 0px) {
 	.col-md-12 img {
 		width: 100%;

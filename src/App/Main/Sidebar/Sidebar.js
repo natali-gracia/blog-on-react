@@ -7,7 +7,7 @@ import WidgetSocialIcons from './WidgetSocialIcons'
 import PostsListWidgetPopular from './PostsListWidgets/PostsListWidgetPopular'
 import PostsListWidget from './PostsListWidgets/PostsListWidget'
 import WidgetCategories from './Categories/WidgetCategories'
-import TagsCloud from "./TagsCloud/TagsCloud"
+import TagsCloudArray from '../TagsPage/TagsCloudArray'
 import SearchWidget from "./SearchWidget/SearchWidget"
 
 const Sidebar = ({
@@ -41,7 +41,11 @@ const Sidebar = ({
             </div>
             <div className="widget">
                 <h3>Tags</h3>
-                <TagsCloud/>
+                <div className='row'>
+                    <TagsCloudArray
+                        changeBrowsingCategory={changeBrowsingCategory}
+                    />
+                </div>  
             </div>          
             <div className="widget">
                 <h3>Recent Posts</h3>
