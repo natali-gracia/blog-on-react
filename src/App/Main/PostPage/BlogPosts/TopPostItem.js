@@ -16,17 +16,16 @@ const TopPostItem = ({
         <div className="wrap">           
             <div className="top-blogitem">
                 <div className="blog-category">
-                        {сategories.map((category,i,arr)=>{
-                            return ( 
-                            <span keys={i}>
-                            <Link to={`/category/${category}`} onClick={() => changeBrowsingCategory(category)}>
-                                {category}
-                            </Link> 
-                            {i !== (arr.length-1) ? 
-                            <em>•</em>
-                            : ''}
+                        {сategories.map((category,i,arr)=>( 
+                            <span key={i}>
+                                <Link to={`/category/${category}`} onClick={() => changeBrowsingCategory(category)}>
+                                    {category}
+                                </Link> 
+                                {i !== (arr.length-1) ? 
+                                <em>•</em>
+                                : ''}
                             </span>
-                            )})
+                            ))
                         }
                 </div>
                 <h1 className="postitem-title">{title}</h1>

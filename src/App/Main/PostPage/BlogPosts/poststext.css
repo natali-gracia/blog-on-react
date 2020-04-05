@@ -9,6 +9,16 @@
 .post-text p {
 	margin: 1em 0 1.5em 0;
 }
+.post-text h3 {
+	font-size: 28px;
+	font-family: 'Lora', sans-serif;
+    font-style: italic;
+}
+.post-text h2 {
+	font-size: 32px;
+	font-family: 'Lora', sans-serif;
+    font-style: italic;
+}
 .main-letter {
 	float: left;
 	color: #333;
