@@ -76,7 +76,12 @@ const BlogPost = ({
                         <CommentForm/>
                 </div>
                 <div className="post-nav">
-                        <PostsNav/>
+                        <PostsNav
+                                prev_title_link={postItemData[id+1]===undefined ? null : postItemData[id+1].title_link}
+                                prev_title={postItemData[id+1]===undefined ? null : postItemData[id+1].title}
+                                next_title_link={postItemData[id-1]===undefined ? null : postItemData[id-1].title_link}
+                                next_title={postItemData[id-1]===undefined ? null : postItemData[id-1].title}
+                        />
                 </div>
 
             </div>           						

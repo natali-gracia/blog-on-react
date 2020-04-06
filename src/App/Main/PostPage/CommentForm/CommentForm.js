@@ -6,7 +6,7 @@ const CommentForm = () => {
 	return (
         <div className="comment-form">
                 <form method="" action="">
-                        <textarea name="comment" id="" cols="45" rows="8" tabIndex="4" required></textarea>
+                        <textarea name="comment" id="text-area" cols="45" rows="8" tabIndex="4" required></textarea>
                         <label htmlFor='author'>
                                 Name <small>(required)</small>
                                 <br/>

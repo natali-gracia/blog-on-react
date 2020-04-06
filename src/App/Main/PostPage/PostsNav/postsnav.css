@@ -1,0 +1,58 @@
+
+.link-title-previous, .link-title-next {
+	display: block;
+	width: 48%;
+	background-color: #aaa;
+    color: #fff;
+    border-radius: 4px;
+    padding: 30px 0 25px 0;
+    text-decoration: none;
+}
+.link-title-next {
+	padding-right: 25px;
+	padding-left: 5px;
+	float: right;
+}
+.link-title-previous {
+	padding-left: 25px;
+	padding-right: 5px;
+	float: left;
+}
+.link-title-previous:hover, .link-title-next:hover {
+	background-color: #cdb280;
+}
+.link-title-previous span, .link-title-next span {
+	border-bottom: 1px solid;
+    text-transform: uppercase;
+    line-height: 22px;
+    font-size: 13px;
+    display: block;
+}
+.link-title-previous span, .prev-post-title {
+	float: left;
+}
+.link-title-next span, .next-post-title {
+	float: right;
+	text-align: right;
+}
+.prev-post-title, .next-post-title {
+	font-family: 'Lora', sans-serif;
+	font-style: italic;
+	width: 100%;
+    font-size: 20px;
+    margin-top: 5px;
+}
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+    .link-title-previous, .link-title-next {
+		width: 100% !important;
+		margin-top: 10px;
+	}
+	.link-title-next {
+		padding-left: 25px !important;
+		padding-right: 0 !important;
+	}
+	.link-title-next span, .next-post-title {
+		float: left !important;
+		text-align: left  !important;
+    }
+}

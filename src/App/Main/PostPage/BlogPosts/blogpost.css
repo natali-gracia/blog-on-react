@@ -23,6 +23,9 @@
     padding-top: 45px;
     margin-bottom: 20px;
 }
+.post-nav {
+	margin-bottom: 10px;
+}
 @media only screen and (max-width: 1520px) and (min-width: 0px) {
 	.related-posts {
     	min-width: initial;
