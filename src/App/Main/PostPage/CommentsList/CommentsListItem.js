@@ -1,9 +1,26 @@
-import React from "react"
+import React,{Component} from "react"
 import PropTypes from "prop-types"
 import "./commentslist.css"
 
+import CommentForm from './../CommentForm/CommentForm'
 
-const CommentsListItem = ({
+class CommentsListItem extends Component {
+
+    state = {
+        replyRow: false,
+    }
+
+    showReplyRow = () => {
+        this.setState((prevState)=>{
+            return{
+                replyRow: !prevState.replyRow
+            }
+        })
+    }
+
+
+    render() {
+        const {
     id,
     author,
     avatar,
@@ -11,7 +28,7 @@ const CommentsListItem = ({
     text,
     replies,
     lastCommentId
-}) => {
+    } = this.props;
     
         return (
             <div>
@@ -24,7 +41,7 @@ const CommentsListItem = ({
                             <span className="author-name">{author}</span>
                             <span className="comment-date">
                                 {date}
-                                <button>Reply</button>
+                                <button onClick={this.showReplyRow}>Reply</button>
                             </span>
                         </div>
                         <div className="comment-text">
@@ -33,17 +50,25 @@ const CommentsListItem = ({
                             </p>
                         </div>
                     </div>
+                    <div className={this.state.replyRow === false ? 'hidden' : ''}>
+                        <div className='reply-row'>                            
+                            <button className='cancel-reply-btn' onClick={this.showReplyRow}>Cancel reply</button>
+                            <CommentForm/>
+                        </div>
+                    </div>
                 </div>
-                <div className="reply">
+                <div className='reply'>
                 {replies && replies.length !== 0 ? replies.map((item,id) => {
                         return (<div key={id}>
                             <CommentsListItem {...item}
                             /> </div>)
                     }) : false}
-                </div>                               
+                </div>                              
             </div>
-            )
+        )
     }
+
+}
 
 CommentsListItem.propTypes = {
     author:PropTypes.string,

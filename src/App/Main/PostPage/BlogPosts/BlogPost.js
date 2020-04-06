@@ -69,7 +69,10 @@ const BlogPost = ({
                                 </div>
                         </div>          
                 : null}
-                <div>
+                <div className="respond-form">
+                        <div className="post-widget-title">
+                                <h4>Leave a Comment</h4>
+                        </div>
                         <CommentForm/>
                 </div>
                 <div className="post-nav">

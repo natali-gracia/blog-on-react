@@ -1,15 +1,16 @@
 import React from "react"
 
 import './logo.css'
+import {Link} from "react-router-dom"
 
 import logo from "./logo-white.png"
 
 const Logo = () => {
 	return (
         <div className="logo">
-            <a href="/">
+            <Link to="/">
                 <img src={logo} alt="logo"/>
-            </a>
+            </Link>
         </div>
 	)
 }

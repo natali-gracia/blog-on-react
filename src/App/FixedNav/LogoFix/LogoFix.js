@@ -1,15 +1,16 @@
 import React from "react"
 
 import './logofix.css'
+import {Link} from "react-router-dom"
 
 import logo from "./logo.png"
 
 const LogoFix = () => {
 	return (
         <div className="logo-fixednav">
-            <a href="/">
+            <Link to="/">
                 <img src={logo} alt="logo"/>
-            </a>
+            </Link>
         </div>
 	)
 }
