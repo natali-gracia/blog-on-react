@@ -12,6 +12,7 @@ const CommentsListItem = ({
     replies,
     lastCommentId
 }) => {
+    
         return (
             <div>
                 <div className={id === lastCommentId ? 'last-comment-item wrap' : 'comment-item wrap'}>
@@ -45,7 +46,7 @@ const CommentsListItem = ({
     }
 
 CommentsListItem.propTypes = {
-    author:PropTypes.string.isRequired,
+    author:PropTypes.string,
     avatar:PropTypes.string,
     date:PropTypes.string,
     text:PropTypes.string,

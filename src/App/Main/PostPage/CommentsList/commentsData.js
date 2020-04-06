@@ -1,6 +1,7 @@
 const commentsData = [
     {
-        id: 11,
+        id:1,
+        link_relative: 'enjoy-the-winter-time-in-the-city',
         author:'Anariel',
         avatar:'/images/unknown-avatar.png',
         date:'December 3, 2019 at 6:23 pm',
@@ -8,22 +9,23 @@ const commentsData = [
         replies: []
     },
     {
-        id: 11,
+        id:2,
+        link_relative: 'enjoy-the-winter-time-in-the-city',
         author:'Lisbet',
         avatar:'/images/unknown-avatar.png',
         date:'December 21, 2019 at 2:40 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [
             {
-                id: 12,
+                id:3,
                 author:'Boris',
                 avatar:'/images/unknown-avatar.png',
                 date:'December 22, 2019 at 3:10 pm',
                 text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
                 replies: [
                     {
-                        id: 13,
-                        author:'Jack',
+                        id:4,
+                        author:'Anariel',
                         avatar:'/images/unknown-avatar.png',
                         date:'December 28, 2019 at 1:08 pm',
                         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
@@ -34,26 +36,60 @@ const commentsData = [
         ]
     },
     {
-        id: 14,
+        id:5,
+        link_relative: 'enjoy-the-winter-time-in-the-city',
+        author:'Anariel',
+        avatar:'/images/unknown-avatar.png',
+        date:'January 15, 2020 at 1:10 pm',
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
+        replies: []
+    },
+    {
+        id:6,
+        link_relative: 'beautiful-christmas-decoration',
         author:'Alise',
         avatar:'/images/unknown-avatar.png',
         date:'February 8, 2020 at 9:54 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
+        replies: [
+            {
+                id:7,
+                author:'Anariel',
+                avatar:'/images/unknown-avatar.png',
+                date:'December 28, 2019 at 1:08 pm',
+                text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
+                replies: []
+            }
+        ]
+    },
+    {
+        id:8,
+        link_relative: 'beautiful-christmas-decoration',
+        author:'John',
+        avatar:'/images/unknown-avatar.png',
+        date:'February 14, 2020 at 01:10 pm',
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
+        replies: [],
+    },
+    {
+        id:9,
+        link_relative: 'fashion-tips-for-autumn-days',
+        author:'Mark',
+        avatar:'/images/unknown-avatar.png',
+        date:'November 24, 2019 at 9:54 pm',
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: []
+    },
+    {
+        id:10,
+        link_relative: 'fashion-tips-for-autumn-days',
+        author:'Antony',
+        avatar:'/images/unknown-avatar.png',
+        date:'November 25, 2019 at 01:45 pm',
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
+        replies: [],
     },
 ]
 
-// console.log(commentsData.length)
-// console.log(commentsData[1].replies)
-
-// const TrueLength = commentsData.map((post)=>(
-//     post.replies.map((post)=>(
-//         post.replies.map((post)=>(
-//             post.replies
-//         ))
-//     ))
-// ))
-
-// console.log(TrueLength)
-
 export default commentsData
+

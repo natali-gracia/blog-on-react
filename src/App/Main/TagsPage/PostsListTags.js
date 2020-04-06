@@ -14,6 +14,7 @@ const PostsListTags = ({
                     .sort((a,b)=> b.id - a.id).slice(0,sliceValue).map((post)=>(
                         <div key={post.id}>
                             <PostListItem 
+                                id={post.id}
                                 title={post.title}
                                 date={post.date}
                                 image={post.image_postitem}

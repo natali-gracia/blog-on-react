@@ -12,12 +12,16 @@ import RelatedPosts from '../RelatedPosts/RelatedPosts'
 import CommentsList from '../CommentsList/CommentsList'
 import CommentForm from '../CommentForm/CommentForm'
 import PostsNav from '../PostsNav/PostsNav'
+import CommentsListLength from './../../../../Components/CommentsListLength/CommentsListLength'
 
 const BlogPost = ({
         postItemData = getPostsMap(postsData),
         changeBrowsingCategory,
         id,      
 }) => {
+
+        const CommentsArray = commentsData.filter((comment) => comment.link_relative === postItemData[id].title_link)
+
         return (
             <div>
                 <div className="blog-post">
@@ -27,6 +31,8 @@ const BlogPost = ({
                                 сategories={postItemData[id].сategories}
                                 author={postItemData[id].author}
                                 changeBrowsingCategory={changeBrowsingCategory}
+                                id={postItemData[id].id}
+                                CommentsArray={CommentsArray}
                         />
                         <div className="post-text"
                         dangerouslySetInnerHTML={{
@@ -47,14 +53,19 @@ const BlogPost = ({
                                 id={postItemData[id].id}
                         />
                 </div>
-                {commentsData && commentsData.length !== 0 ?
+                {CommentsArray.length !== 0 ?
                         <div>
                                 <div id="comment-list"></div>
                                 <div className="comment-list">
                                         <div className="post-widget-title">
-                                                <h4>{commentsData.length} Comments</h4>
+                                                <h4>
+                                                {<CommentsListLength
+                                                        id={postItemData[id].id}
+                                                />} Comments</h4>
                                         </div>
-                                        <CommentsList/>  
+                                        <CommentsList
+                                                CommentsArray={CommentsArray}
+                                        />  
                                 </div>
                         </div>          
                 : null}

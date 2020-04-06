@@ -4,14 +4,17 @@ import './itempost.css'
 
 import {Link} from "react-router-dom"
 import ScrollIntoView from 'react-scroll-into-view'
-
+import CommentsListLength from './../../../../Components/CommentsListLength/CommentsListLength'
 
 const TopPostItem = ({
     title,
     date,
     сategories,
     changeBrowsingCategory,
+    CommentsArray,
+    id,
 }) => {
+
 	return (
         <div className="wrap">           
             <div className="top-blogitem">
@@ -32,7 +35,10 @@ const TopPostItem = ({
                 <div className="postitem-meta">
                     <span className="post-meta-time">{date}</span>
                     <ScrollIntoView selector="#comment-list" className="scroll-btn">
-                        <button>7 Comments</button>
+                    <button>{CommentsArray.length !== 0 ?
+                                <CommentsListLength
+                                    id={id}
+                                /> : 'No'} Comments</button>
                     </ScrollIntoView>                    
                 </div>
             </div>

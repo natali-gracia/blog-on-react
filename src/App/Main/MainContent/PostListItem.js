@@ -5,7 +5,13 @@ import "./postlistitem.css"
 
 import {Link} from "react-router-dom"
 
+import CommentsListLength from './../../../Components/CommentsListLength/CommentsListLength'
+
+import commentsData from './../PostPage/CommentsList/commentsData'
+import postsData, {getPostsMap} from './postsData'
+
 const PostListItem = ({
+    id,
     title,
     title_link,
     date,
@@ -13,7 +19,10 @@ const PostListItem = ({
     excerpt,
     сategories,
     changeBrowsingCategory,
-}) => {
+    postItemData = getPostsMap(postsData),
+}) => { 
+
+        const CommentsArray = commentsData.filter((comment) => comment.link_relative === postItemData[id].title_link)
 
         return (
             <div className="blog-items">
@@ -41,7 +50,10 @@ const PostListItem = ({
                     </h2>
                     <div className="post-meta">
                         <span className="post-meta-time">{date}</span>
-                        <span>{7} Comments</span>
+                        <span>{CommentsArray.length !== 0 ?
+                                <CommentsListLength
+                                    id={id}
+                                /> : 'No'} Comments</span>
                     </div>
                 </div>
                 <div className="blog-content">{excerpt}</div>

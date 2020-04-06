@@ -12,6 +12,7 @@ const PostsListPopular = ({
                 {postsData.sort((a,b)=> b.likes - a.likes).slice(0,sliceValue).map((post)=>(
                         <div key={post.id}>
                             <PostListItem 
+                                id={post.id}
                                 title={post.title}
                                 date={post.date}
                                 image={post.image_postitem}

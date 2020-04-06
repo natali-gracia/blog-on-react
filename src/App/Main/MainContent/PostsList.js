@@ -11,7 +11,8 @@ const PostsList = ({
         return (
             <div className="flex-wrap">
                 {postsData.sort((a,b)=> b.id - a.id).slice(0,sliceValue).map((post)=>(
-                        <PostListItem 
+                        <PostListItem
+                            id={post.id}
                             title={post.title}
                             date={post.date}
                             image={post.image_postitem}

@@ -4,22 +4,24 @@ import CommentsListItem from './CommentsListItem'
 import commentsData from './commentsData'
 
 
-const CommentsList = () => {
+const CommentsList = ({
+    CommentsArray
+}) => {
 
-        const lastCommentId = commentsData[commentsData.length-1].id
+        const lastCommentId = CommentsArray[CommentsArray.length-1].id
 
         return (
             <div>
-                {commentsData.map((post, id)=>(
+                {CommentsArray.map((comment, id)=>(
                         <div key={id}>
                             <CommentsListItem                            
-                                author={post.author}
-                                avatar={post.avatar}
-                                date={post.date}
-                                link={post.link}
-                                text={post.text}
-                                replies={post.replies}
-                                id={post.id}
+                                author={comment.author}
+                                avatar={comment.avatar}
+                                date={comment.date}
+                                link={comment.link}
+                                text={comment.text}
+                                replies={comment.replies}
+                                id={comment.id}
                                 lastCommentId={lastCommentId}
                             />
                         </div>
