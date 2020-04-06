@@ -17,7 +17,7 @@ class FixedNav extends Component {
       }
 
     handleScroll = () => {
-        if(window.pageYOffset > 200) {
+        if(window.pageYOffset > 300) {
             this.setState({
               showNavBar: true,
             });
