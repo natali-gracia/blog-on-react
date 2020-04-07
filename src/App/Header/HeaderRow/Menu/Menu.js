@@ -8,7 +8,7 @@ const Menu = ({
     changeBrowsingCategory
 }) => {
 	return (
-        <div>
+        <div className="menu-row">
             <ul className="menu">
                 <li><Link to="/">Home</Link></li>
                 <li>

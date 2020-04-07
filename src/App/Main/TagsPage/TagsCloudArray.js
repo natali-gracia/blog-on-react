@@ -11,11 +11,9 @@ const TagsCloudArray = ({
             <div>
                 <TagsCloud
                     changeBrowsingCategory={changeBrowsingCategory}
-                    tags = {[...new Set(
-                        [...postsData.map((post)=>post.tags).
-                            flat()
-                        ]
-                    )]}
+                    tags = {
+                        [...new Set([...postsData.map((post)=>post.tags).flat()])]
+                        }
                 />
             </div>
             )

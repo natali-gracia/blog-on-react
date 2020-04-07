@@ -2,6 +2,7 @@ import React from "react"
 
 import'./headerrow.css'
 
+import ResponseMenu from './ResponseMenu/ResponseMenu'
 import Logo from './Logo/Logo'
 import Menu from './Menu/Menu'
 
@@ -12,10 +13,15 @@ const HeaderRow = ({
 	return (
         <div className="header-row">
             <div className="wrap">
-                <div className="col-md-4">
+                <div className="resp-menu">
+                    <ResponseMenu
+                    changeBrowsingCategory={changeBrowsingCategory}
+                    />
+                </div>                
+                <div className="logo-inner">
                     <Logo/>
                 </div>
-                <div className="col-md-auto">
+                <div className="menu-inner">
                     <Menu
                     changeBrowsingCategory={changeBrowsingCategory}
                     />						

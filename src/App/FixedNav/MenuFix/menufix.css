@@ -1,3 +1,6 @@
+.items-fixedmenu {
+	padding-right: 25px;
+}
 .items-fixedmenu>li:first-child a {
 	color: #c5a076;
 }

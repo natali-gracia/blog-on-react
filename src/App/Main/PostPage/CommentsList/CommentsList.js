@@ -1,8 +1,6 @@
 import React from "react"
 
 import CommentsListItem from './CommentsListItem'
-import commentsData from './commentsData'
-
 
 const CommentsList = ({
     CommentsArray

@@ -9,10 +9,10 @@ const TopRow = () => {
 	return (
         <div className="top-row">
             <div className="wrap">
-                <div className="col-md-6">
+                <div className="top-left">
                     <SocialIcons/>
                 </div>
-                <div className="col-md-6">
+                <div className="top-right">
                     <Search/>						
                 </div>			
             </div>

@@ -6,11 +6,14 @@
     border-bottom: 1px solid #eee;
     box-shadow: 0 1px 7px rgba(0,0,0,0.2);
     position: fixed;
-    transition: all 2s linear;
+    margin-top: -60px;
+    transition: margin .2s ease-in;
 }
-.slidein-animation {
-    animation: 0.3s slidein;
+.is-nav-open {
+    margin-top: 0;
 }
-@keyframes slidein {
-    from {margin-top: -57px;} to {margin-top: 0%;}
+@media only screen and (max-width: 1520px) and (min-width: 0px) {
+	.fixednav {
+		display: none !important;
+    }
 }

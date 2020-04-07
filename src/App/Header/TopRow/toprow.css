@@ -1,3 +1,29 @@
 .top-row {
 	background: #f9f9f9;
 }
+.top-left {
+	float: left;
+    width: 50%;
+    margin-left: 20px;
+}
+.top-right {
+	float: right;
+    width: 45%;
+    margin-right: 20px;
+}
+@media only screen and (max-width: 1180px) and (min-width: 0px) {
+	.top-left {
+	    width: auto !important;
+	    margin-left: 3% !important;
+    }
+    .top-right {
+	    width: auto !important;
+	    margin-right: 3% !important;
+	}
+}
+@media screen and (max-width: 515px) and (min-width: 0px) {
+	.top-right {
+    	float: left !important;
+    	margin-left: 3% !important;
+	}
+}

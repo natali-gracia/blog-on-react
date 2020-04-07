@@ -1,5 +1,3 @@
-import React from "react"
-
 import commentsData from './../../App/Main/PostPage/CommentsList/commentsData'
 import postsData, {getPostsMap} from './../../App/Main/MainContent/postsData'
 

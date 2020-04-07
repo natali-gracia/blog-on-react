@@ -6,9 +6,10 @@ import LogoFix from './LogoFix/LogoFix'
 import MenuFix from './MenuFix/MenuFix'
 
 const NavBar = ({
-    changeBrowsingCategory
+    changeBrowsingCategory,
+    showNavBar,
 }) => (
-    <div className="fixednav slidein-animation">
+    <div className={showNavBar === false ? 'fixednav' : 'fixednav  is-nav-open'}>
         <div className="wrap">
             <div className="col-md-4">
                 <LogoFix />

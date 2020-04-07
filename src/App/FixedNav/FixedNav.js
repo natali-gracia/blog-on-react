@@ -37,9 +37,10 @@ class FixedNav extends Component {
 
     return (
           <div>
-              {
-                  this.state.showNavBar ? <NavBar changeBrowsingCategory={changeBrowsingCategory}/> : null
-              }
+              <NavBar
+              changeBrowsingCategory={changeBrowsingCategory}
+              showNavBar={this.state.showNavBar}
+              />
           </div>
     );
 }}
