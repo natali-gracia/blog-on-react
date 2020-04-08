@@ -32,14 +32,13 @@ class SliderFade extends Component {
           <Slider {...settings}>
             <Parallax strength={120}>
               <div className="slick-slide-one">
-                  <div className="col-md-10 slider-content">
-					            <div className="col-md-7 items-caption">
-                          <div className="item-date">{postItemData[10].date}</div>	
-                          <div className="item-subtitle">{postItemData[10].title}</div>
-                          <div className="item-btn-more">
-                              <button type="button"><Link to={`/post/${postItemData[10].title_link}`}>READ MORE</Link></button> 
-						              </div>					
-					            </div>
+                  <div className="slick-image"><img src={postItemData[10].image}/></div>
+                  <div className="slider-content">
+                      <div className="item-date">{postItemData[10].date}</div>	
+                      <div className="item-subtitle">{postItemData[10].title}</div>
+                      <div className="item-btn-more">
+                          <button type="button"><Link to={`/post/${postItemData[10].title_link}`}>READ MORE</Link></button> 
+                      </div>					
 				          </div>
               </div>
               <Background className="bg-image">
@@ -48,14 +47,13 @@ class SliderFade extends Component {
             </Parallax>
             <Parallax strength={120}>
               <div className="slick-slide-two">
-                  <div className="col-md-10 slider-content">
-					            <div className="col-md-7 items-caption">
-                          <div className="item-date">{postItemData[6].date}</div>	
-                          <div className="item-subtitle">{postItemData[6].title}</div>
-                          <div className="item-btn-more">
-                              <button type="button"><Link to={`/post/${postItemData[6].title_link}`}>READ MORE</Link></button> 
-						              </div>					
-					            </div>
+                  <div className="slick-image"><img src={postItemData[6].image}/></div>
+                  <div className="slider-content">
+                      <div className="item-date">{postItemData[6].date}</div>	
+                      <div className="item-subtitle">{postItemData[6].title}</div>
+                      <div className="item-btn-more">
+                          <button type="button"><Link to={`/post/${postItemData[6].title_link}`}>READ MORE</Link></button> 
+                      </div>					
 				          </div>
               </div>
               <Background className="bg-image">
@@ -64,19 +62,18 @@ class SliderFade extends Component {
             </Parallax>
             <Parallax strength={120}>
               <div className="slick-slide-three">
-                  <div className="col-md-10 slider-content">
-					            <div className="col-md-7 items-caption">
-                          <div className="item-date">{postItemData[5].date}</div>	
-                          <div className="item-subtitle">{postItemData[5].title}</div>
-                          <div className="item-btn-more">
-                              <button type="button"><Link to={`/post/${postItemData[5].title_link}`}>READ MORE</Link></button> 
-						              </div>					
-					            </div>
+                  <div className="slick-image"><img src={postItemData[5].image}/></div>
+                  <div className="slider-content">
+                      <div className="item-date">{postItemData[5].date}</div>	
+                      <div className="item-subtitle">{postItemData[5].title}</div>
+                      <div className="item-btn-more">
+                          <button type="button"><Link to={`/post/${postItemData[5].title_link}`}>READ MORE</Link></button> 
+                      </div>					
 				          </div>
               </div>
-              <Background className="bg-image">
-                <img src={postItemData[5].image} alt="fill murray"/>
-              </Background>
+                <Background className="bg-image">
+                  <img src={postItemData[5].image} alt="fill murray"/>
+                </Background>
             </Parallax>
           </Slider>
         </div>

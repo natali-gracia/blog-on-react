@@ -71,8 +71,16 @@
 .reply-row {
 	float: left;
 	width: 100%;
-	padding-top: 70px;
 	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: height .5s ease-in;
+}
+.is-reply-open {
+	height: 580px;
+}
+.top-line {
+	padding-top: 70px;
 }
 @media only screen and (max-width: 1520px) and (min-width: 0px) {
 	.right-part {

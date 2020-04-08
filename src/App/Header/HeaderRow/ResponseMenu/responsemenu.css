@@ -26,7 +26,8 @@
 .resp-menu-dropdown {
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height .5s cubic-bezier(0.3, 0.8, 0.36, 1); 
+	transition: max-height .5s ease-in; 
+	/* transition: max-height .5s cubic-bezier(0.3, 0.8, 0.36, 1);  */
 }
 .is-menu-open {
 	max-height: 745px;

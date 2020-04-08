@@ -50,8 +50,8 @@ class CommentsListItem extends Component {
                             </p>
                         </div>
                     </div>
-                    <div className={this.state.replyRow === false ? 'hidden' : ''}>
-                        <div className='reply-row'>                            
+                    <div className={this.state.replyRow === false ? 'reply-row' : 'reply-row is-reply-open'}>
+                        <div className="top-line">                          
                             <button className='cancel-reply-btn' onClick={this.showReplyRow}>Cancel reply</button>
                             <CommentForm/>
                         </div>
