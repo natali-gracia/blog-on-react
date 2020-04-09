@@ -4,6 +4,7 @@ import { Route } from "react-router-dom"
 import'./main.css'
 
 import MainContent from './MainContent/MainContent'
+import AboutPage from './AboutPage/AboutPage'
 import PostImage from './PostImage'
 import BreadCrumb from "./BreadCrumb"
 import PostPage from './PostPage/PostPage'
@@ -18,6 +19,11 @@ const Main = ({
 }) => {	
 	return (
         <main>
+			<Route path='/about/' render={()=>(
+				<PostImage
+					image='/images/postsimg/postsitemimg/about.jpg'
+				/>
+			)}/>
 			<Route path='/post/:postTitle' component={PostImage}/>
 			<Route path='/category/' render={()=>(
 				<BreadCrumb
@@ -30,6 +36,7 @@ const Main = ({
 					browsingItem = 'Tag'
 				/>)}/>
 			<div className="col-md-10">
+				<Route path='/about/' component={AboutPage}/>
 				<div className="wrap">
 					<div className="col-md-7">
 						<Route exact path='/' render={()=>(
@@ -59,9 +66,12 @@ const Main = ({
 							</div>)}/>
 					</div>
 					<div className="col-md-3">
-						<Sidebar
-						changeBrowsingCategory={changeBrowsingCategory}
-						/>	
+						<Route exact path='/' component={Sidebar}/>
+						<Route path={['/post/:postTitle', '/category/', '/tag/']} render={()=>(
+							<Sidebar
+								changeBrowsingCategory={changeBrowsingCategory}
+							/>	
+						)}/>
 					</div>					
 				</div>
 			</div>

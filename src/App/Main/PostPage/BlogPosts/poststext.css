@@ -19,6 +19,12 @@
 	font-family: 'Lora', sans-serif;
     font-style: italic;
 }
+.post-text h1 {
+	margin-bottom: 25px;
+	font-size: 34px;
+	font-family: 'Lora', sans-serif;
+    font-style: italic;
+}
 .main-letter {
 	float: left;
 	color: #333;

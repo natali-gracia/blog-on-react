@@ -1,7 +1,5 @@
 import React from "react"
 
-import './categorypage.css'
-
 import PostsListWithBtn from './../MainContent/PostsListWithBtn'
 import PostsListCategories from './PostsListCategories'
 
@@ -11,7 +9,7 @@ const CategoryPage = ({
 	changeBrowsingCategory
 }) => {
 	return (
-		<div className="category-pagerow">
+		<div style={{marginTop: 40}}>
 			<PostsListWithBtn
 			categoryInBreadcrumb={categoryInBreadcrumb}
 			PostsListRelevant={PostsListCategories}

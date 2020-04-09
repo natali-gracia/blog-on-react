@@ -116,7 +116,7 @@ class ResponseMenu extends Component {
                                 }}>
                                     Lifestyle
                         </Link>
-                        <Link to="/" onClick={this.showRespMenu}>About me</Link>
+                        <Link to="/about/" onClick={this.showRespMenu}>About me</Link>
                     </div>
                 </div>
             </div>

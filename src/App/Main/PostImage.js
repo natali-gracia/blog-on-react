@@ -6,12 +6,12 @@ import postsData from './MainContent/postsData'
 
 const PostImage = ({
     match,
+    image = postsData.filter(post => post.title_link === match.params.postTitle)[0].image,
 }) => {
-    const linkTitle = postsData.filter(post => post.title_link === match.params.postTitle)
 
     return (
         <div className="col-md-12">
-            <img src={linkTitle[0].image} alt=""/>            
+            <img src={image} alt=""/>            
         </div>
     )
 }

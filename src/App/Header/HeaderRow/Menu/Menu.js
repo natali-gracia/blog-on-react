@@ -35,7 +35,7 @@ const Menu = ({
                 <li>
                     <Link to="/category/lifestyle" onClick={() => changeBrowsingCategory('lifestyle')}>Lifestyle</Link>
                 </li>				
-                <li><Link to="/">About me</Link></li>
+                <li><Link to="/about/">About me</Link></li>
 			</ul>		
         </div>
 	)
