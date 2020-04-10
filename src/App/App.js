@@ -29,7 +29,7 @@ class App extends Component {
         />
         <Header
           changeBrowsingCategory={this.changeBrowsingCategory}
-        />							
+        />		
         <Route exact path='/'><SliderFadeParallax/></Route>
         <Main
           categoryInBreadcrumb={this.state.categoryInBreadcrumb}

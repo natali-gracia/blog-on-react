@@ -16,7 +16,7 @@ const TopPostItem = ({
 }) => {
 
 	return (
-        <div className="wrap">           
+        <div>           
             <div className="top-blogitem">
                 <div className="blog-category">
                         {сategories.map((category,i,arr)=>( 

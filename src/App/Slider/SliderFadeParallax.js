@@ -11,7 +11,7 @@ import './sliderparallax.css'
 import postsData, {getPostsMap} from './../Main/MainContent/postsData'
 
 
-class SliderFade extends Component {
+class SliderFadeParallax extends Component {
     render() {
       const settings = {
         dots: true,
@@ -81,4 +81,4 @@ class SliderFade extends Component {
     }
   }
 
-export default SliderFade
+export default SliderFadeParallax
