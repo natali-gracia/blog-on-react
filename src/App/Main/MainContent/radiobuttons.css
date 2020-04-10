@@ -1,7 +1,8 @@
 .btn-posts-nav {
-    width: 49.5%;
-    background: #f6f6f6;
+    width: 49.1%;
+    background-color: #f6f6f6;
     color: #000;
+    margin: 0 0.9% 10px 0;
 }
 .btn-posts-nav label {
     display: block;
@@ -10,6 +11,7 @@
     text-align: center;
     text-transform: uppercase;
     font: inherit;
+    font-family: "Open Sans";
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -21,12 +23,16 @@
 .btn-posts-nav p {
     line-height: 50px;
 }
-
 .btn-posts-nav input {
     display: none;
 }
-
 .checked, .btn-posts-nav label:hover {
 	background: #222;
     color: #fff;
+}
+@media screen and (max-width: 620px) and (min-width: 0px) {
+    .btn-posts-nav {
+        width: 100%;
+        margin-right: 0;
+    }
 }

@@ -59,3 +59,8 @@
 	border: none;
 	outline: none;
 }
+@media only screen and (max-width: 1520px) and (min-width: 0px) {
+	.widget-search, .widget-search input {
+		width: 100% !important;
+	}
+}

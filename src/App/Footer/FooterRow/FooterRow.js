@@ -6,8 +6,8 @@ const FooterRow = () => {
 	return (
         <div className="wrap footer-row">
             <div className="col-md-10 lower-footer">
-                <div className="col-md-5 left-footer-content">© 2020 copyright // All rights reserved</div>
-				<div className="col-md-5 right-footer-content">Created by 
+                <div className="col-md-6 left-footer-content">© 2020 copyright // All rights reserved</div>
+				<div className="col-md-6 right-footer-content">Created by 
 					<strong>
 						<a href="/"> NataliaSmalii</a>
 					</strong>

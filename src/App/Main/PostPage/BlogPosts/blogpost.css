@@ -32,12 +32,4 @@
     	width: auto !important;
 	}
 }
-@media screen and (max-width: 620px) and (min-width: 0px) {
-	.related-post-item {
-		width: 100% !important;
-    	margin-bottom: 30px;
-	}
-	.related-post-item:last-child {
-    	margin-bottom: 0 !important;
-	}	    
-}
+

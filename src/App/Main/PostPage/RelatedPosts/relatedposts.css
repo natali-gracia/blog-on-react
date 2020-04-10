@@ -39,3 +39,12 @@
 		max-width: initial !important;
 	}	    
 }
+@media screen and (max-width: 620px) and (min-width: 0px) {
+	.related-items {
+		width: 100% !important;
+    	margin-bottom: 30px;
+	}
+	.last-item {
+    	margin-bottom: 0 !important;
+	}	    
+}

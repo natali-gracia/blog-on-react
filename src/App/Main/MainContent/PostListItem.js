@@ -32,7 +32,7 @@ const PostListItem = ({
                             <img src={image} alt=""/>
                         </Link>	
                     </div>
-                    <div className="blog-category">
+                    <div className="blogpost-category">
                         {сategories.map((category,i,arr)=>(
                             <span key={i}>
                             <Link to={`/category/${category}`} onClick={() => changeBrowsingCategory(category)}>
@@ -48,8 +48,9 @@ const PostListItem = ({
                     <h2 className="title">
                         <Link to={`/post/${title_link}`}>{title}</Link>
                     </h2>
-                    <div className="post-meta">
-                        <span className="post-meta-time">{date}</span>
+                    <div className="blogpost-meta">
+                        <span>{date}</span>
+                        <em>•</em>
                         <span>{CommentsArray.length !== 0 ?
                                 <CommentsListLength
                                     id={id}

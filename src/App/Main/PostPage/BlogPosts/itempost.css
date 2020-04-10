@@ -169,13 +169,13 @@ h1 {
 	}	    
 }
 @media screen and (max-width: 515px) and (min-width: 0px) {
-	.post-meta {
+	.postitem-meta {
 		margin-left: 0;
 	    width: 100%;
-	    min-height: 120px;
+	    min-height: 75px;
 	    background: none;
 	}
-	.post-meta a {
+	.postitem-meta span, .postitem-meta button {
 	    width: 100%;
 	    float: left;
 	    padding: 3px 0px;

@@ -12,11 +12,13 @@ const FooterTop = () => {
             <div className="instagram-line">
                 <InstaLine/>
             </div>
-            <div className="footer-widget">
-                <h3>Subscribe to our Newsletter</h3>
-                <FooterSubscr/>
-                <div className="footer-social">
-                <FooterSocialIcons/>
+            <div className="footer-inside">
+                <div className="footer-widget">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <FooterSubscr/>
+                    <div className="footer-social">
+                    <FooterSocialIcons/>
+                    </div>
                 </div>
             </div>			
 	    </div>						

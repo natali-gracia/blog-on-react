@@ -1,7 +1,5 @@
 import React from 'react'
 
-import'./main.css'
-
 import postsData from './MainContent/postsData'
 
 const PostImage = ({
