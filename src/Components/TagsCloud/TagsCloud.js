@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 
 const TagsCloud = ({
     tags,
-    changeBrowsingCategory
+    changeBrowsingCategory,
 }) => {
         return (
             <div className="tags-cloud">

@@ -5,7 +5,7 @@ import TagsCloud from "./../../../Components/TagsCloud/TagsCloud"
 
 
 const TagsCloudArray = ({
-    changeBrowsingCategory
+    changeBrowsingCategory,
 }) => {
         return (
             <div>

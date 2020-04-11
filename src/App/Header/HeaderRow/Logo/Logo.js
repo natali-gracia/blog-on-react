@@ -5,10 +5,12 @@ import {Link} from "react-router-dom"
 
 import logo from "./logo-white.png"
 
-const Logo = () => {
+const Logo = ({
+    showRespMenu,
+}) => {
 	return (
         <div className="logo">
-            <Link to="/">
+            <Link to="/" onClick={()=>showRespMenu()}>
                 <img src={logo} alt="logo"/>
             </Link>
         </div>

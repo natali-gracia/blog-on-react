@@ -3,7 +3,7 @@ import React,{Component} from "react"
 import'./maincontent.css'
 
 import PostsListWithBtn from './PostsListWithBtn'
-import  PostsListPopular from './PostsListPopular'
+import PostsListPopular from './PostsListPopular'
 import RadioButtons from './RadioButtons'
 
 
@@ -23,6 +23,9 @@ class MainContent extends Component {
         
         const {
             changeBrowsingCategory,
+            favoritesButtonState,
+            addFavorites,
+            removeFavorites,
         } = this.props
         
         return (
@@ -37,10 +40,16 @@ class MainContent extends Component {
                     {this.state.postsFilter==='Recent posts' ?
                         <PostsListWithBtn
                         changeBrowsingCategory={changeBrowsingCategory}
+                        favoritesButtonState={favoritesButtonState}
+                        addFavorites={addFavorites}
+                        removeFavorites={removeFavorites}
                         /> : 
                         <PostsListWithBtn
                         PostsListRelevant={PostsListPopular}
                         changeBrowsingCategory={changeBrowsingCategory}
+                        favoritesButtonState={favoritesButtonState}
+                        addFavorites={addFavorites}
+                        removeFavorites={removeFavorites}
                         /> 
                     }                                    
                 </div>

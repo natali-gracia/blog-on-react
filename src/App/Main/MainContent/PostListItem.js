@@ -20,6 +20,9 @@ const PostListItem = ({
     сategories,
     changeBrowsingCategory,
     postItemData = getPostsMap(postsData),
+    inFavorites = false,
+    addFavorites,
+    removeFavorites,
 }) => { 
 
         const CommentsArray = commentsData.filter((comment) => comment.link_relative === postItemData[id].title_link)
@@ -44,6 +47,15 @@ const PostListItem = ({
                             </span>
                             ))
                         }
+                    </div>
+                    <div className="btn-favorites">
+                        <button onClick={
+                                ()=>inFavorites[id] ? removeFavorites(id) : addFavorites(id)
+                            } title={
+                                inFavorites[id] ? 'Remove from Favorites' : 'Add to Favorites'
+                            }>
+                        {inFavorites[id] ? <span>&#9829;</span> : <span>&#9825;</span>}
+                        </button>
                     </div>
                     <h2 className="title">
                         <Link to={`/post/${title_link}`}>{title}</Link>

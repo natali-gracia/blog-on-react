@@ -1,127 +1,78 @@
-import React, {Component} from "react"
+import React from "react"
 
 import'./responsemenu.css'
 
 import {Link} from "react-router-dom"
 
-class ResponseMenu extends Component {
-    
-    state = {
-        respMenu: false,
-        }
-
-    showRespMenu = () => {
-        this.setState((prevState)=>{
-            return{
-                respMenu: !prevState.respMenu
-            }
-        })
-    }
-
-    render() {
-
-        const {
-            changeBrowsingCategory,
-        } = this.props
-
-	    return (
+const ResponseMenu = ({ 
+    changeBrowsingCategory,
+    favoritesButtonState,
+    respMenu,
+    showRespMenu,
+}) => {
+	
+        return (
             <div>
                 <div className="resp-menu-btn">
-                    <button className="menu-icon" onClick={this.showRespMenu}></button>
+                    <button className="menu-icon" onClick={()=>showRespMenu()}></button>
                 </div>
-                <div className={this.state.respMenu === false ? 'resp-menu-dropdown' : 'resp-menu-dropdown  is-menu-open'}>
+                <div className={respMenu === false ? 'resp-menu-dropdown' : 'resp-menu-dropdown  is-menu-open'}>
                     <div>
-                        <Link to="/" onClick={this.showRespMenu}>Home</Link>
-                        <Link to="/category/beauty" 
-                            onClick={() => {
-                                changeBrowsingCategory('beauty'); 
-                                this.showRespMenu()
-                                }}>
-                                    Beauty
+                        <Link to="/" onClick={()=>showRespMenu()}>Home</Link>
+                        <Link to="/category/beauty" onClick={() => {changeBrowsingCategory('beauty'); showRespMenu()}}>
+                            Beauty
                         </Link>
-                        <Link to="/category/fashion" 
-                            onClick={() => {
-                                changeBrowsingCategory('fashion');
-                                this.showRespMenu()
-                                }}>
-                                    Fashion
+                        <Link to="/category/fashion" onClick={() => {changeBrowsingCategory('fashion'); showRespMenu()}}>
+                            Fashion
                         </Link>
                             <Link to="/category/fashion" className="item-child" 
-                                onClick={() => {
-                                    changeBrowsingCategory('fashion');
-                                    this.showRespMenu()
-                                    }}>
-                                        News
+                                onClick={() => {changeBrowsingCategory('fashion'); showRespMenu()}}>
+                                    News
                             </Link>
                             <Link to="/category/fashion" className="item-child" 
-                                onClick={() => {
-                                    changeBrowsingCategory('fashion');
-                                    this.showRespMenu()
-                                    }}>
-                                        Trends
+                                onClick={() => {changeBrowsingCategory('fashion'); showRespMenu()}}>
+                                    Trends
                             </Link>
                             <Link to="/category/fashion" className="item-child" 
-                                onClick={() => {
-                                    changeBrowsingCategory('fashion');
-                                    this.showRespMenu()
-                                    }}>
-                                        Collections
+                                onClick={() => {changeBrowsingCategory('fashion'); showRespMenu()}}>
+                                    Collections
                             </Link>
                             <Link to="/category/fashion" className="item-child" 
-                                onClick={() => {
-                                    changeBrowsingCategory('fashion');
-                                    this.showRespMenu()
-                                    }}>
-                                        Everyday fashion
+                                onClick={() => {changeBrowsingCategory('fashion'); showRespMenu()}}>
+                                    Everyday fashion
                             </Link>
-                        <Link to="/category/travels" 
-                            onClick={() => {
-                                changeBrowsingCategory('travels');
-                                this.showRespMenu()
-                                }}>
-                                    Travels
+                        <Link to="/category/travels" onClick={() => {changeBrowsingCategory('travels'); showRespMenu()}}>
+                            Travels
                         </Link>
                             <Link to="/category/travels" className="item-child" 
-                                onClick={() => {
-                                    changeBrowsingCategory('travels');
-                                    this.showRespMenu()
-                                    }}>
-                                        Countries
+                                onClick={() => {changeBrowsingCategory('travels'); showRespMenu()}}>
+                                    Countries
                             </Link>
                             <Link to="/category/travels" className="item-child" 
-                                onClick={() => {
-                                    changeBrowsingCategory('travels');
-                                    this.showRespMenu()
-                                    }}>
-                                        Active travels
+                                onClick={() => {changeBrowsingCategory('travels'); showRespMenu()}}>
+                                    Active travels
                             </Link>
                             <Link to="/category/travels" className="item-child" 
-                                onClick={() => {
-                                    changeBrowsingCategory('travels');
-                                    this.showRespMenu()
-                                    }}>
-                                        My tops
+                                onClick={() => {changeBrowsingCategory('travels'); showRespMenu()}}>
+                                    My tops
                             </Link>
                             <Link to="/category/travels" className="item-child" 
-                                onClick={() => {
-                                    changeBrowsingCategory('travels');
-                                    this.showRespMenu()
-                                    }}>
-                                        Lifehacks
+                                onClick={() => {changeBrowsingCategory('travels'); showRespMenu()}}>
+                                    Lifehacks
                             </Link>
                         <Link to="/category/lifestyle" 
-                            onClick={() => {
-                                changeBrowsingCategory('lifestyle');
-                                this.showRespMenu()
-                                }}>
-                                    Lifestyle
+                            onClick={() => {changeBrowsingCategory('lifestyle'); showRespMenu()}}>
+                                Lifestyle
                         </Link>
-                        <Link to="/about/" onClick={this.showRespMenu}>About me</Link>
+                        <Link to="/about/" onClick={()=>showRespMenu()}>About me</Link>
+                        <Link to="/favorites/" onClick={() => {changeBrowsingCategory('favorites'); showRespMenu()}}>
+                            Favorites
+                            ({(Object.keys(favoritesButtonState).filter((postId) => favoritesButtonState[postId] === true)).length})
+                        </Link>
                     </div>
                 </div>
-            </div>
-        )
-    }
+            </div>   
+    )
 }
 
 export default ResponseMenu

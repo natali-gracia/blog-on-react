@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 
 import'./headerrow.css'
 
@@ -6,29 +6,53 @@ import ResponseMenu from './ResponseMenu/ResponseMenu'
 import Logo from './Logo/Logo'
 import Menu from './Menu/Menu'
 
-const HeaderRow = ({
-    changeBrowsingCategory
-}) => {
-	
-	return (
+class HeaderRow extends Component {
+    
+    state = {
+        respMenu: false,
+        }
+
+    showRespMenu = () => {
+        this.setState((prevState)=>{
+            return{
+                respMenu: !prevState.respMenu
+            }
+        })
+    }
+
+    render() {
+
+    const {
+        changeBrowsingCategory,
+        favoritesButtonState
+    } = this.props
+
+    return (
         <div className="header-row">
             <div className="wrap">
                 <div className="resp-menu">
                     <ResponseMenu
-                    changeBrowsingCategory={changeBrowsingCategory}
+                        respMenu={this.state.respMenu}
+                        showRespMenu={this.showRespMenu}
+                        changeBrowsingCategory={changeBrowsingCategory}
+                        favoritesButtonState={favoritesButtonState}
                     />
                 </div>                
                 <div className="logo-inner">
-                    <Logo/>
+                    <Logo
+                        showRespMenu={this.showRespMenu}
+                    />
                 </div>
                 <div className="menu-inner">
                     <Menu
-                    changeBrowsingCategory={changeBrowsingCategory}
+                        changeBrowsingCategory={changeBrowsingCategory}
+                        favoritesButtonState={favoritesButtonState}
                     />						
                 </div>			
             </div>
 	    </div>						
-	)
+        )
+    }
 }
 
 export default HeaderRow

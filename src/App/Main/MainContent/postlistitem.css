@@ -32,6 +32,10 @@
 	text-decoration: underline;
 	color: #cdb280;
 }
+.btn-favorites {
+	text-align: center;
+	padding-bottom: 5px;
+}
 .title {
     text-align: center;
     font-weight: 500;

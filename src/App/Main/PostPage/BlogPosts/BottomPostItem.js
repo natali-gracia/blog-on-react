@@ -8,6 +8,10 @@ import TagsCloud from "../../../../Components/TagsCloud/TagsCloud"
 const BottomPostItem = ({
     changeBrowsingCategory,
     tags,
+    inFavorites = false,
+    id,
+    addFavorites,
+    removeFavorites,  
 }) => {
 	return (
         <div className="wrap">
@@ -25,6 +29,15 @@ const BottomPostItem = ({
                         <a href="/" title="YouTube" className="youtube-icon-grey"></a>
                         <a href="/" title="Instagram" className="insta-icon-grey"></a>
                         <a href="/" title="Pinterest" className="pint-icon-grey"></a>			
+                    </div>
+                    <div className="btn-favorites">
+                        <button onClick={
+                                ()=>inFavorites[id] ? removeFavorites(id) : addFavorites(id)
+                            } title={
+                                inFavorites[id] ? 'Remove from Favorites' : 'Add to Favorites'
+                            }>
+                        {inFavorites[id] ? <span>&#9829;</span> : <span>&#9825;</span>}
+                        </button>
                     </div>
                 </div>
             </div>

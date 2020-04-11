@@ -30,7 +30,7 @@
 	/* transition: max-height .5s cubic-bezier(0.3, 0.8, 0.36, 1);  */
 }
 .is-menu-open {
-	max-height: 745px;
+	max-height: 800px;
 }
 .resp-menu-dropdown a {
     background: #fff;

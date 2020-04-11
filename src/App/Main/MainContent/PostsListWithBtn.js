@@ -24,7 +24,10 @@ class PostsListWithBtn extends Component {
             PostsListRelevant = PostsList,
             categoryInBreadcrumb,
             changeBrowsingCategory,
-            categoryArray = postsData.filter(post => post.categories === categoryInBreadcrumb),
+            relevantArray = postsData,
+            favoritesButtonState,
+            addFavorites,
+            removeFavorites,
         } = this.props
 
         return (
@@ -34,9 +37,12 @@ class PostsListWithBtn extends Component {
                     sliceValue = {this.state.sliceValue}
                     categoryInBreadcrumb = {categoryInBreadcrumb}
                     changeBrowsingCategory={changeBrowsingCategory}
+                    favoritesButtonState={favoritesButtonState}
+                    addFavorites={addFavorites}
+                    removeFavorites={removeFavorites}
                     />    												
                 </div>
-                <div className={this.state.sliceValue>=categoryArray.length || this.state.sliceValue>=postsData.length ? 'hidden' : ''}>
+                <div className={this.state.sliceValue>=relevantArray.length ? 'hidden' : ''}>
                     <button className="more-posts" onClick={this.sliceChange}>Load more posts</button>
                 </div>                                       
             </div>           				

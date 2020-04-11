@@ -118,9 +118,9 @@ h1 {
     margin-right: 1px;
     float: left;
 }
-.toolbox-social-icons a:last-child {
+/* .toolbox-social-icons a:last-child {
 	width: 21px;
-}
+} */
 .toolbox-social-icons a:after {
 	background-repeat: no-repeat;
 	background-size: 100%;

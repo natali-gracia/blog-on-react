@@ -6,7 +6,10 @@ import BlogPost from './BlogPosts/BlogPost'
 
 const PostPage = ({
 	match,
-	changeBrowsingCategory
+	changeBrowsingCategory,
+	favoritesButtonState,
+	addFavorites,
+	removeFavorites,
 }) => {
 
 	const linkTitle = postsData.filter(post => post.title_link === match.params.postTitle)
@@ -17,6 +20,9 @@ const PostPage = ({
 			<BlogPost
 				id={linkTitle[0].id}
 				changeBrowsingCategory={changeBrowsingCategory}
+				favoritesButtonState={favoritesButtonState}
+				addFavorites={addFavorites}
+				removeFavorites={removeFavorites}
 			/>
 		</div>							
 	)

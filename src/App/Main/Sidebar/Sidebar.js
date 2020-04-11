@@ -43,7 +43,7 @@ const Sidebar = ({
                 <h3>Tags</h3>
                 <div className='row'>
                     <TagsCloudArray
-                        changeBrowsingCategory={changeBrowsingCategory}
+                    changeBrowsingCategory={changeBrowsingCategory}
                     />
                 </div>  
             </div>          

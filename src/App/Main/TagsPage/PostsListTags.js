@@ -5,7 +5,10 @@ import postsData from './../MainContent/postsData'
 const PostsListTags = ({
     sliceValue,
     categoryInBreadcrumb,
-    changeBrowsingCategory
+    changeBrowsingCategory,
+    favoritesButtonState,
+    addFavorites,
+    removeFavorites,
 }) => {
         return (
             <div className="flex-wrap">
@@ -22,6 +25,9 @@ const PostsListTags = ({
                                 excerpt={post.excerpt}
                                 сategories={post.сategories}
                                 changeBrowsingCategory={changeBrowsingCategory}
+                                inFavorites={favoritesButtonState}
+                                addFavorites={addFavorites}
+                                removeFavorites={removeFavorites}
                             />
                         </div>
                     ))

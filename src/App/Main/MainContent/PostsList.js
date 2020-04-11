@@ -6,8 +6,10 @@ import postsData from './postsData'
 const PostsList = ({
     sliceValue,
     changeBrowsingCategory,
-}) => {
-
+    favoritesButtonState,
+    addFavorites,
+    removeFavorites,
+}) => { 
         return (
             <div className="flex-wrap">
                 {postsData.sort((a,b)=> b.id - a.id).slice(0,sliceValue).map((post)=>(
@@ -21,6 +23,9 @@ const PostsList = ({
                             сategories={post.сategories}
                             changeBrowsingCategory={changeBrowsingCategory}
                             key={post.id}
+                            inFavorites={favoritesButtonState}
+                            addFavorites={addFavorites}
+                            removeFavorites={removeFavorites}
                         />
                     ))
                 }

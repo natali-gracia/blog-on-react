@@ -5,16 +5,20 @@ import'./menu.css'
 import {Link} from "react-router-dom"
 
 const Menu = ({
-    changeBrowsingCategory
+    changeBrowsingCategory,
+    favoritesButtonState,
+    menuRow = "menu-row",
+    menuClass = "menu",
+    dropdownClass = "dropdown-item",
 }) => {
 	return (
-        <div className="menu-row">
-            <ul className="menu">
+        <div className={menuRow}>
+            <ul className={menuClass}>
                 <li><Link to="/">Home</Link></li>
                 <li>
                     <Link to="/category/beauty" onClick={() => changeBrowsingCategory('beauty')}>Beauty</Link>
                 </li>
-                <li className="dropdown-item">
+                <li className={dropdownClass}>
                     <Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>Fashion</Link>
                     <ul className="dropdown-menu">
                         <li><Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>News</Link></li>
@@ -23,7 +27,7 @@ const Menu = ({
                         <li><Link to="/category/fashion" onClick={() => changeBrowsingCategory('fashion')}>Everyday fashion</Link></li>
                     </ul>
                 </li>
-                <li className="dropdown-item">
+                <li className={dropdownClass}>
                     <Link to="/category/travels" onClick={() => changeBrowsingCategory('travels')}>Travels </Link>
                     <ul className="dropdown-menu">
                         <li><Link to="/category/travels" onClick={() => changeBrowsingCategory('travels')}>Countries</Link></li>
@@ -36,6 +40,12 @@ const Menu = ({
                     <Link to="/category/lifestyle" onClick={() => changeBrowsingCategory('lifestyle')}>Lifestyle</Link>
                 </li>				
                 <li><Link to="/about/">About me</Link></li>
+                <li>
+                    <Link to="/favorites/" onClick={() => changeBrowsingCategory('favorites')}>
+                        Favorites
+                        ({(Object.keys(favoritesButtonState).filter((postId) => favoritesButtonState[postId] === true)).length})
+                    </Link>
+                </li>
 			</ul>		
         </div>
 	)

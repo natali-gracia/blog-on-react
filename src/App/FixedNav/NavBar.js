@@ -3,10 +3,11 @@ import React from "react"
 import'./fixednav.css'
 
 import LogoFix from './LogoFix/LogoFix'
-import MenuFix from './MenuFix/MenuFix'
+import Menu from './../Header/HeaderRow/Menu/Menu'
 
 const NavBar = ({
     changeBrowsingCategory,
+    favoritesButtonState,
     showNavBar,
 }) => (
     <div className={showNavBar === false ? 'fixednav' : 'fixednav  is-nav-open'}>
@@ -15,7 +16,13 @@ const NavBar = ({
                 <LogoFix />
             </div>
             <div className="col-md-auto">
-                <MenuFix changeBrowsingCategory={changeBrowsingCategory} />
+                <Menu 
+                    changeBrowsingCategory={changeBrowsingCategory}
+                    favoritesButtonState={favoritesButtonState}
+                    menuClass={"menu items-fixedmenu"}
+                    dropdownClass={"dropdown-item dropdown-fixedmenu"}
+                    menuRow={''}
+                />
             </div>
         </div>
     </div>
