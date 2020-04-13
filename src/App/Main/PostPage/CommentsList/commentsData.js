@@ -4,7 +4,7 @@ const commentsData = [
         link_relative: 'enjoy-the-winter-time-in-the-city',
         author:'Anariel',
         avatar:'/images/unknown-avatar.png',
-        date:'December 3, 2019 at 6:23 pm',
+        date:'June 12, 2020 at 6:23 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: []
     },
@@ -13,21 +13,21 @@ const commentsData = [
         link_relative: 'enjoy-the-winter-time-in-the-city',
         author:'Lisbet',
         avatar:'/images/unknown-avatar.png',
-        date:'December 21, 2019 at 2:40 pm',
+        date:'June 13, 2020 at 2:40 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [
             {
                 id:3,
                 author:'Boris',
                 avatar:'/images/unknown-avatar.png',
-                date:'December 22, 2019 at 3:10 pm',
+                date:'June 15, 2020 at 3:10 pm',
                 text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
                 replies: [
                     {
                         id:4,
                         author:'Anariel',
                         avatar:'/images/unknown-avatar.png',
-                        date:'December 28, 2019 at 1:08 pm',
+                        date:'June 21, 2020 at 1:08 pm',
                         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
                         replies: []
                     }
@@ -40,7 +40,7 @@ const commentsData = [
         link_relative: 'enjoy-the-winter-time-in-the-city',
         author:'Anariel',
         avatar:'/images/unknown-avatar.png',
-        date:'January 15, 2020 at 1:10 pm',
+        date:'June 14, 2020 at 1:10 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: []
     },
@@ -49,14 +49,14 @@ const commentsData = [
         link_relative: 'beautiful-christmas-decoration',
         author:'Alise',
         avatar:'/images/unknown-avatar.png',
-        date:'February 8, 2020 at 9:54 pm',
+        date:'May 18, 2020 at 9:54 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [
             {
                 id:7,
                 author:'Anariel',
                 avatar:'/images/unknown-avatar.png',
-                date:'December 28, 2019 at 1:08 pm',
+                date:'May 19, 2020 at 1:08 pm',
                 text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
                 replies: []
             }
@@ -67,7 +67,7 @@ const commentsData = [
         link_relative: 'beautiful-christmas-decoration',
         author:'John',
         avatar:'/images/unknown-avatar.png',
-        date:'February 14, 2020 at 01:10 pm',
+        date:'May 23, 2020 at 01:10 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [],
     },
@@ -76,7 +76,7 @@ const commentsData = [
         link_relative: 'fashion-tips-for-autumn-days',
         author:'Mark',
         avatar:'/images/unknown-avatar.png',
-        date:'November 24, 2019 at 9:54 pm',
+        date:'April 24, 2020 at 9:54 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: []
     },
@@ -85,7 +85,7 @@ const commentsData = [
         link_relative: 'fashion-tips-for-autumn-days',
         author:'Antony',
         avatar:'/images/unknown-avatar.png',
-        date:'November 25, 2019 at 01:45 pm',
+        date:'April 25, 2020 at 01:45 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [],
     },

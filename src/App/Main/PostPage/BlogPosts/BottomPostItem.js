@@ -30,13 +30,14 @@ const BottomPostItem = ({
                         <a href="/" title="Instagram" className="insta-icon-grey"></a>
                         <a href="/" title="Pinterest" className="pint-icon-grey"></a>			
                     </div>
-                    <div className="btn-favorites">
+                    <div className="favorites-btn">
                         <button onClick={
                                 ()=>inFavorites[id] ? removeFavorites(id) : addFavorites(id)
                             } title={
                                 inFavorites[id] ? 'Remove from Favorites' : 'Add to Favorites'
                             }>
-                        {inFavorites[id] ? <span>&#9829;</span> : <span>&#9825;</span>}
+                            {inFavorites[id] ? <span className="isLiked"></span> : <span className="noLiked"></span>}
+                                Favorites                
                         </button>
                     </div>
                 </div>

@@ -26,6 +26,7 @@ class MainContent extends Component {
             favoritesButtonState,
             addFavorites,
             removeFavorites,
+            match
         } = this.props
         
         return (
@@ -39,12 +40,14 @@ class MainContent extends Component {
                 <div>
                     {this.state.postsFilter==='Recent posts' ?
                         <PostsListWithBtn
+                        match={match}
                         changeBrowsingCategory={changeBrowsingCategory}
                         favoritesButtonState={favoritesButtonState}
                         addFavorites={addFavorites}
                         removeFavorites={removeFavorites}
                         /> : 
                         <PostsListWithBtn
+                        match={match}
                         PostsListRelevant={PostsListPopular}
                         changeBrowsingCategory={changeBrowsingCategory}
                         favoritesButtonState={favoritesButtonState}

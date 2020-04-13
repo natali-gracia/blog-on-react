@@ -18,7 +18,7 @@
 }
 .menu>li:last-child a {
 	padding-right: 0;
-	color: #c5a076;
+	color: #cdb280;
 }
 .menu a {
 	text-decoration: none;
@@ -33,7 +33,7 @@
     letter-spacing: 1.5px;
 }
 .menu>li:hover>a {
-	color: #c5a076;
+	color: #cdb280;
 }
 .dropdown-menu {
 	display: none;
@@ -65,7 +65,7 @@
 }
 .dropdown-menu li:hover a {
 	background-color: #f8f8f8;
-	color: #c5a076;
+	color: #cdb280;
 }
 .dropdown-item:after {
 	background-image: url("/images/arrow-down-white.png");
@@ -99,6 +99,20 @@
 	background-image: url("/images/arrow-down.png");
 	top: 24px;
 	display: block;
+}
+.fav-count {
+	display: inline-block;
+	border-radius: 90px;
+	border: 1px solid #cdb280;
+	font-size: 13px;
+	font-family: 'Fira Sans' !important;
+	color: #cdb280;
+	text-align: center;
+    max-height: 20px;
+	line-height: 17px;
+	letter-spacing: 1px;
+	padding: 0 5px 0 6px;
+	margin-left: 5px;
 }
 @media only screen and (max-width: 1180px) and (min-width: 0px) {
 	.menu-row {

@@ -43,7 +43,9 @@ const Menu = ({
                 <li>
                     <Link to="/favorites/" onClick={() => changeBrowsingCategory('favorites')}>
                         Favorites
-                        ({(Object.keys(favoritesButtonState).filter((postId) => favoritesButtonState[postId] === true)).length})
+                        <span className="fav-count">
+                            {(Object.keys(favoritesButtonState).filter((postId) => favoritesButtonState[postId] === true)).length}
+                        </span>
                     </Link>
                 </li>
 			</ul>		

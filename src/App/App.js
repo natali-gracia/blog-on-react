@@ -15,6 +15,7 @@ class App extends Component {
 	state = {
     categoryInBreadcrumb: 'travels',
     favoritesButtonState: {
+      10:true,
 		}
 	}
 	

@@ -46,8 +46,9 @@ const Main = ({
 					<Route path='/about/' component={AboutPage}/>
 					<div className="wrap">
 						<div className="col-md-7">
-							<Route exact path='/' render={()=>(
+							<Route exact path='/' render={({match})=>(
 								<MainContent
+								match={match}
 								changeBrowsingCategory={changeBrowsingCategory}
 								favoritesButtonState={favoritesButtonState}
 								addFavorites={addFavorites}
@@ -61,9 +62,10 @@ const Main = ({
 									addFavorites={addFavorites}
 									removeFavorites={removeFavorites}
 								/>)}/>
-							<Route path='/category/' render={()=>(
+							<Route path='/category/:postCategory' render={({match})=>(
 								<div className="category-pagerow">
 									<PostsListWithBtn
+									match={match}
 									PostsListRelevant={PostsListCategories}
 									categoryInBreadcrumb={categoryInBreadcrumb}
 									changeBrowsingCategory={changeBrowsingCategory}
@@ -75,9 +77,10 @@ const Main = ({
 										category === categoryInBreadcrumb)[0] === categoryInBreadcrumb)}
 									/>
 								</div>)}/>
-							<Route path='/tag/' render={()=>(
+							<Route path='/tag/:postTag' render={({match})=>(
 								<div className="category-pagerow">
 									<PostsListWithBtn
+									match={match}
 									PostsListRelevant={PostsListTags}
 									categoryInBreadcrumb={categoryInBreadcrumb}
 									changeBrowsingCategory={changeBrowsingCategory}

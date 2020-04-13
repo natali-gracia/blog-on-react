@@ -67,7 +67,9 @@ const ResponseMenu = ({
                         <Link to="/about/" onClick={()=>showRespMenu()}>About me</Link>
                         <Link to="/favorites/" onClick={() => {changeBrowsingCategory('favorites'); showRespMenu()}}>
                             Favorites
-                            ({(Object.keys(favoritesButtonState).filter((postId) => favoritesButtonState[postId] === true)).length})
+                            <span className="favresp-count">
+                                {(Object.keys(favoritesButtonState).filter((postId) => favoritesButtonState[postId] === true)).length}
+                            </span>
                         </Link>
                     </div>
                 </div>

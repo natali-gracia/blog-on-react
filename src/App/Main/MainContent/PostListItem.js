@@ -48,20 +48,22 @@ const PostListItem = ({
                             ))
                         }
                     </div>
-                    <div className="btn-favorites">
-                        <button onClick={
-                                ()=>inFavorites[id] ? removeFavorites(id) : addFavorites(id)
-                            } title={
-                                inFavorites[id] ? 'Remove from Favorites' : 'Add to Favorites'
-                            }>
-                        {inFavorites[id] ? <span>&#9829;</span> : <span>&#9825;</span>}
-                        </button>
-                    </div>
+
                     <h2 className="title">
                         <Link to={`/post/${title_link}`}>{title}</Link>
                     </h2>
                     <div className="blogpost-meta">
                         <span>{date}</span>
+                        <em>•</em>
+                        <div className="favorites-pointer">
+                            <button onClick={
+                                    ()=>inFavorites[id] ? removeFavorites(id) : addFavorites(id)
+                                } title={
+                                    inFavorites[id] ? 'Remove from Favorites' : 'Add to Favorites'
+                                }>
+                                {inFavorites[id] ? <span className="liked"></span> : <span className="noliked"></span>}             
+                            </button>
+                        </div>
                         <em>•</em>
                         <span>{CommentsArray.length !== 0 ?
                                 <CommentsListLength
