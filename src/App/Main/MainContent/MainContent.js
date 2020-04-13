@@ -3,7 +3,7 @@ import React,{Component} from "react"
 import'./maincontent.css'
 
 import PostsListWithBtn from './PostsListWithBtn'
-import PostsListPopular from './PostsListPopular'
+import PostsListWithBtnPopular from './PostsListWithBtnPopular'
 import RadioButtons from './RadioButtons'
 
 
@@ -46,9 +46,8 @@ class MainContent extends Component {
                         addFavorites={addFavorites}
                         removeFavorites={removeFavorites}
                         /> : 
-                        <PostsListWithBtn
+                        <PostsListWithBtnPopular
                         match={match}
-                        PostsListRelevant={PostsListPopular}
                         changeBrowsingCategory={changeBrowsingCategory}
                         favoritesButtonState={favoritesButtonState}
                         addFavorites={addFavorites}
