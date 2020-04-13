@@ -18,14 +18,14 @@ class PostsListWithBtn extends Component {
         }));
     }
 
-    // componentWillReceiveProps(nextProps) {
-    //     console.log(nextProps.match);
-    //     if (this.props.match.params !== nextProps.match.params) {
-    //         this.setState({sliceValue: 6})
-    //     } else {
-    //         this.setState({...this.state.sliceValue})
-    //     }
-    //   }
+    componentWillReceiveProps(nextProps) {
+        console.log(nextProps.match);
+        if (this.props.match.params !== nextProps.match.params) {
+            this.setState({sliceValue: 6})
+        } else {
+            this.setState({...this.state.sliceValue})
+        }
+      }
 
 
     render() {	
