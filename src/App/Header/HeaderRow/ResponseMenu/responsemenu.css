@@ -70,7 +70,7 @@
 .favresp-count {
 	display: inline-block;
 	border-radius: 90px;
-	border: 1.5px solid #cdb280;
+	border: 1.2px solid #cdb280;
 	font-size: 14px;
 	font-weight: bold;
 	color: #cdb280;
@@ -78,6 +78,6 @@
     max-height: 20px;
 	line-height: 17px;
 	letter-spacing: 1px;
-	padding: 0 5px 2px 6px;
+	padding: 0 4px 2px 5px;
 	margin-left: 5px;
 }

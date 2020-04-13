@@ -19,8 +19,7 @@ class PostsListWithBtn extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps.match);
-        if (this.props.match.params !== nextProps.match.params) {
+        if (this.props.match.url !== nextProps.match.url) {
             this.setState({sliceValue: 6})
         } else {
             this.setState({...this.state.sliceValue})

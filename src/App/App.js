@@ -15,7 +15,6 @@ class App extends Component {
 	state = {
     categoryInBreadcrumb: 'travels',
     favoritesButtonState: {
-      10:true,
 		}
 	}
 	
@@ -52,6 +51,7 @@ class App extends Component {
           favoritesButtonState={this.state.favoritesButtonState}
         />		
         <Route exact path='/'><SliderFadeParallax/></Route>
+        <Route path='/popular/'><SliderFadeParallax/></Route>
         <Main
           categoryInBreadcrumb={this.state.categoryInBreadcrumb}
           changeBrowsingCategory={this.changeBrowsingCategory}

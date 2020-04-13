@@ -111,7 +111,7 @@
     max-height: 20px;
 	line-height: 17px;
 	letter-spacing: 1px;
-	padding: 0 5px 0 6px;
+	padding: 0 4px 0 5px;
 	margin-left: 5px;
 }
 @media only screen and (max-width: 1180px) and (min-width: 0px) {
