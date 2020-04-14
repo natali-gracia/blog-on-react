@@ -1,6 +1,4 @@
 const postFavoritesReducer = (state={
-    9:true,
-    7:true,
 }, action) => {
     switch(action.type) {
         case 'FAVORITES':

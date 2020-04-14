@@ -26,8 +26,6 @@ const PostListItem = ({
 
         const CommentsArray = commentsData.filter((comment) => comment.link_relative === postItemData[id].title_link)
 
-        console.log(inFavorites)
-
         return (
             <div className="blog-items">
                 <div className="top-blog">
