@@ -145,7 +145,7 @@ const postsData = [
         tags: ['weekend','city','fashion','tips','lifestyle', 'fall'],
         image: '/images/postsimg/anariel-post-12.jpg',         
         image_postitem:"/images/postsimg/anariel-post-12-390x240.jpg",
-        image_sidebar: '',
+        image_sidebar: '/images/postsimg/anariel-post-12-255x170.jpg',
         image_widget: "/images/postsimg/anariel-post-12-345x230.jpg",   
         likes:11,
         excerpt:
