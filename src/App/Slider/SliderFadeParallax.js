@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './sliderparallax.css'
 
-import postsData, {getPostsMap} from './../Main/MainContent/postsData'
+import postsData from '../Main/MainContent/postsData'
 
 
 class SliderFadeParallax extends Component {
@@ -23,58 +23,29 @@ class SliderFadeParallax extends Component {
         cssEase: 'linear',
         autoplay: true,
         autoplaySpeed: 4500,
-      };
-      const {
-        postItemData = getPostsMap(postsData),
-      } = this.props
+      }
+      
       return (
         <div className="slider-row">
           <Slider {...settings}>
+            {postsData.sort((a,b)=> b.id - a.id).slice(0,3).map((post)=>(
             <Parallax strength={120}>
-              <div className="slick-slide-one">
-                  <div className="slick-image"><img src={postItemData[10].image}/></div>
+              <div className="slick-slide-item">
+                  <div className="slick-image"><img src={post.image}/></div>
                   <div className="slider-content">
-                      <div className="item-date">{postItemData[10].date}</div>	
-                      <div className="item-subtitle">{postItemData[10].title}</div>
+                      <div className="item-date">{post.date}</div>	
+                      <div className="item-subtitle">{post.title}</div>
                       <div className="item-btn-more">
-                          <button type="button"><Link to={`/post/${postItemData[10].title_link}`}>READ MORE</Link></button> 
+                          <button type="button"><Link to={`/post/${post.title_link}`}>READ MORE</Link></button> 
                       </div>					
 				          </div>
               </div>
-              <Background className="bg-image">
-                <img src={postItemData[10].image} alt="fill murray"/>
+              <Background>
+                <div className="bg-image"><img src={post.image} alt="fill murray"/></div>
               </Background>
             </Parallax>
-            <Parallax strength={120}>
-              <div className="slick-slide-two">
-                  <div className="slick-image"><img src={postItemData[6].image}/></div>
-                  <div className="slider-content">
-                      <div className="item-date">{postItemData[6].date}</div>	
-                      <div className="item-subtitle">{postItemData[6].title}</div>
-                      <div className="item-btn-more">
-                          <button type="button"><Link to={`/post/${postItemData[6].title_link}`}>READ MORE</Link></button> 
-                      </div>					
-				          </div>
-              </div>
-              <Background className="bg-image">
-                <img src={postItemData[6].image} alt="fill murray"/>
-              </Background>
-            </Parallax>
-            <Parallax strength={120}>
-              <div className="slick-slide-three">
-                  <div className="slick-image"><img src={postItemData[5].image}/></div>
-                  <div className="slider-content">
-                      <div className="item-date">{postItemData[5].date}</div>	
-                      <div className="item-subtitle">{postItemData[5].title}</div>
-                      <div className="item-btn-more">
-                          <button type="button"><Link to={`/post/${postItemData[5].title_link}`}>READ MORE</Link></button> 
-                      </div>					
-				          </div>
-              </div>
-                <Background className="bg-image">
-                  <img src={postItemData[5].image} alt="fill murray"/>
-                </Background>
-            </Parallax>
+            ))
+          }
           </Slider>
         </div>
       );

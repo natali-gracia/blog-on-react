@@ -49,14 +49,14 @@ const commentsData = [
         link_relative: 'beautiful-christmas-decoration',
         author:'Alise',
         avatar:'/images/unknown-avatar.png',
-        date:'May 18, 2020 at 9:54 pm',
+        date:'April 18, 2020 at 9:54 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [
             {
                 id:7,
                 author:'Anariel',
                 avatar:'/images/unknown-avatar.png',
-                date:'May 19, 2020 at 1:08 pm',
+                date:'April 19, 2020 at 1:08 pm',
                 text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
                 replies: []
             }
@@ -67,7 +67,7 @@ const commentsData = [
         link_relative: 'beautiful-christmas-decoration',
         author:'John',
         avatar:'/images/unknown-avatar.png',
-        date:'May 23, 2020 at 01:10 pm',
+        date:'April 23, 2020 at 01:10 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [],
     },
@@ -76,7 +76,7 @@ const commentsData = [
         link_relative: 'fashion-tips-for-autumn-days',
         author:'Mark',
         avatar:'/images/unknown-avatar.png',
-        date:'April 24, 2020 at 9:54 pm',
+        date:'May 24, 2020 at 9:54 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: []
     },
@@ -85,7 +85,7 @@ const commentsData = [
         link_relative: 'fashion-tips-for-autumn-days',
         author:'Antony',
         avatar:'/images/unknown-avatar.png',
-        date:'April 25, 2020 at 01:45 pm',
+        date:'May 25, 2020 at 01:45 pm',
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh classica ed euismod tincidunt ut laoreet dolore magna vertolori. Claritas est etiam processus dynamicus, qui sequitur.",
         replies: [],
     },
