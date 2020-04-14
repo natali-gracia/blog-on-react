@@ -1,19 +1,18 @@
 import React from "react"
+import {connect} from 'react-redux'
 import PostListItem from '../MainContent/PostListItem'
 import postsData, {getPostsMap} from '../MainContent/postsData'
 
 const PostsListFavorites = ({
     sliceValue,
     changeBrowsingCategory,
-    favoritesButtonState,
-    addFavorites,
-    removeFavorites,
+    inFavorites,
     postsObj = getPostsMap(postsData),
 }) => {
         return (
             <div className="flex-wrap">
-                {Object.keys(favoritesButtonState).filter((postId) => 
-                     favoritesButtonState[postId] === true).sort((a,b)=> b - a).slice(0,sliceValue).map((postId)=>(
+                {Object.keys(inFavorites).filter((postId) => 
+                     inFavorites[postId] === true).sort((a,b)=> b - a).slice(0,sliceValue).map((postId)=>(
                         <div key={postsObj[postId].id}>
                             <PostListItem 
                                 id={postsObj[postId].id}
@@ -24,9 +23,6 @@ const PostsListFavorites = ({
                                 excerpt={postsObj[postId].excerpt}
                                 сategories={postsObj[postId].сategories}
                                 changeBrowsingCategory={changeBrowsingCategory}
-                                inFavorites={favoritesButtonState}
-                                addFavorites={addFavorites}
-                                removeFavorites={removeFavorites}
                             />
                         </div>
                     ))
@@ -35,4 +31,10 @@ const PostsListFavorites = ({
 	    )
 }
 
-export default PostsListFavorites
+const mapStateToProps = (state) => ({
+    inFavorites:state,
+})
+
+export default connect(
+    mapStateToProps,
+) (PostsListFavorites)

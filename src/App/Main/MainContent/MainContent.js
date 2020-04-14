@@ -23,9 +23,6 @@ class MainContent extends Component {
         
         const {
             changeBrowsingCategory,
-            favoritesButtonState,
-            addFavorites,
-            removeFavorites,
             match
         } = this.props
         
@@ -42,16 +39,10 @@ class MainContent extends Component {
                         <PostsListWithBtn
                         match={match}
                         changeBrowsingCategory={changeBrowsingCategory}
-                        favoritesButtonState={favoritesButtonState}
-                        addFavorites={addFavorites}
-                        removeFavorites={removeFavorites}
                         /> : 
                         <PostsListWithBtnPopular
                         match={match}
                         changeBrowsingCategory={changeBrowsingCategory}
-                        favoritesButtonState={favoritesButtonState}
-                        addFavorites={addFavorites}
-                        removeFavorites={removeFavorites}
                         /> 
                     }                                    
                 </div>

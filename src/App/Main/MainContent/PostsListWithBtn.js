@@ -18,12 +18,10 @@ class PostsListWithBtn extends Component {
         }));
     }
 
-    componentWillReceiveProps(nextProps) {
-        if (this.props.match.url !== nextProps.match.url) {
+    componentDidUpdate(prevProps) {
+        if (this.props.match.url !== prevProps.match.url) {
             this.setState({sliceValue: 6})
-        } else {
-            this.setState({...this.state.sliceValue})
-        }
+        } 
       }
 
 
@@ -34,12 +32,7 @@ class PostsListWithBtn extends Component {
             categoryInBreadcrumb,
             changeBrowsingCategory,
             relevantArray = postsData,
-            favoritesButtonState,
-            addFavorites,
-            removeFavorites,
         } = this.props
-
-        console.log(this.state.sliceValue)
 
         return (
             <div>
@@ -48,9 +41,6 @@ class PostsListWithBtn extends Component {
                     sliceValue = {this.state.sliceValue}
                     categoryInBreadcrumb = {categoryInBreadcrumb}
                     changeBrowsingCategory={changeBrowsingCategory}
-                    favoritesButtonState={favoritesButtonState}
-                    addFavorites={addFavorites}
-                    removeFavorites={removeFavorites}
                     />    												
                 </div>
                 <div className={this.state.sliceValue>=relevantArray.length ? 'hidden' : ''}>

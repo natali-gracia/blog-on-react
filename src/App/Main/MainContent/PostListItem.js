@@ -1,12 +1,11 @@
 import React from "react"
+import {connect} from 'react-redux'
+import {Link} from "react-router-dom"
 import PropTypes from "prop-types"
+
 import "./postlistitem.css"
 
-
-import {Link} from "react-router-dom"
-
 import CommentsListLength from './../../../Components/CommentsListLength/CommentsListLength'
-
 import commentsData from './../PostPage/CommentsList/commentsData'
 import postsData, {getPostsMap} from './postsData'
 
@@ -26,6 +25,8 @@ const PostListItem = ({
 }) => { 
 
         const CommentsArray = commentsData.filter((comment) => comment.link_relative === postItemData[id].title_link)
+
+        console.log(inFavorites)
 
         return (
             <div className="blog-items">
@@ -56,12 +57,9 @@ const PostListItem = ({
                         <span>{date}</span>
                         <em>•</em>
                         <div className="favorites-pointer">
-                            <button onClick={
-                                    ()=>inFavorites[id] ? removeFavorites(id) : addFavorites(id)
-                                } title={
-                                    inFavorites[id] ? 'Remove from Favorites' : 'Add to Favorites'
-                                }>
-                                {inFavorites[id] ? <span className="liked"></span> : <span className="noliked"></span>}             
+                            <button onClick={()=>inFavorites ? removeFavorites(id) : addFavorites(id)} 
+                                title={inFavorites ? 'Remove from Favorites' : 'Add to Favorites'}>
+                                {inFavorites ? <span className="liked"></span> : <span className="noliked"></span>}             
                             </button>
                         </div>
                         <em>•</em>
@@ -90,4 +88,22 @@ PostListItem.defaultProps = {
     excerpt:"No excerpt",
 }
 
-export default PostListItem
+const mapStateToProps = (state,props) => ({
+    inFavorites:state[props.id],
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    addFavorites:(id)=>dispatch({
+        type: 'FAVORITES',
+        id:id,
+    }),
+    removeFavorites:(id)=>dispatch({
+        type: 'NOFAVORITES',
+        id:id,
+    }),
+})
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps,
+) (PostListItem)

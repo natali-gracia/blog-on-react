@@ -6,9 +6,6 @@ const PostsListCategories = ({
     sliceValue,
     categoryInBreadcrumb,
     changeBrowsingCategory,
-    favoritesButtonState,
-    addFavorites,
-    removeFavorites,
 }) => {
         return (
             <div className="flex-wrap">
@@ -25,9 +22,6 @@ const PostsListCategories = ({
                                 excerpt={post.excerpt}
                                 сategories={post.сategories}
                                 changeBrowsingCategory={changeBrowsingCategory}
-                                inFavorites={favoritesButtonState}
-                                addFavorites={addFavorites}
-                                removeFavorites={removeFavorites}
                             />
                         </div>
                     ))

@@ -1,5 +1,6 @@
 import React from "react"
 import { Route } from "react-router-dom"
+import {connect} from 'react-redux'
 
 import'./main.css'
 
@@ -19,9 +20,7 @@ import Sidebar from './Sidebar/Sidebar'
 const Main = ({
 			categoryInBreadcrumb,
 			changeBrowsingCategory,
-			favoritesButtonState,
-			addFavorites,
-			removeFavorites,
+			inFavorites,
 }) => {
 
 	return (
@@ -48,19 +47,13 @@ const Main = ({
 						<div className="col-md-7">
 							<Route exact path='/' render={({match})=>(
 								<MainContent
-								match={match}
-								changeBrowsingCategory={changeBrowsingCategory}
-								favoritesButtonState={favoritesButtonState}
-								addFavorites={addFavorites}
-								removeFavorites={removeFavorites}
+									match={match}
+									changeBrowsingCategory={changeBrowsingCategory}
 								/>)}/>
 							<Route path='/post/:postTitle' render={({match})=>(
 								<PostPage
 									match={match}
 									changeBrowsingCategory={changeBrowsingCategory}
-									favoritesButtonState={favoritesButtonState}
-									addFavorites={addFavorites}
-									removeFavorites={removeFavorites}
 								/>)}/>
 							<Route path='/category/:postCategory' render={({match})=>(
 								<div className="category-pagerow">
@@ -69,9 +62,6 @@ const Main = ({
 									PostsListRelevant={PostsListCategories}
 									categoryInBreadcrumb={categoryInBreadcrumb}
 									changeBrowsingCategory={changeBrowsingCategory}
-									favoritesButtonState={favoritesButtonState}
-									addFavorites={addFavorites}
-									removeFavorites={removeFavorites}
 									relevantArray = {postsData.filter((post) => 
 										post.сategories.filter((category) => 
 										category === categoryInBreadcrumb)[0] === categoryInBreadcrumb)}
@@ -84,24 +74,19 @@ const Main = ({
 									PostsListRelevant={PostsListTags}
 									categoryInBreadcrumb={categoryInBreadcrumb}
 									changeBrowsingCategory={changeBrowsingCategory}
-									favoritesButtonState={favoritesButtonState}
-									addFavorites={addFavorites}
-									removeFavorites={removeFavorites}
 									relevantArray = {postsData.filter((post) => 
 										post.tags.filter((tag) => 
 										tag === categoryInBreadcrumb)[0] === categoryInBreadcrumb)}
 									/>
 								</div>)}/>
-							<Route path='/favorites/' render={()=>(
+							<Route path='/favorites/' render={({match})=>(
 								<div className="category-pagerow">
 									<PostsListWithBtn
+									match={match}
 									PostsListRelevant={PostsListFavorites}
 									categoryInBreadcrumb={categoryInBreadcrumb}
 									changeBrowsingCategory={changeBrowsingCategory}
-									favoritesButtonState={favoritesButtonState}
-									addFavorites={addFavorites}
-									removeFavorites={removeFavorites}
-									relevantArray = {Object.keys(favoritesButtonState)}
+									relevantArray = {Object.keys(inFavorites)}
 									/>
 								</div>)}/>
 						</div>
@@ -123,5 +108,10 @@ const Main = ({
     )
 }
 
+const mapStateToProps = (state) => ({
+    inFavorites:state,
+})
 
-export default Main
+export default connect(
+    mapStateToProps,
+) (Main)

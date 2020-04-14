@@ -1,4 +1,5 @@
 import React from "react"
+import {connect} from 'react-redux'
 import PropTypes from "prop-types"
 
 import './itempost.css'
@@ -8,8 +9,8 @@ import TagsCloud from "../../../../Components/TagsCloud/TagsCloud"
 const BottomPostItem = ({
     changeBrowsingCategory,
     tags,
-    inFavorites = false,
     id,
+    inFavorites = false,
     addFavorites,
     removeFavorites,  
 }) => {
@@ -32,11 +33,11 @@ const BottomPostItem = ({
                     </div>
                     <div className="favorites-btn">
                         <button onClick={
-                                ()=>inFavorites[id] ? removeFavorites(id) : addFavorites(id)
+                                ()=>inFavorites ? removeFavorites(id) : addFavorites(id)
                             } title={
-                                inFavorites[id] ? 'Remove from Favorites' : 'Add to Favorites'
+                                inFavorites ? 'Remove from Favorites' : 'Add to Favorites'
                             }>
-                            {inFavorites[id] ? <span className="isLiked"></span> : <span className="noLiked"></span>}
+                            {inFavorites ? <span className="isLiked"></span> : <span className="noLiked"></span>}
                                 Favorites                
                         </button>
                     </div>
@@ -50,5 +51,22 @@ BottomPostItem.propTypes = {
     tags:PropTypes.array,
 }
 
+const mapStateToProps = (state,props) => ({
+    inFavorites:state[props.id],
+})
 
-export default BottomPostItem
+const mapDispatchToProps = (dispatch) => ({
+    addFavorites:(id)=>dispatch({
+        type: 'FAVORITES',
+        id:id,
+    }),
+    removeFavorites:(id)=>dispatch({
+        type: 'NOFAVORITES',
+        id:id,
+    }),
+})
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps,
+) (BottomPostItem)

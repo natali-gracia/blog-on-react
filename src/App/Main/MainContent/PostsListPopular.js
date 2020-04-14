@@ -6,9 +6,6 @@ import postsData from './postsData'
 const PostsListPopular = ({
     sliceValue,
     changeBrowsingCategory,
-    favoritesButtonState,
-    addFavorites,
-    removeFavorites,
 }) => {
         return (
             <div className="flex-wrap">
@@ -23,9 +20,6 @@ const PostsListPopular = ({
                                 excerpt={post.excerpt}
                                 сategories={post.сategories}
                                 changeBrowsingCategory={changeBrowsingCategory}
-                                inFavorites={favoritesButtonState}
-                                addFavorites={addFavorites}
-                                removeFavorites={removeFavorites}
                             />
                         </div>
                     ))

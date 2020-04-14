@@ -29,9 +29,9 @@ class SliderFadeParallax extends Component {
         <div className="slider-row">
           <Slider {...settings}>
             {postsData.sort((a,b)=> b.id - a.id).slice(0,3).map((post)=>(
-            <Parallax strength={120}>
+            <Parallax strength={120} key={post.id}>
               <div className="slick-slide-item">
-                  <div className="slick-image"><img src={post.image}/></div>
+                  <div className="slick-image"><img src={post.image} alt={post.title}/></div>
                   <div className="slider-content">
                       <div className="item-date">{post.date}</div>	
                       <div className="item-subtitle">{post.title}</div>
@@ -41,7 +41,7 @@ class SliderFadeParallax extends Component {
 				          </div>
               </div>
               <Background>
-                <div className="bg-image"><img src={post.image} alt="fill murray"/></div>
+                <div className="bg-image"><img src={post.image} alt={post.title}/></div>
               </Background>
             </Parallax>
             ))

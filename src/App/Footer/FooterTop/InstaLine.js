@@ -10,7 +10,7 @@ const InstaLine = () => {
             <div className='wrap'>
                 {instaData.reverse().slice(0,6).map((post)=>(  
                     <div className="insta-items" key={post.id}>
-                        <a href={post.link}><img src={post.image} alt=""/></a>
+                        <a href={post.link}><img src={post.image} title="Instagram post" alt=""/></a>
                     </div>					
                     ))
                 }         

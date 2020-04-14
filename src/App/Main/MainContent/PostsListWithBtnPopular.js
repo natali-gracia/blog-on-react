@@ -22,9 +22,6 @@ class PostsListWithBtnPopular extends Component {
         const {
             categoryInBreadcrumb,
             changeBrowsingCategory,
-            favoritesButtonState,
-            addFavorites,
-            removeFavorites,
         } = this.props
 
         console.log(this.state.sliceValue)
@@ -36,9 +33,6 @@ class PostsListWithBtnPopular extends Component {
                     sliceValue = {this.state.sliceValue}
                     categoryInBreadcrumb = {categoryInBreadcrumb}
                     changeBrowsingCategory={changeBrowsingCategory}
-                    favoritesButtonState={favoritesButtonState}
-                    addFavorites={addFavorites}
-                    removeFavorites={removeFavorites}
                     />    												
                 </div>
                 <div className={this.state.sliceValue>=postsData.length ? 'hidden' : ''}>

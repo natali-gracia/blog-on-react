@@ -17,10 +17,7 @@ import CommentsListLength from './../../../../Components/CommentsListLength/Comm
 const BlogPost = ({
         postItemData = getPostsMap(postsData),
         changeBrowsingCategory,
-        id,
-        favoritesButtonState, 
-        addFavorites,
-        removeFavorites,     
+        id,  
 }) => {
 
         const CommentsArray = commentsData.filter((comment) => comment.link_relative === postItemData[id].title_link)
@@ -47,9 +44,6 @@ const BlogPost = ({
                                 tags={postItemData[id].tags}
                                 changeBrowsingCategory={changeBrowsingCategory}
                                 id={postItemData[id].id}
-                                inFavorites={favoritesButtonState}
-                                addFavorites={addFavorites}
-				removeFavorites={removeFavorites}
                         />
 		</div>
                 <div className="related-posts">

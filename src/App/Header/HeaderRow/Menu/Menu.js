@@ -1,4 +1,5 @@
 import React from "react"
+import {connect} from 'react-redux'
 
 import'./menu.css'
 
@@ -6,7 +7,7 @@ import {Link} from "react-router-dom"
 
 const Menu = ({
     changeBrowsingCategory,
-    favoritesButtonState,
+    inFavorites,
     menuRow = "menu-row",
     menuClass = "menu",
     dropdownClass = "dropdown-item",
@@ -44,7 +45,7 @@ const Menu = ({
                     <Link to="/favorites/" onClick={() => changeBrowsingCategory('favorites')}>
                         Favorites
                         <span className="fav-count">
-                            {(Object.keys(favoritesButtonState).filter((postId) => favoritesButtonState[postId] === true)).length}
+                            {(Object.keys(inFavorites).filter((postId) => inFavorites[postId] === true)).length}
                         </span>
                     </Link>
                 </li>
@@ -53,4 +54,10 @@ const Menu = ({
 	)
 }
 
-export default Menu
+const mapStateToProps = (state) => ({
+    inFavorites:state,
+})
+
+export default connect(
+    mapStateToProps,
+) (Menu)

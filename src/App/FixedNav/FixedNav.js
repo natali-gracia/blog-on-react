@@ -33,7 +33,6 @@ class FixedNav extends Component {
 
     const {
       changeBrowsingCategory,
-      favoritesButtonState,
     } = this.props;
 
     return (
@@ -41,7 +40,6 @@ class FixedNav extends Component {
               <NavBar
               changeBrowsingCategory={changeBrowsingCategory}
               showNavBar={this.state.showNavBar}
-              favoritesButtonState={favoritesButtonState}
               />
           </div>
     );

@@ -7,7 +7,6 @@ import Menu from './../Header/HeaderRow/Menu/Menu'
 
 const NavBar = ({
     changeBrowsingCategory,
-    favoritesButtonState,
     showNavBar,
 }) => (
     <div className={showNavBar === false ? 'fixednav' : 'fixednav  is-nav-open'}>
@@ -18,7 +17,6 @@ const NavBar = ({
             <div className="col-md-auto">
                 <Menu 
                     changeBrowsingCategory={changeBrowsingCategory}
-                    favoritesButtonState={favoritesButtonState}
                     menuClass={"menu items-fixedmenu"}
                     dropdownClass={"dropdown-item dropdown-fixedmenu"}
                     menuRow={''}

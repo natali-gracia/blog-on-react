@@ -13,29 +13,11 @@ import Footer from './Footer/Footer'
 class App extends Component {
 	
 	state = {
-    categoryInBreadcrumb: 'travels',
-    favoritesButtonState: {
-		}
+    categoryInBreadcrumb: 'travels'
 	}
 	
 	changeBrowsingCategory = ((name) => {
         this.setState({categoryInBreadcrumb: name})
-      }) 
-  
-  addFavorites = ((postId) => {
-    this.setState((prevState)=>({
-      favoritesButtonState: {
-      ...prevState.favoritesButtonState,
-      [postId]: true,
-        }}))
-    })
-
-  removeFavorites = ((postId) => {
-      this.setState((prevState)=>({
-        favoritesButtonState: {
-        ...prevState.favoritesButtonState,
-        [postId]: false,
-          }}))
       })
       
   render () {
@@ -44,19 +26,14 @@ class App extends Component {
     <div>
 	      <FixedNav
           changeBrowsingCategory={this.changeBrowsingCategory}
-          favoritesButtonState={this.state.favoritesButtonState}
         />
         <Header
           changeBrowsingCategory={this.changeBrowsingCategory}
-          favoritesButtonState={this.state.favoritesButtonState}
         />		
         <Route exact path='/'><SliderFadeParallax/></Route>
         <Main
           categoryInBreadcrumb={this.state.categoryInBreadcrumb}
           changeBrowsingCategory={this.changeBrowsingCategory}
-          favoritesButtonState={this.state.favoritesButtonState}
-          addFavorites={this.addFavorites}
-          removeFavorites={this.removeFavorites}
         />       
         <Footer/>
     </div>

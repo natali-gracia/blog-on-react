@@ -24,7 +24,6 @@ class HeaderRow extends Component {
 
     const {
         changeBrowsingCategory,
-        favoritesButtonState
     } = this.props
 
     return (
@@ -35,7 +34,6 @@ class HeaderRow extends Component {
                         respMenu={this.state.respMenu}
                         showRespMenu={this.showRespMenu}
                         changeBrowsingCategory={changeBrowsingCategory}
-                        favoritesButtonState={favoritesButtonState}
                     />
                 </div>                
                 <div className="logo-inner">
@@ -46,7 +44,6 @@ class HeaderRow extends Component {
                 <div className="menu-inner">
                     <Menu
                         changeBrowsingCategory={changeBrowsingCategory}
-                        favoritesButtonState={favoritesButtonState}
                     />						
                 </div>			
             </div>
