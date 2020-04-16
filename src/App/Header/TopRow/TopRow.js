@@ -2,7 +2,7 @@ import React from "react"
 
 import'./toprow.css'
 
-import SocialIcons from './../../../Components/SocialIcons/SocialIcons'
+import SocialIcons from './SocialIcons/SocialIcons'
 import Search from './Search/Search'
 
 const TopRow = () => {

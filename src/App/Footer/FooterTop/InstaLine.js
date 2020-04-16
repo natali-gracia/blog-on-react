@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 import'./footertop.css'
 
@@ -10,7 +11,7 @@ const InstaLine = () => {
             <div className='wrap'>
                 {instaData.reverse().slice(0,6).map((post)=>(  
                     <div className="insta-items" key={post.id}>
-                        <a href={post.link}><img src={post.image} title="Instagram post" alt=""/></a>
+                        <Link to={post.link}><img src={post.image} title="Instagram post" alt=""/></Link>
                     </div>					
                     ))
                 }         

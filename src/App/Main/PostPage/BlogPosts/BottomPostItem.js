@@ -2,6 +2,8 @@ import React from "react"
 import {connect} from 'react-redux'
 import PropTypes from "prop-types"
 
+import {Link} from "react-router-dom"
+
 import './itempost.css'
 
 import TagsCloud from "../../../../Components/TagsCloud/TagsCloud"
@@ -26,10 +28,10 @@ const BottomPostItem = ({
                 <div className="flex-row">
                     Share:
                     <div className="toolbox-social-icons">
-                        <a href="/" title="Facebook" className="fb-icon-grey"></a>
-                        <a href="/" title="YouTube" className="youtube-icon-grey"></a>
-                        <a href="/" title="Instagram" className="insta-icon-grey"></a>
-                        <a href="/" title="Pinterest" className="pint-icon-grey"></a>			
+                        <Link to="/" title="Facebook" className="fb-icon"></Link>            
+                        <Link to="/" title="YouTube" className="youtube-icon"></Link>
+                        <Link to="/" title="Instagram" className="insta-icon"></Link>
+                        <Link to="/" title="Pinterest" className="pint-icon"></Link>			
                     </div>
                     <div className="favorites-btn">
                         <button onClick={

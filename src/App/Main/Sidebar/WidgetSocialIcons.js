@@ -2,7 +2,7 @@ import React from "react"
 
 import {Link} from "react-router-dom"
 
-import '../../../Components/SocialIcons/socialicons.css'
+import '../../Header/TopRow/SocialIcons/socialicons.css'
 
 const WidgetSocialIcons = () => {
 	return (

@@ -4,11 +4,9 @@ import {Link} from "react-router-dom"
 
 import './socialicons.css'
 
-const SocialIcons = ({
-    socialIconClass="top-social-icons",
-}) => {
+const SocialIcons = () => {
 	return (
-        <div className={socialIconClass}>
+        <div className="top-social-icons">
             <Link to="/" title="Facebook" className="fb-icon"></Link>            
             <Link to="/" title="YouTube" className="youtube-icon"></Link>
             <Link to="/" title="Instagram" className="insta-icon"></Link>

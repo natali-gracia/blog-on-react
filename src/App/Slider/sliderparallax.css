@@ -341,9 +341,9 @@
     .item-subtitle {
         font-size: 30px;
         line-height: 25px;
-        max-width: 420px;
-        min-width: 420px;
-        padding: 0px 0px 60px;
+        max-width: 330px;
+        min-width: 300px;
+        padding: 0px 0px 50px;
     }
     .item-date {
         padding-top: 10px;

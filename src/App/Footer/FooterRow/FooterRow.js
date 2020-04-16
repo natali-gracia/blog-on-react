@@ -1,5 +1,7 @@
 import React from "react"
 
+import {Link} from "react-router-dom"
+
 import'./footerrow.css'
 
 const FooterRow = () => {
@@ -9,7 +11,7 @@ const FooterRow = () => {
                 <div className="col-md-6 left-footer-content">© 2020 copyright // All rights reserved</div>
 				<div className="col-md-6 right-footer-content">Created by 
 					<strong>
-						<a href="/"> NataliaSmalii</a>
+						<Link to="/"> NataliaSmalii</Link>
 					</strong>
 				</div>                						
             </div>			
