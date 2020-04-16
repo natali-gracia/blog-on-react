@@ -2,11 +2,13 @@ import React from "react"
 
 import {Link} from "react-router-dom"
 
-import '../../../Components/SocialIcons/socialicons.css'
+import './socialicons.css'
 
-const WidgetSocialIcons = () => {
+const SocialIcons = ({
+    socialIconClass="top-social-icons",
+}) => {
 	return (
-        <div className="widget-social-icons">
+        <div className={socialIconClass}>
             <Link to="/" title="Facebook" className="fb-icon"></Link>            
             <Link to="/" title="YouTube" className="youtube-icon"></Link>
             <Link to="/" title="Instagram" className="insta-icon"></Link>
@@ -15,4 +17,4 @@ const WidgetSocialIcons = () => {
 	)
 }
 
-export default WidgetSocialIcons
+export default SocialIcons
