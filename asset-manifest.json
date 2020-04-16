@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/blog-on-react/static/css/main.7ac8bdef.chunk.css",
+    "main.js": "/blog-on-react/static/js/main.b6854f94.chunk.js",
+    "main.js.map": "/blog-on-react/static/js/main.b6854f94.chunk.js.map",
+    "runtime-main.js": "/blog-on-react/static/js/runtime-main.1d390953.js",
+    "runtime-main.js.map": "/blog-on-react/static/js/runtime-main.1d390953.js.map",
+    "static/css/2.93a7d2f9.chunk.css": "/blog-on-react/static/css/2.93a7d2f9.chunk.css",
+    "static/js/2.59a9d2b7.chunk.js": "/blog-on-react/static/js/2.59a9d2b7.chunk.js",
+    "static/js/2.59a9d2b7.chunk.js.map": "/blog-on-react/static/js/2.59a9d2b7.chunk.js.map",
+    "index.html": "/blog-on-react/index.html",
+    "precache-manifest.95edb73631482b2699740cee2f64114f.js": "/blog-on-react/precache-manifest.95edb73631482b2699740cee2f64114f.js",
+    "service-worker.js": "/blog-on-react/service-worker.js",
+    "static/css/2.93a7d2f9.chunk.css.map": "/blog-on-react/static/css/2.93a7d2f9.chunk.css.map",
+    "static/css/main.7ac8bdef.chunk.css.map": "/blog-on-react/static/css/main.7ac8bdef.chunk.css.map",
+    "static/js/2.59a9d2b7.chunk.js.LICENSE.txt": "/blog-on-react/static/js/2.59a9d2b7.chunk.js.LICENSE.txt",
+    "static/media/postlistitem.css": "/blog-on-react/static/media/fav-short (2).aefdb0b3.svg",
+    "static/media/itempost.css": "/blog-on-react/static/media/youtube-icon-grey.da4b6420.png",
+    "static/media/socialicons.css": "/blog-on-react/static/media/youtube-icon.62f278a2.png",
+    "static/media/logo.png": "/blog-on-react/static/media/logo.726b8fbc.png",
+    "static/media/poststext.css": "/blog-on-react/static/media/quote-icon.8276db7e.png",
+    "static/media/slick-theme.css": "/blog-on-react/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d390953.js",
+    "static/css/2.93a7d2f9.chunk.css",
+    "static/js/2.59a9d2b7.chunk.js",
+    "static/css/main.7ac8bdef.chunk.css",
+    "static/js/main.b6854f94.chunk.js"
+  ]
+}
