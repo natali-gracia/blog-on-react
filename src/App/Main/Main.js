@@ -27,7 +27,7 @@ const Main = ({
 		<main>
 				<Route path='/about/' render={()=>(
 					<PostImage
-						image='/images/postsimg/postsitemimg/about.jpg'
+						image='images/postsimg/postsitemimg/about.jpg'
 					/>
 				)}/>
 				<Route path='/post/:postTitle' component={PostImage}/>
