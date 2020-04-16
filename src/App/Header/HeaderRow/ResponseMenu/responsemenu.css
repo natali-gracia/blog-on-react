@@ -56,7 +56,7 @@
 	padding-left: 5.5% !important;
 }
 .menu-icon:after {
-	background-image: url('/images/menu-icon.png');
+	background-image: url('./../../../../common/images/menu-icon.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 30px;

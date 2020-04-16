@@ -133,28 +133,28 @@ h1 {
 	top: 8px;
 }
 .fb-icon-grey:after {
-	background-image: url("/images/socialicons/fb-icon-grey.png");
+	background-image: url("./../../../../common/images/socialicons/fb-icon-grey.png");
 }
 .fb-icon-grey:hover:after {
-	background-image: url("/images/socialicons/fb-icon-gold.png");
+	background-image: url("./../../../../common/images/socialicons/fb-icon-gold.png");
 }
 .youtube-icon-grey:after {
-	background-image: url("/images/socialicons/youtube-icon-grey.png");
+	background-image: url("./../../../../common/images/socialicons/youtube-icon-grey.png");
 }
 .youtube-icon-grey:hover:after {
-	background-image: url("/images/socialicons/youtube-icon-gold.png");
+	background-image: url("./../../../../common/images/socialicons/youtube-icon-gold.png");
 }
 .insta-icon-grey:after {
-	background-image: url("/images/socialicons/insta-icon-grey.png");
+	background-image: url("./../../../../common/images/socialicons/insta-icon-grey.png");
 }
 .insta-icon-grey:hover:after {
-	background-image: url("/images/socialicons/insta-icon-gold.png");
+	background-image: url("./../../../../common/images/socialicons/insta-icon-gold.png");
 }
 .pint-icon-grey:after {
-	background-image: url("/images/socialicons/pint-icon-grey.png");
+	background-image: url("./../../../../common/images/socialicons/pint-icon-grey.png");
 }
 .pint-icon-grey:hover:after {
-	background-image: url("/images/socialicons/pint-icon-gold.png");
+	background-image: url("./../../../../common/images/socialicons/pint-icon-gold.png");
 }
 .favorites-btn button {
 	display: inline-block;
@@ -198,10 +198,10 @@ h1 {
 	position: absolute;
 }
 .isLiked:before {
-	background-image: url('/images/fav-short (2).svg');
+	background-image: url('./../../../../common/images/fav-short\ \(2\).svg');
 }
 .noLiked:before {
-	background-image: url('/images/fav-short (1).svg');
+	background-image: url('./../../../../common/images/fav-short\ \(1\).svg');
 }
 
 @media only screen and (max-width: 960px) and (min-width: 0px) {

@@ -19,7 +19,7 @@
 	cursor: pointer;
 }
 .widget-search button:after {
-	background-image: url('/images/magnifying-glass.png');
+	background-image: url('./../../../../common/images/magnifying-glass.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 26px;

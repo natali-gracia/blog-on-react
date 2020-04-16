@@ -237,7 +237,7 @@
 .slick-prev:before, .slick-next:before {
     color: #fff;
     content: '';
-    background-image: url('/images/arrow-down-white.png');
+    background-image: url('./../../common/images/arrow-down-white.png');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;

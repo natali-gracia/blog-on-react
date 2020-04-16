@@ -68,7 +68,7 @@
 	color: #cdb280;
 }
 .dropdown-item:after {
-	background-image: url("/images/arrow-down-white.png");
+	background-image: url("./../../../../common/images/arrow-down-white.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 8px;
@@ -79,7 +79,7 @@
 	right: 5px; top: 37px;
 }
 .dropdown-item:hover:after {
-	background-image: url('/images/arrow-down-gold.png');
+	background-image: url('./../../../../common/images/arrow-down-gold.png');
 }
 .items-fixedmenu {
 	padding-right: 25px;
@@ -96,7 +96,7 @@
 	margin-top: 0;
 }
 .dropdown-fixedmenu:after {
-	background-image: url("/images/arrow-down.png");
+	background-image: url("./../../../../common/images/arrow-down.png");
 	top: 24px;
 	display: block;
 }

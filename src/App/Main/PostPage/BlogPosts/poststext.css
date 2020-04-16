@@ -42,7 +42,7 @@
     position: relative;
 }
 .post-quote:before {
-	background-image: url("/images/quote-icon.png");
+	background-image: url("./../../../../common/images/quote-icon.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	transform: scale(-1, 1);
