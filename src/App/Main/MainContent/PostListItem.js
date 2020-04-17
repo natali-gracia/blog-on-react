@@ -57,7 +57,7 @@ const PostListItem = ({
                         <div className="favorites-pointer">
                             <button onClick={()=>inFavorites ? removeFavorites(id) : addFavorites(id)} 
                                 title={inFavorites ? 'Remove from Favorites' : 'Add to Favorites'}>
-                                {inFavorites ? <span className="liked"></span> : <span className="noliked"></span>}             
+                                {inFavorites ? <em className="liked"></em> : <em className="noliked"></em>}             
                             </button>
                         </div>
                         <em>•</em>

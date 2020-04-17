@@ -90,11 +90,13 @@
 	position: relative;
 	width: 22px;
 	height: 22px;
+	vertical-align: middle;
 }
 .favorites-pointer button:focus {
 	outline: none;
 }
 .favorites-pointer button:hover {
+	cursor: pointer;
 	background-color: rgba(205, 178, 128, 0.3)
 }
 .liked:before, .noliked:before {
